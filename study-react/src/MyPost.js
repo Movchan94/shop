@@ -1,26 +1,29 @@
 import React from 'react';
-import './App.css';
+import Post from "./Post";
 
-function App(props) {
+
+const MyPost =(props)=> {
+ let postElements =  props.state.posts.map(m => <Post message = {m.message}/>)
 
  let newPostText = React.createRef()
 
-  let addNewPost =()=>{
-   let text = newPostText.current.value
-    newPostText.current.value = ''
-    console.log(text)
-  }
+ let addPost =()=>{
+ // props.addPost()
+     props.dispatch({type:'ADD-POST'})
+ }
+ let onPostChange =()=>{
+     let text = newPostText.current.value;
+    // props.updateNewPostText(text)
+     props.dispatch({type:'UPDATE-NEW-POST-TEXT'})
+     console.log(text)
+ }
+ return (
+     <div>
+      <textarea onChange={onPostChange} value = {props.state.newPostText} ref = {newPostText} />
+      <button onClick={addPost}>Отправить</button>
+      {postElements}
+     </div>
+ )
 
-
-
-
-  return (
-    <div className="App">
-   <textarea ref = {newPostText} ></textarea>
-      <button onClick={addNewPost}>Отправить</button>
-     <div>{props.state.message}</div>
-    </div>
-  );
 }
-
-export default App;
+export default MyPost;
