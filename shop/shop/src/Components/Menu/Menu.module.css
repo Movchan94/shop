@@ -1,8 +1,0 @@
-.appHeader {
-    grid-area: header;
-}
-
-.filter {
-    display: flex;
-    justify-content: center;
-}
