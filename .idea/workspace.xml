@@ -2,111 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5a1c057-8eee-465c-9ac4-ff911ffcc5a3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/svg/Logo1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todo/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todo/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todo/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todo/.idea/todo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todo/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todo/src/components/Header/header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todo/src/components/Header/header.module..css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todo/src/components/SearchPanel/search-panel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todo/src/components/SearchPanel/serach-panel.module..css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todo/src/components/todoList/todo-list-item.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todo/src/components/todoList/todo-list.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todo/src/components/todoList/todo-list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/.idea/shop.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/public/boat.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/public/productsJson.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/shop/public/boat.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/shop/public/productsJson.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/shop/src/Actions/BasketAC.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/shop/src/Actions/FilterAC.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/shop/src/Actions/ProductsAC.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/shop/src/AppContainer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/shop/src/Common/Filter/Filter.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/shop/src/Common/Filter/FilterContainer.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/shop/src/Common/Preloader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/shop/src/Components/Basket/Basket.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/shop/src/Components/Basket/BasketContainer.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/shop/src/Components/Boat.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/shop/src/Components/BoatContainer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/shop/src/Components/Header/Header.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/shop/src/Components/Header/Header.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/shop/src/Components/Menu/Menu.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/shop/src/Components/Menu/MenuContainer.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/shop/src/Components/Menu/MenuGoods.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/shop/src/Components/Pagination/Pagination.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/shop/src/Reducers/BasketReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/shop/src/Reducers/FilterReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/shop/src/Reducers/ProductsReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/shop/src/Reducers/Reducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/shop/src/Store.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/Actions/BasketAC.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/Actions/FilterAC.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/Actions/ProductsAC.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/AppContainer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/Common/Filter/Filter.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/Common/Filter/FilterContainer.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/Common/Preloader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/Components/Basket/Basket.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/Components/Basket/BasketContainer.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/Components/Boat.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/Components/BoatContainer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/Components/Header/Header.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/Components/Header/Header.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/Components/Menu/Menu.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/Components/Menu/MenuContainer.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/Components/Menu/MenuGoods.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/Components/Pagination/Pagination.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/Reducers/BasketReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/Reducers/FilterReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/Reducers/ProductsReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/Reducers/Reducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/Store.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop2/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop2/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop2/.idea/shop2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop2/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop2/src/components/Cart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop2/src/components/Default.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop2/src/components/Details.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop2/src/components/Navbar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop2/src/components/Navbar.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop2/src/components/Product.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop2/src/components/ProductList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-react/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-react/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-react/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-react/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-react/.idea/study-react.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-react/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-react/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-react/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-react/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-react/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-react/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-react/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-react/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-react/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-react/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-react/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-react/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-react/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-react/src/MyPost.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-react/src/Post.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-react/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-react/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-react/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-react/src/serviceWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-react/src/setupTests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-react/src/store.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-react/yarn.lock" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/50 % на всю продукцию BABY ITALIA (1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Ellipse 1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Vector 2 (1).svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Vector 3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Vector 4 (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Vector 4 (2).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/figure3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/svg/Ellipse 9.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/svg/Vector (1).svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/svg/Vector (2).svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/svg/Vector (3).svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/svg/Vector (4).svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/svg/search_icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/каляска.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/лого.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg/Logo1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/svg/Logo1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../shop2/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../shop2/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../shop2/.idea/shop2.iml" beforeDir="false" />
@@ -120,6 +34,13 @@
       <change beforePath="$PROJECT_DIR$/../shop2/src/components/ProductList.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../study-react/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../study-react/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../study-react/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../study-react/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todo/src/components/Header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/../todo/src/components/Header/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todo/src/components/SearchPanel/search-panel.js" beforeDir="false" afterPath="$PROJECT_DIR$/../todo/src/components/SearchPanel/search-panel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todo/src/components/todoList/todo-list-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/../todo/src/components/todoList/todo-list-item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todo/src/components/todoList/todo-list.css" beforeDir="false" afterPath="$PROJECT_DIR$/../todo/src/components/todoList/todo-list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todo/src/components/todoList/todo-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/../todo/src/components/todoList/todo-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../united-airlines/src/Header.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../united-airlines/src/Header.module.css" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -131,37 +52,28 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="46" lean-forward="true" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+            <state relative-caret-position="247">
+              <caret line="131" column="14" lean-forward="true" selection-start-line="131" selection-start-column="14" selection-end-line="131" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/img/svg/Logo1.svg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/reset.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="902">
-              <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+            <state relative-caret-position="335">
+              <caret line="418" column="11" selection-start-line="418" selection-start-column="11" selection-end-line="418" selection-end-column="11" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/img/svg/Vector (4).svg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -176,8 +88,8 @@
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/css/style.scss" />
         <option value="$PROJECT_DIR$/css/reset.css" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -203,6 +115,12 @@
               <item name="shop" type="b2602c69:ProjectViewProjectNode" />
               <item name="shop" type="462c0819:PsiDirectoryNode" />
               <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="svg" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -230,6 +148,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\IT\shop\img\svg" />
+      <recent name="D:\IT\shop\img" />
       <recent name="D:\IT\shop\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -258,23 +177,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598463885996</updated>
-      <workItem from="1598463888884" duration="8347000" />
+      <workItem from="1598463888884" duration="8629000" />
+      <workItem from="1598552586014" duration="6462000" />
+      <workItem from="1598690531774" duration="21773000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8347000" />
+    <option name="totallyTimeSpent" value="36864000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24960339" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24960339" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" weight="0.32908458" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32908458" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32908458" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -282,6 +200,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32908458" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4997356" visible="true" weight="0.33487833" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5002644" side_tool="true" weight="0.33487833" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -291,52 +213,70 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/doc/misc.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3432" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.editorconfig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tile.png">
+    <entry file="file://$PROJECT_DIR$/doc/misc.md" />
+    <entry file="file://$PROJECT_DIR$/package-lock.json" />
+    <entry file="file://$PROJECT_DIR$/.editorconfig" />
+    <entry file="file://$PROJECT_DIR$/package.json" />
+    <entry file="file://$PROJECT_DIR$/tile.png" />
+    <entry file="file://$PROJECT_DIR$/favicon.ico" />
+    <entry file="file://$PROJECT_DIR$/img/svg/Logo2.svg" />
+    <entry file="file://$PROJECT_DIR$/img/svg/logo1.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/favicon.ico">
+    <entry file="file://$PROJECT_DIR$/img/svg/search_icon.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/svg/Ellipse 9.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/css/reset.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="902">
-          <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+        <state relative-caret-position="726">
+          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/svg/Vector (1).svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/svg/Vector (3).svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/svg/Vector 4 (1).svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/svg/Vector 4 (2).svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/лого.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/Vector 4 (2).png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/Vector 4 (1).png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/svg/Vector (2).svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/Vector 3.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/svg/Vector (4).svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="131" column="14" lean-forward="true" selection-start-line="131" selection-start-column="14" selection-end-line="131" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/svg/Logo1.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="46" lean-forward="true" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+        <state relative-caret-position="335">
+          <caret line="418" column="11" selection-start-line="418" selection-start-column="11" selection-end-line="418" selection-end-column="11" />
         </state>
       </provider>
     </entry>
