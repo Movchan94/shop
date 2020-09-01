@@ -33,9 +33,9 @@
     height: 35.87px;
     left: 445px;
     top: 28px;
-    /* border: 1px solid #EEEEEE;
-     box-sizing: border-box;
-     transform: rotate(-90deg);*/
+   /* border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    transform: rotate(-90deg);*/
 }
 
 .search-icon {
@@ -138,7 +138,6 @@
     text-align: right;
     color: #CC32A1;
 }
-
 .number-2 {
     font-style: normal;
     font-weight: bold;
@@ -147,7 +146,6 @@
     text-align: right;
     color: black;
 }
-
 .number-text {
     font-size: 14px;
     text-align: right;
@@ -155,13 +153,12 @@
 }
 
 .input1 {
-    border: none;
+    border:none;
     outline: none;
 
 }
-
 .input1::-webkit-input-placeholder {
-    color: #000000;
+    color:#000000;
     font-size: 14px;
 }
 
@@ -338,8 +335,7 @@
     left: 995.25px;
     top: 404.01px;
 }
-
-.slide1 {
+.slide1{
     position: absolute;
     width: 592px;
     height: 476px;
@@ -402,8 +398,8 @@
     position: absolute;
     width: 77px;
     height: 40px;
-    left: 40px;
-    top: 6px;
+    left:40px;
+    top:6px;
     font-family: Circe;
     font-style: normal;
     font-weight: bold;
@@ -494,59 +490,6 @@
     height: 100%;
 }
 
-.line8 {
-    position: absolute;
-    height: 100%;
-    left: 1340px;
-    top: 121px;
-    border: 1px solid #EEEEEE;
-}
-
-.slider2-container1 {
-    position: absolute;
-    width: 709px;
-    height: 373px;
-    left: -160px;
-    top: 1052px;
-   /* background: url(../img/Rectangle16.png);*/
-    border-radius: 20px;
-}
-.slider2-img1 {
-    position: absolute;
-    width: 709px;
-    height: 373px;
-    /* background: url(../img/Rectangle16.png);*/
-    border-radius: 20px;
-}
-
-.slider2-container2 {
-    position: absolute;
-    width: 709px;
-    height: 373px;
-    left: 603px;
-    top: 1052px;
-    background: url(../img/Rectangle15.png);
-    border-radius: 20px;
-}
-
-.slider2-container3 {
-    position: absolute;
-    width: 709px;
-    height: 373px;
-    left: 1366px;
-    right: -155px;
-    top: 1052px;
-   /* background: url(../img/Rectangle17.png);*/
-    border-radius: 20px;
-}
-
-.slider2-img3 {
-    position: absolute;
-    width: 709px;
-    height: 373px;
-    /* background: url(../img/Rectangle16.png);*/
-    border-radius: 20px;
-}
 
 
 
