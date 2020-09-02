@@ -1,0 +1,23 @@
+@import 'fonts';
+@import 'vars';
+@import 'header';
+@import 'footer';
+
+body {
+  box-sizing: border-box;
+  background-color: $main-background;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.wrapper {
+  max-width: 1524px;
+  margin: 0 auto;
+}
+
+
+
+
