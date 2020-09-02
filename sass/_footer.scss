@@ -1,0 +1,31 @@
+.footer {
+  background-color: $footer-backround;
+  color: #fff;
+
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-links-items-item {
+    line-height: 40px;
+  }
+
+  &-contacts {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.social {
+  &-links-items {
+    display: flex;
+    flex-direction: row;
+  }
+  &-links-items-item {
+    display: flex;
+    flex-direction: row;
+    margin-left: 14px;
+  }
+}
