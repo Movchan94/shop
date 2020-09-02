@@ -1,0 +1,117 @@
+@import 'fonts';
+@import 'vars';
+@import 'header';
+@import 'footer';
+
+body {
+  box-sizing: border-box;
+  background-color: $main-background;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.wrapper {
+  max-width: 1524px;
+  margin: 0 auto;
+}
+
+.gallery {
+  background-color: #1A1A1A;
+  color: #fff;
+  font-family: 'Circle-Regular';
+
+  &-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  }
+
+  &-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 37px;
+    padding-bottom: 88px;
+  }
+}
+
+.insta {
+  display: flex;
+  padding: 150px 0 86px 0;
+  &-avatar {
+    margin-right: 42px;
+  }
+
+  &-avatar {
+    width: 143px;
+    height: 141px;
+    margin-top: 30px;
+  }
+
+  &-info {
+  
+  }
+
+  &-header {
+    display: flex;
+  }
+
+  &-acc {
+    font-size: 40px;
+    line-height: 59px;
+    margin-right: 40px;
+  }
+
+  &-subscribe {
+    width: 179px;
+    height: 51px;
+    background: none;
+    outline: none;
+    border: 1px solid #EEEEEE;
+    border-radius: 90px;
+    font-size: 14px;
+    line-height: 40px;
+    color: #fff;
+    &::after {
+      content: '';
+      display: inline-block;
+      background: url(../img/subscribe-arrow.png) no-repeat center center;
+      width: 7px;
+      height: 12px;
+      margin-left: 10px;
+    }
+  }
+
+  &-counters {
+    font-size: 18px;
+    line-height: 27px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Circle-Regular';
+    max-width: 447px;
+    width: 100%;
+    margin: 21px 0;
+    }
+
+  &-counter-number {
+    font-family: 'Circle-Bold';
+  }
+  
+  &-acc-info {
+    &-item {
+      font-size: 14px;
+      line-height: 21px;
+    }
+
+    &-text {
+      margin-left: 6px;
+    }
+  }
+}
+
+
+
+
+
