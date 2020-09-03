@@ -126,9 +126,69 @@
   margin-left: 14px;
 }
 
+.sidebar-left {
+  width: 387px;
+  left: 196px;
+  margin-top: 160px;
+  border: solid 2px red;
+}
+.sidebar-left-horizontal-line {
+  width: 385px;
+  border: 1px solid #E5E5E5;
+  margin-top: 23px;
+  margin-bottom: 28px;
+}
+.sidebar-left .category-list {
+  margin-top: 14px;
+}
+.sidebar-left .category-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.sidebar-left .category-list-item {
+  line-height: 30px;
+}
+.sidebar-left .header {
+  display: flex;
+  justify-content: left;
+  height: 25px;
+  margin-top: 3px;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 25px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #1A1A1A;
+}
+.sidebar-left .header-button {
+  width: 30px;
+  height: 30px;
+  background-color: #fbfbfb;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  margin-left: 2px;
+}
+.sidebar-left .header-button-img {
+  margin-bottom: 3px;
+}
+.sidebar-left .header-name {
+  margin-top: 3px;
+  margin-left: 8px;
+}
+.sidebar-left .price-from-to {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
 body {
   box-sizing: border-box;
-  background-color: #E5E5E5;
+  background-color: #fbfbfb;
 }
 
 a {
