@@ -17,7 +17,410 @@ a {
 .wrapper {
   max-width: 1524px;
   margin: 0 auto;
+  width: 100%;
 }
+
+//utils
+
+.btn-line {
+  outline: none;
+  background: none;
+  border: none;
+  border-bottom: 1px solid;
+  padding: 0 0 5px 0;
+  font-size: 14px;
+  font-family: 'Circle-Bold';
+}
+
+.btn-border {
+  outline: none;
+  background: none;
+  border: none;
+  border-radius: 90px;
+  padding: 0 38px;
+  border: 1px solid;
+  font-size: 14px;
+  height: 51px;
+  font-family: 'Circle-Bold';
+}
+
+.fcard {
+  color: $main-text;
+  margin: 132px 0;
+
+  &-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+  }
+
+  &-header {
+    font-size: 60px;
+    line-height: 73px;
+    font-family: 'Circle-Regular';
+    color: $main-text;
+  }
+
+  &-button {
+    border-color: #eee;
+    &:after {
+      content: '';
+      display: inline-block;
+      background: url(../img/black-arrow.png) no-repeat center center;
+      width: 7px;
+      height: 12px;
+      margin-left: 10px;
+    }
+  }
+
+  &-content {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.slider {
+
+  &-control {
+    margin: 32px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 475px;
+    width: 100%;
+    height: 48px;
+    align-items: center;
+  }
+
+  &-pages-current {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  &-pages-all {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+}
+
+
+
+.card {
+  max-width: 320px;
+  width: 100%;
+  font-family: 'Circle-Regular';
+  color: $main-text;
+  box-shadow: 15px 15px 50px #F2F2F2;
+  border-radius: 20px;
+  padding: 89px 0 8px 0;
+  background: #fff;
+  
+  &-img {
+    display: block;
+    margin: 0 auto 36px auto;
+  }
+
+  &-availability {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    line-height: 40px;
+    color: #777;
+    font-family: 'Circle-Thin';
+  }
+
+  &-description {
+    font-size: 16px;
+    line-height: 40px;
+    color: $main-text;
+    text-align: center;
+    display: block;
+  }
+
+  &-size {
+    text-align: center;
+    display: block;
+    margin-top: -10px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  &-price-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-price {
+    font-family: 'Circle-Bold';
+    font-size: 20px;
+    line-height: 40px;
+    margin-right: 14px;
+  }
+
+  &-color {
+    display: block;
+    margin: auto;
+    margin-top: 28px;
+  }
+}
+
+// future
+
+.future {
+  border-top: 1px solid #DDDDDD;
+  border-bottom: 1px solid #DDDDDD;
+  
+  &-wrapper {
+    
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    height: 418px;
+  }
+
+  &-img {
+    margin-right: 104px;
+    position: relative;
+    z-index: 100;
+    // &:after {
+    //   content: '';
+    //   width: 666px;
+    //   height: 697px;
+    //   display: inline-block;
+    //   background-image: url(../img/shadow.png);
+    // }
+  }
+
+  &-shadow {
+    position: absolute;
+    z-index: 1;
+    top: 470px;
+    left: -45px;
+  }
+
+  &-info {
+    display: flex;
+    min-height: 257px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  &-header-2 {
+    font-family: 'Circle-Regular';
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  &-description {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Circle-light';
+    height: 61px;
+  }
+
+  &-about {
+    color: $text-rose;
+    border-color: $text-rose;
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 10px;
+      margin-left: 17px;
+      background-image: url(../img/rose-btn.svg);
+    }
+  }
+}
+
+//gallery
+
+.gallery {
+  background-color: #1A1A1A;
+  color: #fff;
+  font-family: 'Circle-Regular';
+
+  &-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  }
+
+  &-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 37px;
+    padding-bottom: 88px;
+  }
+}
+
+.insta {
+  display: flex;
+  padding: 150px 0 86px 0;
+  &-avatar {
+    margin-right: 42px;
+  }
+
+  &-avatar {
+    width: 143px;
+    height: 141px;
+    margin-top: 30px;
+  }
+
+  &-info {
+  
+  }
+
+  &-header {
+    display: flex;
+  }
+
+  &-acc {
+    font-size: 40px;
+    line-height: 59px;
+    margin-right: 40px;
+  }
+
+  &-subscribe {
+    width: 179px;
+    height: 51px;
+    background: none;
+    outline: none;
+    border: 1px solid #EEEEEE;
+    border-radius: 90px;
+    font-size: 14px;
+    line-height: 40px;
+    color: #fff;
+    &::after {
+      content: '';
+      display: inline-block;
+      background: url(../img/subscribe-arrow.png) no-repeat center center;
+      width: 7px;
+      height: 12px;
+      margin-left: 10px;
+    }
+  }
+
+  &-counters {
+    font-size: 18px;
+    line-height: 27px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Circle-Regular';
+    max-width: 447px;
+    width: 100%;
+    margin: 21px 0;
+    }
+
+  &-counter-number {
+    font-family: 'Circle-Bold';
+  }
+  
+  &-acc-info {
+    &-item {
+      font-size: 14px;
+      line-height: 21px;
+    }
+
+    &-text {
+      margin-left: 6px;
+    }
+  }
+}
+
+//brands
+
+.brands {
+  height: 230px;
+  display: flex;
+
+  &-slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    &-content {
+      width: 100%;
+      margin: 0 112px;
+    }
+
+    &-items {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+// gift
+
+.gift {
+}
+
+//seo
+
+.seo {
+  margin: 133px 0;
+  &-wrapper {
+    max-width: 840px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  &-header {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &-header-2 {
+    font-size: 70px;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 55px;
+  }
+
+  &-text {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Circle-Thin';
+    padding-bottom: 24px;
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+}
+
+//expert 
+
+.expert {
+  &-wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1456px;
+    display: flex;
+    align-items: center;
+    margin-bottom: -2px;
+  }
+}
+
+.delivery {
+  &-header {
+    font-size: 30px;
+    line-height: 60px;
+    margin-bottom: -35px;
+  }
+
+  &-bold {
+    font-family: 'Circle-Bold';
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
 
 
 

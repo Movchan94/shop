@@ -15,7 +15,7 @@
 <div class="wrapper">
     <header class="header">
         <div class="header-top">
-            <img src="/img/logo.png" alt="" class="header-logo">
+            <img src="img/logo.png" alt="" class="header-logo">
             <div class="header-search">
                 <div class="search-logo">
                     <img src="/img/search-logo.png" alt="">
@@ -86,7 +86,7 @@
             </div>
         </div>
         <div class="sidebar-left-horizontal-line"></div>
-        <div class="price">
+        <div class="filter-price">
             <div class="header">
                 <button class="header-button">
                     <img src="img/svg/category-vector-1.svg" class="header-button-img"/>
@@ -95,15 +95,81 @@
                     ЦЕНА
                 </div>
             </div>
-            <div class="price-from-to">
-                <span class="price-from-to-item">от 0Р.</span>
-                <span class="price-from-to-item">до 30 000 р.</span>
+            <div class="filter-price-from-to">
+                <span class="filter-price-from-to-item">от 0 &#8381</span>
+                <span class="filter-price-from-to-item">до <span id="demo"></span> &#8381</span>
             </div>
-
+            <div class="slider-container">
+                <input type="range" min="0" max="30000" value="50" class="slider" id="myRange">
+            </div>
+            <div class="sidebar-left-horizontal-line"></div>
         </div>
+        <div class="filter-1">
+            <div class="header">
+                <button class="header-button">
+                    <img src="img/svg/category-vector-1.svg" class="header-button-img"/>
+                </button>
+                <div class="header-name">
+                    ЛЮБОЙ ДРУГОЙ ФИЛЬТР
+                </div>
+            </div>
+            <div class="filter-1-checkbox-container">
+                <span class="filter-1-checkbox-item">
+                     <input type="checkbox"/>
+                    <p>На распродаже</p>
+                </span>
+                <span class="filter-1-checkbox-item">
+                     <input type="checkbox"/>
+                    <p>С подарком</p>
+                </span>
+            </div>
+            <div class="sidebar-left-horizontal-line"></div>
+        </div>
+        <div class="filter-2">
+            <div class="header">
+                <button class="header-button">
+                    <img src="img/svg/filter-vector-2.svg" class="header-button-img"/>
+                </button>
+                <div class="header-name">
+                    ЛЮБОЙ ДРУГОЙ
+                </div>
+            </div>
+            <div class="sidebar-left-horizontal-line"></div>
+        </div>
+        <div class="filter-3">
+            <div class="header">
+                <button class="header-button">
+                    <img src="img/svg/filter-vector-2.svg" class="header-button-img"/>
+                </button>
+                <div class="header-name">
+                    ЛЮБОЙ ДРУГОЙ
+                </div>
+            </div>
+            <div class="sidebar-left-horizontal-line"></div>
+        </div>
+        <div class="filter-4">
+            <div class="header">
+                <button class="header-button">
+                    <img src="img/svg/filter-vector-2.svg" class="header-button-img"/>
+                </button>
+                <div class="header-name">
+                    ЛЮБОЙ ДРУГОЙ
+                </div>
+            </div>
+            <div class="sidebar-left-horizontal-line"></div>
+        </div>
+
     </div>
 </div>
 
+<script>
+    let slider = document.getElementById("myRange");
+    let output = document.getElementById("demo");
+    output.innerHTML = slider.value;
 
+    slider.oninput = function() {
+        output.innerHTML = this.value;
+    }
+</script>
 </body>
 </html>

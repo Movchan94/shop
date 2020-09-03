@@ -2,7 +2,6 @@
   width: 387px;
   left: 196px;
   margin-top: 160px;
-  border: solid 2px red;
 
   &-horizontal-line{
     width: 385px;
@@ -23,6 +22,7 @@
     }
     &-list-item {
       line-height: 30px;
+      font-family: 'Circle-Regular';
     }
 
   }
@@ -31,7 +31,7 @@
     justify-content: left;
     height: 25px;
     margin-top: 3px;
-    font-family: Circe;
+    font-family: 'Circle-Bold';
     font-style: normal;
     font-weight: normal;
     font-size: 17px;
@@ -62,12 +62,73 @@
     }
   }
 
-  .price {
+  .filter-price {
 
     &-from-to {
       display: flex;
       justify-content: space-between;
       margin-top: 12px;
+      width: 351px;
+
+      font-family: 'Circle-Regular';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 17px;
+      line-height: 30px;
+    }
+
+    .slider {
+      -webkit-appearance: none;
+      width: 351px;
+      height: 2px;
+      border-radius: 5px;
+      background: #CC32A1;
+      outline: none;
+      opacity: 0.7;
+      -webkit-transition: .2s;
+      transition: opacity .2s;
+    }
+
+    .slider:hover {
+      opacity: 1;
+    }
+
+    .slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 12px;
+      height: 12px;
+      background: #FFFFFF;;
+      cursor: pointer;
+      border: 3px solid #CC32A1;
+      border-radius: 10px;
+    }
+
+    .sidebar-left-horizontal-line {
+      margin-top: 30px;
+    }
+
+  }
+
+  .filter-1 {
+
+    &-checkbox-container {
+      margin-top: 14px;
+      margin-left: 14px;
+    }
+
+    &-checkbox-item {
+      display: flex;
+      justify-content: left;
+
+      font-family: 'Circle-Regular';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 17px;
+      line-height: 30px;
+      /* or 176% */
+      
+      color: $main-text;
     }
   }
 
