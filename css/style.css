@@ -229,6 +229,7 @@
 .sidebar-left .category-list-item {
   line-height: 30px;
   font-family: "Circle-Regular";
+  list-style-position: inside;
 }
 .sidebar-left .header {
   display: flex;
@@ -243,6 +244,10 @@
   /* identical to box height */
   text-transform: uppercase;
   color: #1A1A1A;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
 }
 .sidebar-left .header-button {
   width: 30px;
@@ -276,9 +281,8 @@
   width: 351px;
   height: 2px;
   border-radius: 5px;
-  background: #CC32A1;
+  background: #C4C4C4;
   outline: none;
-  opacity: 0.7;
   -webkit-transition: 0.2s;
   transition: opacity 0.2s;
 }
@@ -287,7 +291,6 @@
 }
 .sidebar-left .filter-price .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
-  appearance: none;
   width: 12px;
   height: 12px;
   background: #FFFFFF;
@@ -441,6 +444,11 @@
 .pagination-pages-all {
   margin-right: 20px;
   font-size: 20px;
+}
+
+.subcategory-list-ul {
+  margin-left: 20px;
+  color: #C4C4C4;
 }
 
 body {
