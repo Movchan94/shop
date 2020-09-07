@@ -1,5 +1,5 @@
 .header {
-  margin: 0 auto;
+  border-bottom: 1px solid #DDDDDD;
 
   &-top {
     display: flex;
@@ -19,6 +19,37 @@
     width: 100%;
     margin: 0 10px;
   }
+
+  &-top-menu {
+    &-items {
+      display: flex;
+      height: 49px;
+      align-items: center;
+      font-size: 14px;
+      color: #777777;
+      font-family: 'Circle-Regular';
+    }
+
+    &-link {
+      margin-right: 27px;
+      cursor: pointer;
+      &:hover {
+        color: $text-rose;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &-img {
+      margin-right: 7px;
+      cursor: pointer;
+    }
+    .last-img {
+      margin-right: 27px;
+    }
+  }
+
 
   &-contacts {
     line-height: 11px;
@@ -54,7 +85,9 @@
     font-family: 'Circle-Bold';
   }
 
-  &-nav-list-item {
+  &-nav-list-item:hover {
+    cursor: pointer;
+    color: $text-rose;
   }
 }
 
@@ -88,4 +121,44 @@
 .reset-search {
   margin-left: 25px;
   align-self: center;
+}
+
+.more-categories-item {
+  color: #1A1A1A;
+  text-align: end;
+  &:hover {
+    color: $text-rose;
+  }
+}
+
+.promo-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(../img/promo.png) no-repeat center center;
+  width: 283px;
+  height: 294px;
+  line-height: 40px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: absolute;
+  right: 22%;
+  z-index: 200;
+
+  &-header {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #777777;
+    font-family: 'Circle-Regular';
+    margin-top: 62px;
+  }
+
+  &-header2 {
+    font-size: 21px;
+    color: $main-text;
+    font-family: 'Circle-Bold';
+    margin-bottom: 48px;
+  }
+
 }
