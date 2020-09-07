@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+<!-- header -->
+
+<div class="wrapper">
+    <header class="header">
+        <div class="header-top">
+            <img src="img/logo.png" alt="" class="header-logo">
+            <div class="header-search">
+                <div class="search-logo">
+                    <img src="/img/search-logo.png" alt="">
+                </div>
+                <input type="text" name="" id="" placeholder="Введите текст" class="search-field">
+                <div class="reset-search">
+                    <img src="/img/close-search.png" alt="">
+                </div>
+            </div>
+            <div class="header-contacts">
+                <div class="header-contacts-pnones">
+                    <span class="phone_rose">+7 (495) 374-72-97</span>
+                    <span>/ 8-800-707-53-34</span>
+                </div>
+                <div class="header-contacts-delivery">
+                    <span>Экспресс - доставка по всей Росии и СНГ</span>
+                </div>
+            </div>
+        </div>
+        <nav class="header-nav">
+            <ul class="header-nav-list">
+                <li class="header-nav-list-item"><a href="">бренды</a></li>
+                <li class="header-nav-list-item"><a href="">летние товары</a></li>
+                <li class="header-nav-list-item"><a href="">для школы</a></li>
+                <li class="header-nav-list-item"><a href="">траснпорт</a></li>
+                <li class="header-nav-list-item"><a href="">коляски</a></li>
+                <li class="header-nav-list-item"><a href="">автокресла</a></li>
+                <li class="header-nav-list-item"><a href="">комната и сон</a></li>
+                <li class="header-nav-list-item"><a href="">комфорт и безопасность</a></li>
+                <li class="header-nav-list-item"><a href="">новорожденным</a></li>
+                <li class="header-nav-list-item"><a href="">для мамы</a></li>
+                <li class="header-nav-list-item"><a href="">+ 2 категории</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--MAIN-->
+
+    <div class="grid-container">
+
+        <!--SIDEBAR-->
+
+        <nav id="mainNav">
+            <div class="sidebar-left">
+                <div class="category">
+                    <div class="wrapper">
+                        <div class="header">
+                            <button class="header-button">
+                                <img src="img/svg/category-vector-1.svg" class="header-button-img"/>
+                            </button>
+                            <div id="header-name-filter" class="header-name">
+                                КАТЕГОРИЯ
+                            </div>
+                        </div>
+                        <ul id="category-list-ul" class="category-list">
+                            <li class="category-list-item">
+                                <div class="wrapper">
+                                    <a href="#">Для новорожденных</a>
+                                    <ul class="subcategory-list-ul">
+                                        <li class="subcategory-list-item"><a href="#">Подкатегория</a></li>
+                                        <li class="subcategory-list-item"><a href="#">Подкатегория</a></li>
+                                        <li class="subcategory-list-item"><a href="#">Подкатегория</a></li>
+                                        <li class="subcategory-list-item"><a href="#">Подкатегория</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="category-list-item"><a href="#">Коляски - трансформеры</a></li>
+                            <li class="category-list-item"><a href="#">Коляски 2 в 1</a></li>
+                            <li class="category-list-item"><a href="#">Коляски 3 в 1</a></li>
+                            <li class="category-list-item"><a href="#">Коляски 4 в 1</a></li>
+                            <li class="category-list-item"><a href="#">Коляски-трости</a></li>
+                            <li class="category-list-item"><a href="#">Коляски прогулочные</a></li>
+                            <li class="category-list-item"><a href="#">Коляски для двойни и погодок</a></li>
+                            <li class="category-list-item"><a href="#">Люльки для новорожденных</a></li>
+                            <li class="category-list-item"><a href="#">Дополнительные сиденья к коляскам</a></li>
+                            <li class="category-list-item"><a href="#">Рамы для колясок</a></li>
+                            <li class="category-list-item"><a href="#">Аксессуары для колясок</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sidebar-left-horizontal-line"></div>
+                <div class="filter-price">
+                    <div class="header">
+                        <button class="header-button">
+                            <img src="img/svg/category-vector-1.svg" class="header-button-img"/>
+                        </button>
+                        <div class="header-name">
+                            ЦЕНА
+                        </div>
+                    </div>
+                    <div class="filter-wrapper">
+                        <div class="filter-price-from-to">
+                            <span class="filter-price-from-to-item">от 0 &#8381</span>
+                            <span class="filter-price-from-to-item">до <span id="demo"></span> &#8381</span>
+                        </div>
+                        <div class="slider-container">
+                            <input type="range" min="0" max="30000" step="100" value="50" class="slider" id="myRange"
+                                   oninput="range()">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-left-horizontal-line"></div>
+
+                <div class="filter-1">
+                    <div class="header">
+                        <button class="header-button">
+                            <img src="img/svg/category-vector-1.svg" class="header-button-img"/>
+                        </button>
+                        <div class="header-name">
+                            ЛЮБОЙ ДРУГОЙ ФИЛЬТР
+                        </div>
+                    </div>
+                    <div class="filter-1-checkbox-container">
+                <span class="filter-1-checkbox-item">
+                     <input type="checkbox"/>
+                    <p>На распродаже</p>
+                </span>
+                        <span class="filter-1-checkbox-item">
+                     <input type="checkbox"/>
+                    <p>С подарком</p>
+                </span>
+                    </div>
+                </div>
+
+                <div class="sidebar-left-horizontal-line"></div>
+
+                <div class="filter-2">
+                    <div class="header">
+                        <button class="header-button">
+                            <img src="img/svg/filter-vector-2.svg" class="header-button-img"/>
+                        </button>
+                        <div class="header-name">
+                            ЛЮБОЙ ДРУГОЙ
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-left-horizontal-line"></div>
+
+                <div class="filter-3">
+                    <div class="header">
+                        <button class="header-button">
+                            <img src="img/svg/filter-vector-2.svg" class="header-button-img"/>
+                        </button>
+                        <div class="header-name">
+                            ЛЮБОЙ ДРУГОЙ
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-left-horizontal-line"></div>
+
+                <div class="filter-4">
+                    <div class="header">
+                        <button class="header-button">
+                            <img src="img/svg/filter-vector-2.svg" class="header-button-img"/>
+                        </button>
+                        <div class="header-name">
+                            ЛЮБОЙ ДРУГОЙ
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-left-horizontal-line"></div>
+
+                <div class="show">
+                    <div class="wrapper">
+                        <div class="show-header"><a href="#">Показать</a></div>
+                        <div class="show-button">
+                            <a href="#"><img src="img/svg/catalog-sidebar-show-vector.svg"/></a>
+                        </div>
+                    </div>
+                    <div class="show-line"></div>
+                </div>
+                <div class="discard">
+                    <div class="wrapper">
+                        <div class="discard-header"><a href="#">Сбросить</a></div>
+                        <div class="discard-button">
+                            <a href="#"><img src="img/svg/catalog-sidebar-discard-vector.svg"/></a>
+                        </div>
+                    </div>
+                    <div class="discard-line"></div>
+                </div>
+        </nav>
+
+        <!--CATALOG-->
+
+        <article id="mainArticle">
+            <div>
+                <div class="catalog">
+                    <div class="catalog-header-img">
+                        <img src="img/catalog-header-img.png"/>
+                    </div>
+                    <div class="catalog-sorting-top">
+                        <span class="catalog-sorting-top-name">Сортировать:</span>
+                        <span class="catalog-sorting-top-by-date"><button>По дате</button></span>
+                        <span class="catalog-sorting-top-price-low"><button>По возрастанию цены</button></span>
+                        <span class="catalog-sorting-top-price-high"><button>По убыванию цены</button></span>
+                    </div>
+                    <div class="catalog-1">
+                        <div class="catalog-1-item">
+                            <div class="card">
+                                <img src="img/card-img.png" alt="" class="card-img"/>
+                                <span class="card-availability">В наличии</span>
+                                <span class="card-description">Кровать машина Cilek Racecup</span>
+                                <span class="card-size">190х90 см</span>
+                                <div class="card-price-block">
+                                    <span class="card-price">₽ 22 000</span>
+                                    <img src="img/tobuy.png" alt="" class="card-buy"/>
+                                </div>
+                                <select name="" id="" class="card-color">
+                                    <option value="0">Select car:</option>
+                                    <option value="1">Audi</option>
+                                    <option value="2">BMW</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="catalog-1-item">
+                            <div class="card">
+                                <img src="img/card-img.png" alt="" class="card-img"/>
+                                <span class="card-availability">В наличии</span>
+                                <span class="card-description">Кровать машина Cilek Racecup</span>
+                                <span class="card-size">190х90 см</span>
+                                <div class="card-price-block">
+                                    <span class="card-price">₽ 22 000</span>
+                                    <img src="img/tobuy.png" alt="" class="card-buy"/>
+                                </div>
+                                <select name="" id="" class="card-color">
+                                    <option value="0">Select car:</option>
+                                    <option value="1">Audi</option>
+                                    <option value="2">BMW</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="catalog-1-item">
+                            <div class="card">
+                                <img src="img/card-img.png" alt="" class="card-img"/>
+                                <span class="card-availability">В наличии</span>
+                                <span class="card-description">Кровать машина Cilek Racecup</span>
+                                <span class="card-size">190х90 см</span>
+                                <div class="card-price-block">
+                                    <span class="card-price">₽ 22 000</span>
+                                    <img src="img/tobuy.png" alt="" class="card-buy"/>
+                                </div>
+                                <select name="" id="" class="card-color">
+                                    <option value="0">Select car:</option>
+                                    <option value="1">Audi</option>
+                                    <option value="2">BMW</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="catalog-1-item">
+                            <div class="card">
+                                <img src="img/card-img.png" alt="" class="card-img"/>
+                                <span class="card-availability">В наличии</span>
+                                <span class="card-description">Кровать машина Cilek Racecup</span>
+                                <span class="card-size">190х90 см</span>
+                                <div class="card-price-block">
+                                    <span class="card-price">₽ 22 000</span>
+                                    <img src="img/tobuy.png" alt="" class="card-buy"/>
+                                </div>
+                                <select name="" id="" class="card-color">
+                                    <option value="0">Select car:</option>
+                                    <option value="1">Audi</option>
+                                    <option value="2">BMW</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="catalog-1-item">
+                            <div class="card">
+                                <img src="img/card-img.png" alt="" class="card-img"/>
+                                <span class="card-availability">В наличии</span>
+                                <span class="card-description">Кровать машина Cilek Racecup</span>
+                                <span class="card-size">190х90 см</span>
+                                <div class="card-price-block">
+                                    <span class="card-price">₽ 22 000</span>
+                                    <img src="img/tobuy.png" alt="" class="card-buy"/>
+                                </div>
+                                <select name="" id="" class="card-color">
+                                    <option value="0">Select car:</option>
+                                    <option value="1">Audi</option>
+                                    <option value="2">BMW</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="catalog-1-item">
+                            <div class="card">
+                                <img src="img/card-img.png" alt="" class="card-img"/>
+                                <span class="card-availability">В наличии</span>
+                                <span class="card-description">Кровать машина Cilek Racecup</span>
+                                <span class="card-size">190х90 см</span>
+                                <div class="card-price-block">
+                                    <span class="card-price">₽ 22 000</span>
+                                    <img src="img/tobuy.png" alt="" class="card-buy"/>
+                                </div>
+                                <select name="" id="" class="card-color">
+                                    <option value="0">Select car:</option>
+                                    <option value="1">Audi</option>
+                                    <option value="2">BMW</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-header">
+                        Коляски-трансформеры
+                    </div>
+                    <div class="catalog-1">
+                        <div class="catalog-1-item">
+                            <div class="card">
+                                <img src="img/card-img.png" alt="" class="card-img"/>
+                                <span class="card-availability">В наличии</span>
+                                <span class="card-description">Кровать машина Cilek Racecup</span>
+                                <span class="card-size">190х90 см</span>
+                                <div class="card-price-block">
+                                    <span class="card-price">₽ 22 000</span>
+                                    <img src="img/tobuy.png" alt="" class="card-buy"/>
+                                </div>
+                                <select name="" id="" class="card-color">
+                                    <option value="0">Select car:</option>
+                                    <option value="1">Audi</option>
+                                    <option value="2">BMW</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="catalog-1-item">
+                            <div class="card">
+                                <img src="img/card-img.png" alt="" class="card-img"/>
+                                <span class="card-availability">В наличии</span>
+                                <span class="card-description">Кровать машина Cilek Racecup</span>
+                                <span class="card-size">190х90 см</span>
+                                <div class="card-price-block">
+                                    <span class="card-price">₽ 22 000</span>
+                                    <img src="img/tobuy.png" alt="" class="card-buy"/>
+                                </div>
+                                <select name="" id="" class="card-color">
+                                    <option value="0">Select car:</option>
+                                    <option value="1">Audi</option>
+                                    <option value="2">BMW</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="catalog-1-item">
+                            <div class="card">
+                                <img src="img/card-img.png" alt="" class="card-img"/>
+                                <span class="card-availability">В наличии</span>
+                                <span class="card-description">Кровать машина Cilek Racecup</span>
+                                <span class="card-size">190х90 см</span>
+                                <div class="card-price-block">
+                                    <span class="card-price">₽ 22 000</span>
+                                    <img src="img/tobuy.png" alt="" class="card-buy"/>
+                                </div>
+                                <select name="" id="" class="card-color">
+                                    <option value="0">Select car:</option>
+                                    <option value="1">Audi</option>
+                                    <option value="2">BMW</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="catalog-1-item">
+                            <div class="card">
+                                <img src="img/card-img.png" alt="" class="card-img"/>
+                                <span class="card-availability">В наличии</span>
+                                <span class="card-description">Кровать машина Cilek Racecup</span>
+                                <span class="card-size">190х90 см</span>
+                                <div class="card-price-block">
+                                    <span class="card-price">₽ 22 000</span>
+                                    <img src="img/tobuy.png" alt="" class="card-buy"/>
+                                </div>
+                                <select name="" id="" class="card-color">
+                                    <option value="0">Select car:</option>
+                                    <option value="1">Audi</option>
+                                    <option value="2">BMW</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="catalog-1-item">
+                            <div class="card">
+                                <img src="img/card-img.png" alt="" class="card-img"/>
+                                <span class="card-availability">В наличии</span>
+                                <span class="card-description">Кровать машина Cilek Racecup</span>
+                                <span class="card-size">190х90 см</span>
+                                <div class="card-price-block">
+                                    <span class="card-price">₽ 22 000</span>
+                                    <img src="img/tobuy.png" alt="" class="card-buy"/>
+                                </div>
+                                <select name="" id="" class="card-color">
+                                    <option value="0">Select car:</option>
+                                    <option value="1">Audi</option>
+                                    <option value="2">BMW</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="catalog-1-item">
+                            <div class="card">
+                                <img src="img/card-img.png" alt="" class="card-img"/>
+                                <span class="card-availability">В наличии</span>
+                                <span class="card-description">Кровать машина Cilek Racecup</span>
+                                <span class="card-size">190х90 см</span>
+                                <div class="card-price-block">
+                                    <span class="card-price">₽ 22 000</span>
+                                    <img src="img/tobuy.png" alt="" class="card-buy"/>
+                                </div>
+                                <select name="" id="" class="card-color">
+                                    <option value="0">Select car:</option>
+                                    <option value="1">Audi</option>
+                                    <option value="2">BMW</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--PAGINATION-->
+                <div class="pagination">
+                    <div><img src="img/arrow-left.png" alt=""></div>
+                    <div class="pagination-pages">
+                        <span class="pagination-pages-current">01 </span>
+                        <span class="pagination-pages-all">02</span>
+                        <span class="pagination-pages-all">03</span>
+                        <span class="pagination-pages-all">04</span>
+                        <span class="pagination-pages-all">05</span>
+                        <span class="pagination-pages-all">06</span>
+                        <span class="pagination-pages-all">07</span>
+                        <span class="pagination-pages-all">08</span>
+                        <span class="pagination-pages-all">09</span>
+                        <span class="pagination-pages-all">10</span>
+                    </div>
+                    <div><img src="img/arrow-right.png" alt="" class="slider-right"/></div>
+                </div>
+        </article>
+    </div>
+
+
+</div>
+<!-- personal expert -->
+
+<section class="expert">
+    <div class="expert-wrapper">
+        <div class="future-img"><img src="img/expert.png" alt=""></div>
+        <div class="future-info">
+            <img src="img/expert-header.png" alt="" class="future-header">
+            <h2 class="future-header-2">Персональный эксперт</h2>
+            <p class="future-description">Новый сервис в нашем интернет-магазине, позволяет переложить многочисленные
+                мелкие дела на плечи персонального помощника и сосредоточиться на своей работе или отдыхе. Расширенная
+                гарантия в подарок!</p>
+            <button class="future-about btn-line gift-about">ПОДРОБНЕЕ</button>
+        </div>
+    </div>
+</section>
+
+<!-- SEO -->
+
+<section class="seo">
+    <div class="seo-wrapper">
+        <img src="img/seo-header.png" alt="" class="seo-header">
+        <h2 class="seo-header-2">Длинный заголовок СЕО текста</h2>
+        <p class="seo-text">В XVIII веке в Великобритании герцог Девонширский попросил Уильяма Кента — художника,
+            архитектора и ландшафтного дизайнера — создать коляску для своих детей. В 1733 году заказ был выполнен. От
+            классической коляски в нашем понимании изделие Кента отличалось очень сильно. Это была очень красиво
+            декорированная уменьшенная копия взрослой повозки, перемещать которую должен был пони или ослик. Ребёнок в
+            этой коляске мог только сидеть.</p>
+        <p class="seo-text">Коляска быстро вошла в моду. Уже к 1840 году подобные коляски продавались в лавках и
+            магазинах детских товаров. Даже королева Виктория приобрела для прогулок со своими наследниками три штуки. В
+            некоторых моделях даже отказались от осликов, предоставив возможность тянуть коляску няням или родителям.
+            Появились трехколёсные варианты. Чуть позже появились коляски-люльки, в которых можно было лежа прогуливать
+            совсем маленьких детей. А в 1889 году Уильям Ричардсон запатентовал идею первой коляски, в которой положение
+            сиденья можно было менять, ставя его как лицом к родителям, так и наоборот. Изобретатель также заменил
+            жестко связанные осью колеса на независимые, что резко увеличило маневренность колясок.</p>
+        <p class="seo-text">С началом XX века родилась колясочная индустрия. Коляски стали дешевле и доступнее.
+            Появилось множество моделей, в которых использовали большие колеса, капоры, тормоза, разные формы люлек. К
+            середине века возникла проблема — громоздкие коляски было неудобно транспортировать в путешествиях. Потому
+            изобрели лёгкие алюминиевые рамы и системы складывания колясок. Со временем детская индустрия адаптировала
+            все современные технологичные достижения, сделав коляски очень легкими, компактными и удобными.</p>
+    </div>
+</section>
+
+<!-- gift -->
+
+<section class="gift">
+    <div class="future">
+        <div class="future-wrapper">
+            <div class="future-img"><img src="img/certificate.png" alt=""></div>
+            <!-- <img src="img/shadow.png" alt="" class="gift-shadow"> -->
+            <div class="future-info">
+                <img src="img/gift-header.png" alt="" class="future-header">
+                <h2 class="future-header-2">Подарочный сертификат</h2>
+                <p class="future-description">Сделайте приятно любимым! Наши подарочные сертификаты не имеют ограничений
+                    по сумме или сроку годности.
+                    Оплата осуществляется любым удобным способом.</p>
+                <button class="future-about btn-line">ПОДРОБНЕЕ</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- brands -->
+
+<section class="brands">
+    <div class="wrapper">
+        <div class="brands-slider">
+            <div class="brands-slider-arrows-left"><img src="img/arrow-left.png" alt=""></div>
+            <div class="brands-slider-content">
+                <ul class="brands-slider-items">
+                    <li class="brands-slider-items-item"><img src="img/brand-1.png" alt=""></li>
+                    <li class="brands-slider-items-item"><img src="img/brand-2.png" alt=""></li>
+                    <li class="brands-slider-items-item"><img src="img/brand-3.png" alt=""></li>
+                    <li class="brands-slider-items-item"><img src="img/brand-4.png" alt=""></li>
+                    <li class="brands-slider-items-item"><img src="img/brand-5.png" alt=""></li>
+                </ul>
+            </div>
+            <div class="brands-slider-arrows-right"><img src="img/arrow-right.png" alt=""></div>
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+
+<footer class="footer">
+    <div class="wrapper">
+        <div class="footer-wrapper footer-wrapper-top">
+            <div class="footer-links">
+                <ul class="footer-links-items">
+                    <li class="footer-links-items-item footer-links-items-item-header">Каталог</li>
+                    <li class="footer-links-items-item"><a href="">Летние товары</a></li>
+                    <li class="footer-links-items-item"><a href="">Все для школы</a></li>
+                    <li class="footer-links-items-item"><a href="">Траснпорт</a></li>
+                    <li class="footer-links-items-item"><a href="">Коляски</a></li>
+                    <li class="footer-links-items-item"><a href="">Автокресла</a></li>
+                    <li class="footer-links-items-item"><a href="">Комната и сон</a></li>
+                    <li class="footer-links-items-item"><a href="">Комфорт и безопасность</a></li>
+                    <li class="footer-links-items-item"><a href="">Все для новорожденных</a></li>
+                    <li class="footer-links-items-item"><a href="">Товары для Мамы</a></li>
+                    <li class="footer-links-items-item"><a href="">Игрушки</a></li>
+                </ul>
+            </div>
+            <div class="footer-contacts">
+                <img src="img/footer-logo.png" alt="" class="footer-logo" width="173px" height="56px">
+                <span class="contacts-phone">7 (495) 374-72-97 / 8-800-707-53-34</span>
+                <span class="contacts-delivery">Экспресс - доставка по всей Росии и СНГ</span>
+                <span class="contacts-time">09:00 - 23:00</span>
+                <div class="news-subscribe">
+                    <span class="subscribe-news">Подписаться на новости</span>
+                    <div class="subscribe-block">
+                        <input type="email" name="" id="" class="subscribe-field" placeholder="Ваш E-mail">
+                        <button class="subscribe-send"><img src="img/footer-button.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <div class="foooter-links">
+                <ul class="footer-links-items footer-links-items-right">
+                    <li class="footer-links-items-item footer-links-items-item-header">Ифнормация</li>
+                    <li class="footer-links-items-item"><a href="">О нас</a></li>
+                    <li class="footer-links-items-item"><a href="">Доставка</a></li>
+                    <li class="footer-links-items-item"><a href="">Оплата</a></li>
+                    <li class="footer-links-items-item"><a href="">Покупка в кредит</a></li>
+                    <li class="footer-links-items-item"><a href="">Договор публичной оферты</a></li>
+                    <li class="footer-links-items-item"><a href="">Правила возврата</a></li>
+                    <li class="footer-links-items-item"><a href="">Сотрудничество</a></li>
+                    <li class="footer-links-items-item"><a href="">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="wrapper footer-wrapper footer-wrapper-bottom">
+            <span class="shop-info">2006-2020 © ООО "СТРАТЕГИЯ". ОГРН 1175024026760, ИНН/КПП 5024178850 / 502401001</span>
+            <div class="social-links">
+                <ul class="social-links-items">
+                    <li class="social-links-items-item"><a href=""><img src="./img/icon-fb.png" alt=""></a></li>
+                    <li class="social-links-items-item"><a href=""><img src="./img/icon-inst.png" alt=""></a></li>
+                    <li class="social-links-items-item"><a href=""><img src="./img/icon-vk.png" alt=""></a></li>
+                    <li class="social-links-items-item"><a href=""><img src="./img/icon-yt.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="../shop/js/catalog.js"></script>
+</body>
+</html>
