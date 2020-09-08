@@ -23,6 +23,9 @@
 
   &-links-items-item {
     line-height: 40px;
+    &:hover {
+      color: $text-rose;
+    }
     &-header {
       text-transform: uppercase;
     }
