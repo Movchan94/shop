@@ -9,7 +9,7 @@ function range() {
 // drop-down list
 $(document).ready(function(){
     $(".category-list, .filter-wrapper, .filter-1-checkbox-container").hide();
-    $(".header-name, .header-button").click(function(){
+    $(".filter-header-name, .filter-header-button").click(function(){
         $(this).parent().next().slideToggle();
     });
 });

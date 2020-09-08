@@ -15,42 +15,65 @@
 
 <div class="wrapper">
     <header class="header">
-        <div class="header-top">
-            <img src="img/logo.png" alt="" class="header-logo">
-            <div class="header-search">
-                <div class="search-logo">
-                    <img src="/img/search-logo.png" alt="">
+        <div class="wrapper">
+            <div class="header-top">
+                <img src="img/logo.png" alt="" class="header-logo">
+                <div class="header-search hide">
+                    <div class="search-logo">
+                        <img src="img/search-logo.png" alt="" class="search-icon">
+                    </div>
+                    <input type="text" name="" id="" placeholder="Введите текст" class="search-field">
+                    <div class="reset-search">
+                        <img src="img/close-search.png" alt="" class="close-search">
+                    </div>
                 </div>
-                <input type="text" name="" id="" placeholder="Введите текст" class="search-field">
-                <div class="reset-search">
-                    <img src="/img/close-search.png" alt="">
+                <div class="header-top-menu">
+                    <ul class="header-top-menu-items">
+                        <li class="header-top-menu-link">Оплата</li>
+                        <li class="header-top-menu-link">Доставка</li>
+                        <li class="header-top-menu-link">Новинки</li>
+                        <li class="header-top-menu-link">Sale</li>
+                        <li class="header-top-menu-img"><img src="img/header-profile.png" alt=""></li>
+                        <li class="header-top-menu-img"><img src="img/header-favorite.png" alt=""></li>
+                        <li class="header-top-menu-img"><img src="img/header-search-mini.png" alt="" class="search-icon"></li>
+                        <li class="header-top-menu-img last-img"><img src="img/header-shop.png" alt=""></li>
+                        <li class="header-top-menu-link">Подарки</li>
+                        <li class="header-top-menu-link">Trad-in</li>
+                        <li class="header-top-menu-link">Персональный эксперт</li>
+                    </ul>
+                </div>
+                <div class="header-contacts">
+                    <div class="header-contacts-pnones">
+                        <span class="phone_rose">+7 (495) 374-72-97</span>
+                        <span>/ 8-800-707-53-34</span>
+                    </div>
+                    <div class="header-contacts-delivery">
+                        <span>Экспресс - доставка по всей Росии и СНГ</span>
+                    </div>
                 </div>
             </div>
-            <div class="header-contacts">
-                <div class="header-contacts-pnones">
-                    <span class="phone_rose">+7 (495) 374-72-97</span>
-                    <span>/ 8-800-707-53-34</span>
-                </div>
-                <div class="header-contacts-delivery">
-                    <span>Экспресс - доставка по всей Росии и СНГ</span>
-                </div>
-            </div>
+            <nav class="header-nav">
+                <ul class="header-nav-list">
+                    <li class="header-nav-list-item">бренды</li>
+                    <li class="header-nav-list-item">летние товары</li>
+                    <li class="header-nav-list-item">для школы</li>
+                    <li class="header-nav-list-item">траснпорт</li>
+                    <li class="header-nav-list-item">коляски</li>
+                    <li class="header-nav-list-item">автокресла</li>
+                    <li class="header-nav-list-item">комната и сон</li>
+                    <li class="header-nav-list-item">комфорт и безопасность</li>
+                    <li class="header-nav-list-item">новорожденным</li>
+                    <li class="header-nav-list-item">для мамы</li>
+                    <li class="header-nav-list-item more-categories">
+                        + 2 категории
+                        <ul class="more-categories-items hide">
+                            <li class="more-categories-item">КАТЕГОРИЯ 1</li>
+                            <li class="more-categories-item">КАТЕГОРИЯ 2</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav class="header-nav">
-            <ul class="header-nav-list">
-                <li class="header-nav-list-item"><a href="">бренды</a></li>
-                <li class="header-nav-list-item"><a href="">летние товары</a></li>
-                <li class="header-nav-list-item"><a href="">для школы</a></li>
-                <li class="header-nav-list-item"><a href="">траснпорт</a></li>
-                <li class="header-nav-list-item"><a href="">коляски</a></li>
-                <li class="header-nav-list-item"><a href="">автокресла</a></li>
-                <li class="header-nav-list-item"><a href="">комната и сон</a></li>
-                <li class="header-nav-list-item"><a href="">комфорт и безопасность</a></li>
-                <li class="header-nav-list-item"><a href="">новорожденным</a></li>
-                <li class="header-nav-list-item"><a href="">для мамы</a></li>
-                <li class="header-nav-list-item"><a href="">+ 2 категории</a></li>
-            </ul>
-        </nav>
     </header>
 
     <!--MAIN-->
@@ -63,12 +86,12 @@
             <div class="sidebar-left">
                 <div class="category">
                     <div class="wrapper">
-                        <div class="header">
-                            <button id="category-header-button" class="header-button">
+                        <div class="filter-header">
+                            <button id="category-header-button" class="filter-header-button">
                                 <img src="img/svg/filter-vector-2.svg" id="category-header-button-img"
-                                     class="header-button-img"/>
+                                     class="filter-header-button-img"/>
                             </button>
-                            <div id="category-header-name" class="header-name">
+                            <div id="category-header-name" class="filter-header-name">
                                 КАТЕГОРИЯ
                             </div>
                         </div>
@@ -100,12 +123,12 @@
                 </div>
                 <div class="sidebar-left-horizontal-line"></div>
                 <div class="filter-price">
-                    <div class="header">
-                        <button id="price-header-button" class="header-button">
-                            <img src="img/svg/filter-vector-2.svg" class="header-button-img"
+                    <div class="filter-header">
+                        <button id="price-header-button" class="filter-header-button">
+                            <img src="img/svg/filter-vector-2.svg" class="filter-header-button-img"
                                  id="price-header-button-img"/>
                         </button>
-                        <div id="price-header-name" class="header-name">
+                        <div id="price-header-name" class="filter-header-name">
                             ЦЕНА
                         </div>
                     </div>
@@ -124,12 +147,12 @@
                 <div class="sidebar-left-horizontal-line"></div>
 
                 <div class="filter-1">
-                    <div class="header">
-                        <button id="filter-1-header-button" class="header-button">
-                            <img src="img/svg/filter-vector-2.svg" class="header-button-img"
+                    <div class="filter-header">
+                        <button id="filter-1-header-button" class="filter-header-button">
+                            <img src="img/svg/filter-vector-2.svg" class="filter-header-button-img"
                                  id="filter-1-header-button-img"/>
                         </button>
-                        <div id="filter-1-header-name" class="header-name">
+                        <div id="filter-1-header-name" class="filter-header-name">
                             ЛЮБОЙ ДРУГОЙ ФИЛЬТР
                         </div>
                     </div>
@@ -148,11 +171,11 @@
                 <div class="sidebar-left-horizontal-line"></div>
 
                 <div class="filter-2">
-                    <div class="header">
-                        <button class="header-button">
-                            <img src="img/svg/filter-vector-2.svg" class="header-button-img"/>
+                    <div class="filter-header">
+                        <button class="filter-header-button">
+                            <img src="img/svg/filter-vector-2.svg" class="filter-header-button-img"/>
                         </button>
-                        <div class="header-name">
+                        <div class="filter-header-name">
                             ЛЮБОЙ ДРУГОЙ
                         </div>
                     </div>
@@ -161,11 +184,11 @@
                 <div class="sidebar-left-horizontal-line"></div>
 
                 <div class="filter-3">
-                    <div class="header">
-                        <button class="header-button">
-                            <img src="img/svg/filter-vector-2.svg" class="header-button-img"/>
+                    <div class="filter-header">
+                        <button class="filter-header-button">
+                            <img src="img/svg/filter-vector-2.svg" class="filter-header-button-img"/>
                         </button>
-                        <div class="header-name">
+                        <div class="filter-header-name">
                             ЛЮБОЙ ДРУГОЙ
                         </div>
                     </div>
@@ -174,11 +197,11 @@
                 <div class="sidebar-left-horizontal-line"></div>
 
                 <div class="filter-4">
-                    <div class="header">
-                        <button class="header-button">
-                            <img src="img/svg/filter-vector-2.svg" class="header-button-img"/>
+                    <div class="filter-header">
+                        <button class="filter-header-button">
+                            <img src="img/svg/filter-vector-2.svg" class="filter-header-button-img"/>
                         </button>
-                        <div class="header-name">
+                        <div class="filter-header-name">
                             ЛЮБОЙ ДРУГОЙ
                         </div>
                     </div>
@@ -454,18 +477,19 @@
 
 
 </div>
+
 <!-- personal expert -->
 
 <section class="expert">
-    <div class="expert-wrapper">
-        <div class="future-img"><img src="img/expert.png" alt=""></div>
-        <div class="future-info">
-            <img src="img/expert-header.png" alt="" class="future-header">
-            <h2 class="future-header-2">Персональный эксперт</h2>
-            <p class="future-description">Новый сервис в нашем интернет-магазине, позволяет переложить многочисленные
-                мелкие дела на плечи персонального помощника и сосредоточиться на своей работе или отдыхе. Расширенная
-                гарантия в подарок!</p>
-            <button class="future-about btn-line gift-about">ПОДРОБНЕЕ</button>
+    <div class="future">
+        <div class="future-wrapper">
+            <div class="future-img"><img src="img/expert.png" alt=""></div>
+            <div class="future-info">
+                <img src="img/expert-header.png" alt="" class="future-header">
+                <h2 class="future-header-2">Персональный эксперт</h2>
+                <p class="future-description">Новый сервис в нашем интернет-магазине, позволяет переложить многочисленные мелкие дела на плечи персонального помощника и сосредоточиться на своей работе или отдыхе. Расширенная гарантия в подарок!</p>
+                <button class="future-about btn-line gift-about">ПОДРОБНЕЕ</button>
+            </div>
         </div>
     </div>
 </section>
@@ -473,41 +497,32 @@
 <!-- SEO -->
 
 <section class="seo">
+    <div class="vertical-lines">
+        <div class="vertical-line"></div>
+        <div class="vertical-line"></div>
+        <div class="vertical-line"></div>
+    </div>
     <div class="seo-wrapper">
         <img src="img/seo-header.png" alt="" class="seo-header">
         <h2 class="seo-header-2">Длинный заголовок СЕО текста</h2>
-        <p class="seo-text">В XVIII веке в Великобритании герцог Девонширский попросил Уильяма Кента — художника,
-            архитектора и ландшафтного дизайнера — создать коляску для своих детей. В 1733 году заказ был выполнен. От
-            классической коляски в нашем понимании изделие Кента отличалось очень сильно. Это была очень красиво
-            декорированная уменьшенная копия взрослой повозки, перемещать которую должен был пони или ослик. Ребёнок в
-            этой коляске мог только сидеть.</p>
-        <p class="seo-text">Коляска быстро вошла в моду. Уже к 1840 году подобные коляски продавались в лавках и
-            магазинах детских товаров. Даже королева Виктория приобрела для прогулок со своими наследниками три штуки. В
-            некоторых моделях даже отказались от осликов, предоставив возможность тянуть коляску няням или родителям.
-            Появились трехколёсные варианты. Чуть позже появились коляски-люльки, в которых можно было лежа прогуливать
-            совсем маленьких детей. А в 1889 году Уильям Ричардсон запатентовал идею первой коляски, в которой положение
-            сиденья можно было менять, ставя его как лицом к родителям, так и наоборот. Изобретатель также заменил
-            жестко связанные осью колеса на независимые, что резко увеличило маневренность колясок.</p>
-        <p class="seo-text">С началом XX века родилась колясочная индустрия. Коляски стали дешевле и доступнее.
-            Появилось множество моделей, в которых использовали большие колеса, капоры, тормоза, разные формы люлек. К
-            середине века возникла проблема — громоздкие коляски было неудобно транспортировать в путешествиях. Потому
-            изобрели лёгкие алюминиевые рамы и системы складывания колясок. Со временем детская индустрия адаптировала
-            все современные технологичные достижения, сделав коляски очень легкими, компактными и удобными.</p>
+        <p class="seo-text">В XVIII веке в Великобритании герцог Девонширский попросил Уильяма Кента — художника, архитектора и ландшафтного дизайнера — создать коляску для своих детей. В 1733 году заказ был выполнен. От классической коляски в нашем понимании изделие Кента отличалось очень сильно. Это была очень красиво декорированная уменьшенная копия взрослой повозки, перемещать которую должен был пони или ослик. Ребёнок в этой коляске мог только сидеть.</p>
+        <p class="seo-text">Коляска быстро вошла в моду. Уже к 1840 году подобные коляски продавались в лавках и магазинах детских товаров. Даже королева Виктория приобрела для прогулок со своими наследниками три штуки. В некоторых моделях даже отказались от осликов, предоставив возможность тянуть коляску няням или родителям. Появились трехколёсные варианты. Чуть позже появились коляски-люльки, в которых можно было лежа прогуливать совсем маленьких детей. А в 1889 году Уильям Ричардсон запатентовал идею первой коляски, в которой положение сиденья можно было менять, ставя его как лицом к родителям, так и наоборот. Изобретатель также заменил жестко связанные осью колеса на независимые, что резко увеличило маневренность колясок.</p>
+        <p class="seo-text">С началом XX века родилась колясочная индустрия. Коляски стали дешевле и доступнее. Появилось множество моделей, в которых использовали большие колеса, капоры, тормоза, разные формы люлек. К середине века возникла проблема — громоздкие коляски было неудобно транспортировать в путешествиях. Потому изобрели лёгкие алюминиевые рамы и системы складывания колясок. Со временем детская индустрия адаптировала все современные технологичные достижения, сделав коляски очень легкими, компактными и удобными.</p>
     </div>
 </section>
+
 
 <!-- gift -->
 
 <section class="gift">
     <div class="future">
         <div class="future-wrapper">
-            <div class="future-img"><img src="img/certificate.png" alt=""></div>
+            <div class="future-img"><img src="img/sertificate-shadow.png" alt=""></div>
             <!-- <img src="img/shadow.png" alt="" class="gift-shadow"> -->
             <div class="future-info">
                 <img src="img/gift-header.png" alt="" class="future-header">
                 <h2 class="future-header-2">Подарочный сертификат</h2>
-                <p class="future-description">Сделайте приятно любимым! Наши подарочные сертификаты не имеют ограничений
-                    по сумме или сроку годности.
+                <p class="future-description">Сделайте приятно любимым! Наши подарочные сертификаты не имеют ограничений по сумме или сроку годности.
                     Оплата осуществляется любым удобным способом.</p>
                 <button class="future-about btn-line">ПОДРОБНЕЕ</button>
             </div>
@@ -521,17 +536,20 @@
 <section class="brands">
     <div class="wrapper">
         <div class="brands-slider">
-            <div class="brands-slider-arrows-left"><img src="img/arrow-left.png" alt=""></div>
-            <div class="brands-slider-content">
-                <ul class="brands-slider-items">
-                    <li class="brands-slider-items-item"><img src="img/brand-1.png" alt=""></li>
-                    <li class="brands-slider-items-item"><img src="img/brand-2.png" alt=""></li>
-                    <li class="brands-slider-items-item"><img src="img/brand-3.png" alt=""></li>
-                    <li class="brands-slider-items-item"><img src="img/brand-4.png" alt=""></li>
-                    <li class="brands-slider-items-item"><img src="img/brand-5.png" alt=""></li>
-                </ul>
+            <div class="brands-slider-arrows-left"><img src="img/arrow-left.png" alt="" class="brand-slider-img-left"></div>
+            <div class="brands-slider-content brand-slider">
+                <div class="brands-slider-items-item"><img src="img/brand-1.png" alt=""></div>
+                <div class="brands-slider-items-item"><img src="img/brand-2.png" alt=""></div>
+                <div class="brands-slider-items-item"><img src="img/brand-3.png" alt=""></div>
+                <div class="brands-slider-items-item"><img src="img/brand-4.png" alt=""></div>
+                <div class="brands-slider-items-item"><img src="img/brand-5.png" alt=""></div>
+                <div class="brands-slider-items-item"><img src="img/brand-1.png" alt=""></div>
+                <div class="brands-slider-items-item"><img src="img/brand-2.png" alt=""></div>
+                <div class="brands-slider-items-item"><img src="img/brand-3.png" alt=""></div>
+                <div class="brands-slider-items-item"><img src="img/brand-4.png" alt=""></div>
+                <div class="brands-slider-items-item"><img src="img/brand-5.png" alt=""></div>
             </div>
-            <div class="brands-slider-arrows-right"><img src="img/arrow-right.png" alt=""></div>
+            <div class="brands-slider-arrows-right"><img src="img/arrow-right.png" alt="" class="brand-slider-img-right"></div>
         </div>
     </div>
 </section>
@@ -600,5 +618,7 @@
 </footer>
 
 <script type="text/javascript" src="../shop/js/catalog.js"></script>
+<script src="js/script.js"></script>
+<script src="js/slick.min.js"></script>
 </body>
 </html>

@@ -41,11 +41,20 @@
       line-height: 30px;
       font-family: 'Circle-Regular';
       list-style-position: inside;
+
+      &:hover {
+        color: $text-rose;
+      }
+
     }
 
   }
 
-  .header {
+  .filter-header {
+    &:hover {
+      color: $text-rose;
+    }
+
     display: flex;
     justify-content: left;
     height: 25px;
@@ -63,7 +72,6 @@
     -webkit-border-radius: 5px;
     padding: 5px;
     cursor: pointer;
-
 
 
     &-button {
@@ -236,6 +244,7 @@
     margin-top: 23px;
     margin-left: 508px;
 
+
     &-name {
       font-family: 'Circle-Regular';
       font-style: normal;
@@ -257,14 +266,22 @@
       color: $main-text;
       margin-right: 10px;
     }
-     button {
-       height: 51px;
-       background: #FBFBFB;
-       border: 1px solid #EEEEEE;
-       box-sizing: border-box;
-       border-radius: 90px;
-       outline: none;
-       cursor: pointer;
+
+    button {
+
+      height: 51px;
+      background: #FBFBFB;
+      border: 1px solid #EEEEEE;
+      box-sizing: border-box;
+      border-radius: 90px;
+      outline: none;
+      cursor: pointer;
+
+    }
+
+    button:hover {
+      color: $text-rose;
+      border-color: $text-rose;
     }
   }
 
@@ -273,7 +290,7 @@
     margin-left: 26px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    grid-row-gap:36px;
+    grid-row-gap: 36px;
     grid-column-gap: 34px;
   }
 
@@ -318,12 +335,14 @@
 input[type="checkbox"] {
   display: none;
 }
+
 label {
   color: #000;
   cursor: pointer;
   line-height: 16px;
   margin-top: 15px;
 }
+
 label:before {
   cursor: pointer;
   content: " ";
