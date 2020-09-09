@@ -297,7 +297,10 @@
   font-family: "Circle-Regular";
   list-style-position: inside;
 }
-.sidebar-left .header {
+.sidebar-left .category-list-item:hover {
+  color: #CC32A1;
+}
+.sidebar-left .filter-header {
   display: flex;
   justify-content: left;
   height: 25px;
@@ -315,7 +318,10 @@
   padding: 5px;
   cursor: pointer;
 }
-.sidebar-left .header-button {
+.sidebar-left .filter-header:hover {
+  color: #CC32A1;
+}
+.sidebar-left .filter-header-button {
   width: 30px;
   height: 30px;
   background-color: #fbfbfb;
@@ -327,7 +333,7 @@
   margin-left: 2px;
   text-align: center;
 }
-.sidebar-left .header-name {
+.sidebar-left .filter-header-name {
   margin-top: 3px;
   margin-left: 8px;
 }
@@ -476,6 +482,10 @@
   border-radius: 90px;
   outline: none;
   cursor: pointer;
+}
+.catalog-sorting-top button:hover {
+  color: #CC32A1;
+  border-color: #CC32A1;
 }
 .catalog .catalog-1 {
   margin-top: 65px;
