@@ -527,6 +527,40 @@
   color: #C4C4C4;
 }
 
+input[type=checkbox] {
+  display: none;
+}
+
+label {
+  color: #000;
+  cursor: pointer;
+  line-height: 16px;
+  margin-top: 15px;
+}
+
+label:before {
+  cursor: pointer;
+  content: " ";
+  color: #1A1A1A;
+  display: inline-block;
+  margin-right: 15px;
+  position: relative;
+  text-align: center;
+  width: 16px;
+  height: 16px;
+  background: #F2F2F2;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+
+/* вариации внешнего вида в зав-ти от статуса checkbox */
+/* checked */
+input:checked + label:before {
+  content: url("../img/svg/checkmark.svg");
+}
+
 .wrapper-card-page {
   font-family: "Circle-Regular";
 }
@@ -858,7 +892,7 @@
   font-family: "Circle-Bold";
 }
 .product-description-block {
-  margin-top: 24px;
+  margin: 24px 0 155px 0;
 }
 .product-description-block:first-child {
   margin-top: 0;
