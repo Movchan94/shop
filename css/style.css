@@ -104,11 +104,6 @@
 }
 
 .search-logo {
-  border: 1px solid #EEEEEE;
-  border-radius: 50%;
-  width: 36px;
-  height: 36px;
-  display: flex;
   margin-right: 5px;
 }
 .search-logo img {
@@ -532,38 +527,347 @@
   color: #C4C4C4;
 }
 
-input[type=checkbox] {
+.wrapper-card-page {
+  font-family: "Circle-Regular";
+}
+
+.top-section {
+  font-family: "Circle-Regular";
+  display: flex;
+  height: 144px;
+  align-items: center;
+}
+.top-section-path {
+  flex-grow: 2;
+  flex-basis: 50%;
+  max-width: 762px;
+}
+.top-section-path-list {
+  display: flex;
+  font-size: 14px;
+  color: #777777;
+  white-space: nowrap;
+  padding-right: 70px;
+}
+.top-section-path-item {
+  cursor: pointer;
+}
+.top-section-path-item:last-child {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.top-section-path-item:hover {
+  color: #CC32A1;
+}
+.top-section-path-item:after {
+  content: "";
+  display: inline-block;
+  background: url(../img/path-arrow.png) no-repeat center center;
+  width: 7px;
+  height: 8px;
+  margin: 0 12px;
+}
+.top-section-path-item:last-child:after {
   display: none;
 }
 
-label {
-  color: #000;
+.top-section-block {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 21px;
+  height: 100%;
+  flex-basis: 25%;
+  padding: 0 20px;
+}
+.top-section-block-img {
+  margin-right: 14px;
+}
+.top-section-block-header {
+  color: #777777;
+  display: block;
   cursor: pointer;
-  line-height: 16px;
-  margin-top: 15px;
+}
+.top-section-block-header:hover {
+  color: #CC32A1;
+}
+.top-section-block-description {
+  color: #C4C4C4;
 }
 
-label:before {
-  cursor: pointer;
-  content: " ";
+.card-section {
+  border-top: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+}
+.card-section .slick-track {
+  display: block;
+}
+.card-section-content {
+  display: flex;
+}
+.card-slider {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 50%;
+  max-width: 762px;
+  margin-top: 52px;
+}
+
+.mini-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 33px;
+}
+.mini-slider .slick-list {
+  margin: 6px 0;
+}
+.mini-slider-img {
+  padding: 15px 0;
+}
+
+.card-control {
+  flex-grow: 1;
+  flex-basis: 50%;
+  font-family: "Circle-Regular";
+  padding-left: 21px;
+}
+.card-control-header {
+  font-size: 25px;
+  line-height: 37px;
   color: #1A1A1A;
-  display: inline-block;
-  margin-right: 15px;
-  position: relative;
-  text-align: center;
-  width: 16px;
-  height: 16px;
-  background: #F2F2F2;
-  border: 1px solid #C4C4C4;
+  font-family: "Circle-Bold";
+  max-width: 700px;
+  margin: 64px 0 38px 0;
+}
+.card-control-color-picker {
+  display: flex;
+  align-items: center;
+}
+.card-control-color {
+  font-size: 18px;
+  color: #777777;
+  margin-right: 44px;
+}
+.card-control-colors {
+  display: flex;
+}
+.card-control-img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 1px solid #DDDDDD;
   box-sizing: border-box;
-  border-radius: 2px;
-  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 14px;
+}
+.card-control-img:hover {
+  border-color: #1A1A1A;
+}
+.card-control-img:nth-child(1) div {
+  background: #E5E5E5;
+}
+.card-control-img:nth-child(2) div {
+  background: #69D881;
+}
+.card-control-img:nth-child(3) div {
+  background: #1A1A1A;
+}
+.card-control-img:nth-child(4) div {
+  background: #CC32A1;
+}
+.card-control-img:nth-child(5) div {
+  background: #578DDE;
+}
+.card-control-img div {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  margin: 8px;
+}
+.card-control .delivery-price {
+  margin-top: 37px;
+  height: 51px;
+  width: 100%;
+  max-width: 336px;
+  border: 1px solid #EEEEEE;
+  border-radius: 30px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 14px;
+}
+.card-control .delivery-price-img {
+  margin: 0 10px 0 33px;
+}
+.card-control .delivery-price-text {
+  color: #777777;
+}
+.card-control .delivery-price-value {
+  color: #1A1A1A;
+  font-family: "Circle-Bold";
 }
 
-/* вариации внешнего вида в зав-ти от статуса checkbox */
-/* checked */
-input:checked + label:before {
-  content: url("../img/svg/checkmark.svg");
+.page-card-description {
+  margin-top: 42px;
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-desc {
+  display: flex;
+}
+.card-descriptions {
+  display: flex;
+  flex-direction: column;
+  height: 125px;
+  justify-content: space-between;
+  color: #777777;
+}
+.card-descriptions-values {
+  color: #191919;
+}
+.card-buy {
+  display: flex;
+}
+
+.buy-1click {
+  margin-top: 34px;
+  width: fit-content;
+}
+
+.price-card {
+  box-sizing: border-box;
+  width: 303px;
+  height: 318px;
+  background: rgba(235, 222, 232, 0.15);
+  backdrop-filter: blur(70px);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 33px 0 24px 50px;
+}
+.price-card-price {
+  margin-top: 76px;
+  font-size: 30px;
+}
+.price-card-quantity {
+  margin-top: 28px;
+  font-size: 16px;
+  color: #777777;
+}
+.price-card-control {
+  display: flex;
+  margin-top: 25px;
+  box-sizing: border-box;
+  height: 29px;
+  font-family: "Circle-Regular";
+  font-size: 17px;
+}
+.price-card .buy-btn {
+  margin-top: 51px;
+}
+
+.price-control-minus {
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  box-sizing: border-box;
+  border-radius: 45px 0 0 45px;
+  width: 25px;
+  text-align: center;
+  line-height: 29px;
+  color: #777777;
+}
+.price-control-quantity {
+  background: #FFFFFF;
+  border-top: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+  width: 29px;
+  text-align: center;
+  line-height: 29px;
+  color: #777777;
+}
+.price-control-plus {
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  box-sizing: border-box;
+  border-radius: 0 45px 45px 0;
+  width: 25px;
+  text-align: center;
+  line-height: 29px;
+  color: #777777;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 51px;
+}
+.product-info-control {
+  display: flex;
+  justify-content: space-between;
+  max-width: 714px;
+  width: 100%;
+}
+.product-info-btn {
+  outline: none;
+  background: none;
+  border: none;
+  border-radius: 90px;
+  border: 1px solid;
+  border-color: #eee;
+  font-size: 17px;
+  height: 51px;
+  width: 335px;
+  font-family: "Circle-Regular";
+  cursor: pointer;
+  box-sizing: border-box;
+  color: #777777;
+}
+.product-info-btn:hover {
+  color: #1A1A1A;
+}
+.product-info-img {
+  margin-top: 37px;
+}
+.product-info-header {
+  font-size: 70px;
+  font-family: "Cormorant", serif;
+}
+
+.video-block {
+  margin-top: 58px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.product-description {
+  max-width: 892px;
+  font-family: "Circle-Thin";
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 65px;
+}
+.product-description .bold {
+  font-family: "Circle-Bold";
+}
+.product-description-block {
+  margin-top: 24px;
+}
+.product-description-block:first-child {
+  margin-top: 0;
+}
+
+.product-info-description {
+  font-family: "Circle-Regular";
+  font-size: 22px;
+  line-height: 32px;
 }
 
 body {
@@ -722,6 +1026,7 @@ img {
   padding: 89px 0 8px 0;
   background: #fff;
   cursor: pointer;
+  overflow-y: visible;
 }
 .card-img {
   display: block;
@@ -760,10 +1065,35 @@ img {
   line-height: 40px;
   margin-right: 14px;
 }
-.card-color {
+.card .selectric {
+  border: none;
+  background: none;
+}
+.card .selectric .button:after {
+  border-top-color: #1A1A1A;
+}
+.card .selectric .label {
+  margin: 0 38px 0 17px;
+  color: #777777;
+  font-size: 12px;
+  font-family: "Circle-Regular";
+}
+.card .selectric li {
+  color: #777777;
+}
+.card .selectric-select-color {
+  color: #1A1A1A;
+}
+.card .selectric-wrapper {
   display: block;
   margin: auto;
   margin-top: 28px;
+  box-sizing: border-box;
+  width: 287px;
+  height: 38px;
+  border: 1px solid #EEEEEE;
+  box-sizing: border-box;
+  border-radius: 15px;
 }
 
 .future {
@@ -981,7 +1311,7 @@ img {
 }
 .newest .slick-list {
   width: 100%;
-  padding: 30px 0;
+  padding: 50px 0;
 }
 
 .sales {
@@ -992,7 +1322,7 @@ img {
 }
 .sales .slick-list {
   width: 100%;
-  padding: 30px 0;
+  padding: 50px 0;
 }
 
 .mslider {

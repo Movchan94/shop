@@ -150,3 +150,10 @@ $(document).mouseup(function (e) {
 		$('.more-categories-items').addClass('hide');
 	}
 });
+
+$(function() {
+  $('.card-select').selectric({
+		forceRenderAbove:true,
+	});
+});
+
