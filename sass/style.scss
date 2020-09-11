@@ -4,6 +4,8 @@
 @import 'footer';
 @import 'catalog';
 @import 'card';
+@import 'basket';
+@import 'profile';
 
 body {
   box-sizing: border-box;
@@ -23,6 +25,18 @@ img {
   max-width: 1524px;
   margin: 0 auto;
   width: 100%;
+}
+
+.full-line {
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.rectangle {
+  box-sizing: border-box;
+  height: 73px;
+  background: #FFFFFF;
+  border-radius: 90px;
+  overflow: hidden;
 }
 
 .vertical-lines {
@@ -335,6 +349,40 @@ img {
       margin-left: 17px;
       background-image: url(../img/rose-btn.svg);
     }
+  }
+}
+
+.features-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin: 125px 0;
+  font-family: 'Circle-Regular';
+
+  .feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 25%;
+  }
+}
+
+.features {
+  &-header {
+    margin-top: 25px;
+    font-size: 25px;
+    line-height: 37px;
+    color: #000000;
+    text-align: center;
+    max-width: 338px;
+  }
+
+  &-description {
+    margin-top: 25px;
+    line-height: 25px;
+    color: #000000;
+    text-align: center;
+    font-family: 'Circle-Thin';
+    max-width: 310px;
   }
 }
 

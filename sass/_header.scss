@@ -139,6 +139,8 @@
   position: absolute;
   right: 22%;
   z-index: 200;
+  transition: opacity 1s linear;
+  opacity: 0;
 
   &-header {
     display: block;

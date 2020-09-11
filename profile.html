@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/selectric.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Profile</title>
+</head>
+<body>
+  
+  <section class="section-profile">
+    <div class="wrapper">
+      <div class="profile">
+        <div class="header">
+          <span class="profile-header">Профиль</span>
+          <button class="btn-border">ВЫХОД</button>
+        </div>
+        <div class="placeholder"><input type="text" class="rectangle" value="Анна"></div>
+        <div class="placeholder"><input type="text" class="rectangle" value="anna@mail.ru"></div>
+        <div class="placeholder"><input type="text" class="rectangle" value="+7"></div>
+        <div class="placeholder">
+          <select type="text" class="rectangle profile-select" value="">
+            <option value="" disabled selected hidden>Добавьте город</option>
+            <option value="Москва">Москва</option>
+            <option value="Ростов">Ростов</option>
+            <option value="Новосибирск">Новосибирск</option>
+          </select>
+        </div>
+        <div class="placeholder"><input type="text" class="rectangle" placeholder="Добавьте адрес"></div>
+        <div class="placeholder">
+          <select type="text" class="rectangle profile-select" value="">
+            <option value="" disabled selected hidden>Выбрать пол</option>
+            <option value="Ж">Ж</option>
+            <option value="">М</option>
+          </select>
+        </div>
+        <div class="placeholder"><input type="text" class="rectangle" placeholder="Добавьте дату рождения"></div>
+        <div class="profile-buttons">
+          <button class="btn-border">НОВЫЙ ПАРОЛЬ</button>
+          <button class="btn-border">СОХРАНИТЬ</button>
+        </div>
+      </div>
+      <div class="orders">
+        <div class="orders-header">
+          <span class="my-orders">Мои заказы</span>
+          <div class="total-orders">
+            <span class="all-orders">Всего: </span>
+            <span class="orders-quantity">2 заказа</span>
+          </div>
+        </div>
+        <div class="orders-list">
+          <div class="order-list-header">
+            <div class="order-info first-col">#</div>
+            <div class="order-info">ДАТА</div>
+            <div class="order-info">ИМЯ</div>
+            <div class="order-info">ТЕЛЕФОН</div>
+            <div class="order-info">E-MAIL</div>
+            <div class="order-info">СУММА</div>
+            <div class="order-info">СТАТУС</div>
+          </div>
+          <div class="order-list-item">
+            <div class="rectangle order-info first-col">1</div>
+            <div class="rectangle order-info">02.09.20</div>
+            <div class="rectangle order-info">Осипова Анна Алексеевна</div>
+            <div class="rectangle order-info">+7 000 000 00 00</div>
+            <div class="rectangle order-info email">annaosipova@grabandgo.pro</div>
+            <div class="rectangle order-info">30 000 руб.</div>
+            <div class="rectangle order-info status">В работе</div>
+          </div>
+          <div class="order-list-item">
+            <div class="rectangle order-info first-col">1</div>
+            <div class="rectangle order-info">02.09.20</div>
+            <div class="rectangle order-info">Осипова Анна Алексеевна</div>
+            <div class="rectangle order-info">+7 000 000 00 00</div>
+            <div class="rectangle order-info email">annaosipova@grabandgo.pro</div>
+            <div class="rectangle order-info">30 000 руб.</div>
+            <div class="rectangle order-info status">В работе</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery.selectric.js"></script>
+  <script src="js/profile.js"></script>
+
+</body>
+</html>
