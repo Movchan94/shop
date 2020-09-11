@@ -1,0 +1,236 @@
+.section-profile {
+  .wrapper {
+    display: grid;
+    // grid-template-columns: 385px auto;
+    grid-template-columns: minmax(auto , 385px) auto;
+  }
+
+  .header {
+    font-size: 40px;
+    line-height: 60px;
+    font-family: 'Cormorant', serif;
+    border: none;
+  }
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  padding-right: 21px;
+  border-right: 1px solid #EEEEEE;
+
+  .header {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  input {
+    border: none;
+    margin-bottom: 20px;
+    outline: none;
+    padding: 34px 32px 13px 32px;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Circle-Regular';
+    position: relative;
+    width: 100%;
+
+    &:placeholder {
+      color: #777777;
+    }
+
+  }
+
+  .placeholder {
+    position: relative;
+    &:after {
+      display: inline-block;
+      position: absolute;
+      font-family: 'Circle-Thin';
+      color: #393544;
+      font-size: 14px;
+      left: 32px;
+      top: 16px;
+    }
+
+    &:nth-child(2) {
+      &:after {
+        content: "ФИО"
+      }
+    }
+    &:nth-child(3) {
+      &:after {
+        content: "E-mail"
+      }
+    }
+    &:nth-child(4) {
+      &:after {
+        content: "Телефон"
+      }
+    }
+    &:nth-child(5) {
+      &:after {
+        content: "Город"
+      }
+    }
+    &:nth-child(6) {
+      &:after {
+        content: "Адресс"
+      }
+    }
+    &:nth-child(7) {
+      &:after {
+        content: "Пол"
+      }
+    }
+    &:nth-child(8) {
+      &:after {
+        content: "Дата рождения"
+      }
+    }
+  }
+
+  .selectric {
+    box-sizing: border-box;
+    height: 73px;
+    background: #FFFFFF;
+    border-radius: 90px;
+    overflow: hidden;
+    border: none;
+    margin-bottom: 20px;
+    outline: none;
+    padding: 34px 32px 13px 32px;
+    font-family: "Circle-Regular";
+
+    
+
+    .button {
+      width: 12px;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 35px;
+        right: 0;
+        bottom: 0;
+        left: -44px;
+        margin: auto;
+        width: 12px;
+        height: 7px;
+        border: none;
+        background: url(../img/select-arrow.svg) no-repeat center center;
+      }
+    }
+  }
+
+  .label {
+    color: #777777;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 0;
+  }
+
+  .selectric-items {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    // color: #777777;
+    
+    li {
+      
+      font-size: 16px;
+      // background: $main-background;
+      font-family: "Circle-Regular";
+      padding-left: 32px;
+    }
+  }
+
+  &-buttons {
+    display: flex;
+    justify-content: space-between;
+    .btn-border {
+      padding: 0 28px;
+    }
+  }
+}
+
+.orders {
+  &-header {
+    font-size: 40px;
+    line-height: 60px;
+    color: $main-text;
+    font-family: 'Cormorant', serif;
+  }
+
+  .total-orders {
+    font-size: 17px;
+    line-height: 30px;
+    font-family: 'Circle-Bold';
+  }
+
+  .all-orders {
+    font-family: 'Circle-Thin';
+  }
+}
+
+.orders {
+  padding-left: 29px;
+}
+
+.order-list {
+  &-header {
+    font-size: 16px;
+    line-height: 24px;
+    color: #777777;
+    text-transform: uppercase;
+    font-family: 'Circle-Regular';
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 10px 0;
+    border-bottom: 1px solid #EEEEEE;
+
+    .first-col {
+      max-width: 80px;
+    }
+  }
+
+  &-item {
+    font-size: 16px;
+    line-height: 20px;
+    color: $main-text;
+    font-family: 'Circle-Regular';
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 0;
+    border-bottom: 1px solid #EEEEEE;
+
+    .first-col {
+      max-width: 80px;
+      font-family: 'Circle-Bold';
+    }
+
+    .email {
+      word-break: break-all;
+    }
+
+    .status {
+      font-family: 'Circle-Bold';
+    }
+
+    .order-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+    }
+  }
+}
+
+.order-info {
+  box-sizing: border-box;
+  max-width: 161px;
+  width: 100%;
+  text-align: center;
+}
+
