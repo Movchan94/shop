@@ -1,0 +1,120 @@
+.delivery-product-description {
+  max-width: 1061px;
+  font-family: "Circle-Thin";
+  font-size: 16px;
+  line-height: 24px;
+  margin: 65px 0 55px 0;
+
+  .bold {
+    font-family: "Circle-Bold";
+  }
+
+  &-block {
+    margin-top: 24px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+.feedback {
+  margin-top: 100px;
+  margin-left: 34px;
+  max-width: 892px;
+
+  .total-reviews {
+    font-family: 'Circle-Thin';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #777777;
+  }
+
+  .give-feedback {
+    margin-top: 7px;
+    font-family: 'Circle-Regular';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 44px;
+    color: $main-text;
+  }
+
+  .feedback-input {
+    margin-top: 49px;
+
+
+    &-name-rating {
+      display: flex;
+      margin-top: 21px;
+    }
+
+  }
+
+
+  #input-your-feedback {
+    max-width: 892px;
+    width: 100%;
+  }
+
+  #input-your-feedback-name {
+    max-width: 401px;
+    width: 401px;
+    margin-right: 18px;
+  }
+
+  .rating {
+    padding: 0 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .your-mark {
+      flex: 1 1 auto;
+      margin: 0 4px;
+    }
+  }
+
+  #checkout-btn-img {
+    margin-left: 124px;
+  }
+
+  .comment {
+    width: 776px;
+    margin-top: 97px;
+
+    &-name {
+      font-style: normal;
+      font-size: 22px;
+      line-height: 30px;
+      color: $main-text;
+      display: flex;
+
+      h1 {
+        font-weight: bold;
+        font-family: 'Circle-Bold';
+      }
+
+      p {
+        font-family: 'Circle-Thin';
+        margin-left: 8px;
+      }
+    }
+
+    &-rating {
+      margin-top: 11px;
+    }
+
+    &-text {
+      margin-top: 11px;
+      font-family: 'Circle-Regular';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 25px;
+    }
+  }
+
+}

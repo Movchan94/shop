@@ -1375,6 +1375,105 @@ input:checked + label:before {
   margin-top: 0;
 }
 
+.delivery-product-description {
+  max-width: 1061px;
+  font-family: "Circle-Thin";
+  font-size: 16px;
+  line-height: 24px;
+  margin: 65px 0 55px 0;
+}
+.delivery-product-description .bold {
+  font-family: "Circle-Bold";
+}
+.delivery-product-description-block {
+  margin-top: 24px;
+}
+.delivery-product-description-block:first-child {
+  margin-top: 0;
+}
+
+.feedback {
+  margin-top: 100px;
+  margin-left: 34px;
+  max-width: 892px;
+}
+.feedback .total-reviews {
+  font-family: "Circle-Thin";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #777777;
+}
+.feedback .give-feedback {
+  margin-top: 7px;
+  font-family: "Circle-Regular";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 44px;
+  color: #1A1A1A;
+}
+.feedback .feedback-input {
+  margin-top: 49px;
+}
+.feedback .feedback-input-name-rating {
+  display: flex;
+  margin-top: 21px;
+}
+.feedback #input-your-feedback {
+  max-width: 892px;
+  width: 100%;
+}
+.feedback #input-your-feedback-name {
+  max-width: 401px;
+  width: 401px;
+  margin-right: 18px;
+}
+.feedback .rating {
+  padding: 0 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.feedback .rating .your-mark {
+  flex: 1 1 auto;
+  margin: 0 4px;
+}
+.feedback #checkout-btn-img {
+  margin-left: 124px;
+}
+.feedback .comment {
+  width: 776px;
+  margin-top: 97px;
+}
+.feedback .comment-name {
+  font-style: normal;
+  font-size: 22px;
+  line-height: 30px;
+  color: #1A1A1A;
+  display: flex;
+}
+.feedback .comment-name h1 {
+  font-weight: bold;
+  font-family: "Circle-Bold";
+}
+.feedback .comment-name p {
+  font-family: "Circle-Thin";
+  margin-left: 8px;
+}
+.feedback .comment-rating {
+  margin-top: 11px;
+}
+.feedback .comment-text {
+  margin-top: 11px;
+  font-family: "Circle-Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+}
+
 body {
   box-sizing: border-box;
   background-color: #fbfbfb;
