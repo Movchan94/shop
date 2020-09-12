@@ -1358,6 +1358,23 @@ input:checked + label:before {
   text-align: center;
 }
 
+.delivery-product-description {
+  max-width: 1061px;
+  font-family: "Circle-Thin";
+  font-size: 16px;
+  line-height: 24px;
+  margin: 65px 0 55px 0;
+}
+.delivery-product-description .bold {
+  font-family: "Circle-Bold";
+}
+.delivery-product-description-block {
+  margin-top: 24px;
+}
+.delivery-product-description-block:first-child {
+  margin-top: 0;
+}
+
 body {
   box-sizing: border-box;
   background-color: #fbfbfb;
@@ -1625,7 +1642,7 @@ img {
   flex-direction: column;
   justify-content: space-between;
   align-items: baseline;
-  font-family: "Cormorant", serif;
+  font-family: "Circle-light";
 }
 .future-header-2 {
   font-size: 60px;

@@ -1,0 +1,19 @@
+.delivery-product-description {
+    max-width: 1061px;
+    font-family: "Circle-Thin";
+    font-size: 16px;
+    line-height: 24px;
+    margin: 65px 0 55px 0;
+
+    .bold {
+      font-family: "Circle-Bold";
+    }
+
+    &-block {
+      margin-top: 24px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+}

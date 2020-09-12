@@ -6,6 +6,7 @@
 @import 'card';
 @import 'basket';
 @import 'profile';
+@import 'delivery';
 
 body {
   box-sizing: border-box;
@@ -323,7 +324,7 @@ img {
     flex-direction: column;
     justify-content: space-between;
     align-items: baseline;
-    font-family: 'Cormorant', serif;
+    font-family: 'Circle-light';
   }
 
   &-header-2 {
