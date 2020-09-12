@@ -8,8 +8,8 @@ function range() {
 
 // drop-down list
 $(document).ready(function(){
-    $(".category-list, .filter-wrapper, .filter-1-checkbox-container").hide();
-    $(".filter-header-name, .filter-header-button").click(function(){
+    $(".category-list, .filter-wrapper, .filter-1-checkbox-container, .subcategory-list").hide();
+    $(".filter-header-name, .filter-header-button, .category-2-name").click(function(){
         $(this).parent().next().slideToggle();
     });
 });
@@ -41,6 +41,4 @@ $("#filter-1-header-button, #filter-1-header-name").click(function(){
 
 });
 
-
-
-
+///
