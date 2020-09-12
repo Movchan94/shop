@@ -175,7 +175,7 @@ img {
   padding: 89px 0 8px 0;
   background: #fff;
   cursor: pointer;
-  
+
   &-img {
     display: block;
     margin: 0 auto 36px auto;
@@ -231,9 +231,9 @@ img {
 .future {
   border-top: 1px solid #DDDDDD;
   border-bottom: 1px solid #DDDDDD;
-  
+
   &-wrapper {
-    
+
     margin: 0 auto;
     width: 100%;
     max-width: 1400px;
@@ -332,7 +332,7 @@ img {
   }
 
   &-info {
-  
+
   }
 
   &-header {
@@ -372,7 +372,7 @@ img {
   &-counter-number {
     font-family: 'Circle-Bold';
   }
-  
+
   &-acc-info {
     &-item {
       font-size: 14px;
@@ -390,7 +390,7 @@ img {
 .brands {
   height: 230px;
   display: flex;
-  
+
   .slick-track {
     align-items: center;
     justify-content: space-between;
@@ -469,7 +469,7 @@ img {
   }
 }
 
-//expert 
+//expert
 
 .expert {
 
@@ -497,7 +497,7 @@ img {
 
 .newest {
   position: relative;
-  
+
   .slick-track {
     justify-content: space-around;
   }
@@ -510,7 +510,7 @@ img {
 
 .sales {
   position: relative;
-  
+
   .slick-track {
     justify-content: space-around;
   }
@@ -530,7 +530,7 @@ img {
     text-align: center;
     margin-right: 54px;
   }
-  
+
   .carousel-cell {
     margin-right: 54px;
   }
@@ -573,7 +573,7 @@ img {
     display: flex;
     justify-content: space-between;
     margin-top: 29px;
-  }  
+  }
 
   &-mid-description {
     max-width: 709px;
@@ -598,7 +598,6 @@ img {
     color: $text-rose;
     font-family: 'Circle-Bold';
   }
-
 }
 
 .slick-slider{
