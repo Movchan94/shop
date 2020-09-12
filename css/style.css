@@ -282,7 +282,7 @@
   margin-top: 160px;
 }
 .sidebar-left-horizontal-line {
-  width: 385px;
+  width: 383px;
   border: 1px solid #E5E5E5;
   margin-top: 23px;
   margin-bottom: 28px;
@@ -299,7 +299,10 @@
   font-family: "Circle-Regular";
   list-style-position: inside;
 }
-.sidebar-left .category-list-item:hover {
+.sidebar-left .category-2-name {
+  cursor: pointer;
+}
+.sidebar-left .category-2-name:hover {
   color: #CC32A1;
 }
 .sidebar-left .filter-header {
@@ -318,10 +321,6 @@
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   padding: 5px;
-  cursor: pointer;
-}
-.sidebar-left .filter-header:hover {
-  color: #CC32A1;
 }
 .sidebar-left .filter-header-button {
   width: 30px;
@@ -336,8 +335,12 @@
   text-align: center;
 }
 .sidebar-left .filter-header-name {
+  cursor: pointer;
   margin-top: 3px;
   margin-left: 8px;
+}
+.sidebar-left .filter-header-name:hover {
+  color: #CC32A1;
 }
 .sidebar-left .filter-price-from-to {
   display: flex;
@@ -438,6 +441,7 @@
 }
 
 .catalog {
+  margin-left: 26px;
   margin-top: 40px;
 }
 .catalog-header {
@@ -451,7 +455,7 @@
   color: #1A1A1A;
 }
 .catalog-header-img {
-  margin-left: -52px;
+  margin-left: -78px;
 }
 .catalog-sorting-top {
   margin-top: 23px;
@@ -491,7 +495,6 @@
 }
 .catalog .catalog-1 {
   margin-top: 65px;
-  margin-left: 26px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   grid-row-gap: 36px;
@@ -515,18 +518,30 @@
   justify-content: center;
 }
 .pagination-pages-current {
+  cursor: pointer;
+  margin-top: -10px;
   margin-right: 20px;
-  font-size: 40px;
+  font-size: 30px;
   text-decoration: underline;
 }
+.pagination-pages-current:hover {
+  color: #CC32A1;
+}
 .pagination-pages-all {
+  cursor: pointer;
   margin-right: 20px;
   font-size: 20px;
+}
+.pagination-pages-all:hover {
+  color: #CC32A1;
 }
 
 .subcategory-list {
   margin-left: 20px;
   color: #C4C4C4;
+}
+.subcategory-list-item:hover {
+  color: #CC32A1;
 }
 
 input[type=checkbox] {
@@ -1826,7 +1841,7 @@ img {
 }
 .newest .slick-list {
   width: 100%;
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 .sales {
@@ -1837,7 +1852,7 @@ img {
 }
 .sales .slick-list {
   width: 100%;
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 .mslider {

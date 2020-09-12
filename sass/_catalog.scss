@@ -20,7 +20,7 @@
   margin-top: 160px;
 
   &-horizontal-line {
-    width: 385px;
+    width: 383px;
     border: 1px solid #E5E5E5;
     margin-top: 23px;
     margin-bottom: 28px;
@@ -41,19 +41,19 @@
       line-height: 30px;
       font-family: 'Circle-Regular';
       list-style-position: inside;
-
-      &:hover {
-        color: $text-rose;
-      }
-
     }
 
   }
 
-  .filter-header {
+  .category-2-name {
+    cursor: pointer;
+
     &:hover {
       color: $text-rose;
     }
+  }
+
+  .filter-header {
 
     display: flex;
     justify-content: left;
@@ -71,7 +71,6 @@
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     padding: 5px;
-    cursor: pointer;
 
 
     &-button {
@@ -88,8 +87,13 @@
     }
 
     &-name {
+      cursor: pointer;
       margin-top: 3px;
       margin-left: 8px;
+
+      &:hover {
+        color: $text-rose;
+      }
     }
   }
 
@@ -222,6 +226,7 @@
 }
 
 .catalog {
+  margin-left: 26px;
   margin-top: 40px;
 
   &-header {
@@ -237,7 +242,7 @@
   }
 
   &-header-img {
-    margin-left: -52px;
+    margin-left: -78px;
   }
 
   &-sorting-top {
@@ -287,7 +292,6 @@
 
   .catalog-1 {
     margin-top: 65px;
-    margin-left: 26px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     grid-row-gap: 36px;
@@ -314,12 +318,25 @@
 
 
     &-current {
+      cursor: pointer;
+
+      &:hover {
+        color: $text-rose;
+      }
+
+      margin-top: -10px;
       margin-right: 20px;
-      font-size: 40px;
+      font-size: 30px;
       text-decoration: underline;
     }
 
     &-all {
+      cursor: pointer;
+
+      &:hover {
+        color: $text-rose;
+      }
+
       margin-right: 20px;
       font-size: 20px;
     }
@@ -327,6 +344,10 @@
 }
 
 .subcategory-list {
+  &-item:hover {
+    color: $text-rose;
+  }
+
   margin-left: 20px;
   color: #C4C4C4;
 }
@@ -365,9 +386,6 @@ input:checked + label:before {
   content: url("../img/svg/checkmark.svg");
 
 }
-
-
-
 
 
 
