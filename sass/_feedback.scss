@@ -1,0 +1,56 @@
+.feedback-container {
+  display: flex;
+  width: 1524px;
+  justify-content: center;
+}
+
+.ceo-support-call {
+  cursor: pointer;
+}
+
+.btn-description-feedback {
+ display: flex;
+ justify-content: center;
+
+
+}
+.feedback-btn {
+ margin-left: 21px;
+ margin-right: 21px;
+ width: 335px;
+ outline: none;
+ background: none;
+ border-radius: 90px;
+ padding: 0 38px;
+ border: 1px solid;
+ border-color: #eee;
+ font-size: 17px;
+ line-height: 30px;
+ height: 59px;
+ font-family: 'Circle-Bold';
+ cursor: pointer;
+}
+
+.feedback-btn:hover {
+ color: $text-rose;
+ border-color: $text-rose;
+ &:after {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 12px;
+ }
+}
+
+.feedback-btn:after {
+ content: "";
+ display: inline-block;
+ width: 7px;
+ height: 12px;
+}
+.feedback-header {
+ margin-top: 29px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
