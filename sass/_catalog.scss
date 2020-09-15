@@ -1,15 +1,21 @@
 .grid-container {
+  position: relative;
   display: grid;
   grid-template-areas: "nav article";
-  grid-template-columns: 385px 1fr;
+  grid-template-columns: 583px 1fr;
   margin: 0;
+  border: 1px solid #EEEEEE;
+
 
   #mainArticle {
     grid-area: article;
+    margin: 0;
   }
 
   #mainNav {
+    border-right: 1px solid #EEEEEE;
     grid-area: nav;
+    margin-left: 197px;
   }
 
 }
@@ -20,8 +26,8 @@
   margin-top: 160px;
 
   &-horizontal-line {
-    width: 383px;
-    border: 1px solid #E5E5E5;
+    width: 385px;
+    border-top: 1px solid #E5E5E5;
     margin-top: 23px;
     margin-bottom: 28px;
   }
@@ -293,9 +299,10 @@
   .catalog-1 {
     margin-top: 65px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: 320px 320px 320px;
     grid-row-gap: 36px;
-    grid-column-gap: 34px;
+    grid-column-gap: 60px;
+    //border: 1px solid red;
   }
 
 }
@@ -387,7 +394,19 @@ input:checked + label:before {
 
 }
 
+.catalog-vertical-line-1 {
+  position: absolute;
+  height: 100%;
+  border-left: 1px solid #EEEEEE;
+  left: 960px;
+}
 
+.catalog-vertical-line-2 {
+  position: absolute;
+  height: 100%;
+  border-left: 1px solid #EEEEEE;
+  left: 1340px;
+}
 
 
 
