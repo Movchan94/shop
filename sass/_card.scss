@@ -4,11 +4,24 @@
 
 //top-section
 
+ .vertical-lines {
+  .hiden-line {
+    border-left: 1px solid $main-background;
+  }
+ }
+
+ .white {
+   background: white !important;
+   z-index: 1;
+ }
+
 .top-section {
   font-family: 'Circle-Regular';
   display: flex;
   height: 144px;
   align-items: center;
+  position: relative;
+  z-index: 5;
   
   &-path {
     flex-grow: 2;
@@ -60,7 +73,7 @@
   height: 100%;
   flex-basis: 25%;
   padding: 0 20px;
-  border-left: 1px solid #EEEEEE;
+  // border-left: 1px solid #EEEEEE;
 
   &-img {
     margin-right: 14px;
@@ -87,6 +100,7 @@
   &-section {
     border-top: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
+    position: relative;
     .slick-track {
       display: block;
     }
@@ -345,7 +359,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 51px;
+  padding-top: 51px;
+  position: relative;
 
   &-control {
     display: flex;

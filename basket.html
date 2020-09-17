@@ -17,21 +17,31 @@
   <!-- basket-header -->
 
   <section class="basket-header">
+    <div class="vertical-lines">
+      <div class="vertical-line"></div>
+      <div class="vertical-line"></div>
+      <div class="vertical-line"></div>
+    </div>
     <div class="wrapper">
-      <div></div>
-      <img src="img/basket-header.png" alt="">
-      <button class="btn-border">НАЗАД К ПОКУПКАМ</button>
+      <div class=></div>
+      <img src="img/basket-header.svg" alt="">
+      <button class="btn-border">Назад к покупкам</button>
     </div>
   </section>
 
   <!-- basket-card -->
 
   <section class="basket-card">
+    <div class="vertical-lines">
+      <div class="vertical-line"></div>
+      <div class="vertical-line"></div>
+      <div class="vertical-line"></div>
+    </div>
     <div class="basket-wrapper">
       <div class="basket-cards">
         <div class="wrapper">
           <div class="basket-card-item">
-            <div class="border">
+            <div class="border card-grid">
               <div class="card margin">
                 <img src="img/card-img.png" alt="" class="card-img">
                 <select name="" id="" class="card-select">
@@ -52,14 +62,17 @@
                 <span class="product-delete">УДАЛИТЬ</span>
               </div>
             </div>
-            <div class="border">
+            <div class="border price-grid">
               <div class="basket-card-price margin">
                 <div class="price-card-control">
                   <div class="price-control-minus btn">-</div>
                   <div class="price-control-quantity btn">1</div>
                   <div class="price-control-plus btn">+</div>
                 </div>
-                <span class="basket-card-price-text">₽ 24 000</span>
+                <div class="mobile-delete">
+                  <span class="basket-card-price-text">₽ 24 000</span>
+                  <span class="product-delete mobile">УДАЛИТЬ</span>
+                </div>
               </div>
             </div>
             <div class="basket-price-card">
@@ -72,7 +85,7 @@
                   <span class="price-card-total-text">Итог</span>
                   <span class="price-card-total-price">₽ 24 000</span>
                 </div>
-                <button class="buy-btn btn-border">КУПИТЬ</button>
+                <button class="buy-btn btn-border promo-block-btn">КУПИТЬ</button>
               </div>
             </div>
           </div>
@@ -80,7 +93,7 @@
         <div class="full-line"></div>
         <div class="wrapper">
           <div class="basket-card-item">
-            <div class="border">
+            <div class="border card-grid">
               <div class="card margin">
                 <img src="img/card-img.png" alt="" class="card-img">
                 <select name="" id="" class="card-select">
@@ -101,7 +114,7 @@
                 <span class="product-delete">УДАЛИТЬ</span>
               </div>
             </div>
-            <div class="border">
+            <div class="border price-grid">
               <div class="basket-card-price margin">
                 <div class="price-card-control">
                   <div class="price-control-minus btn">-</div>
@@ -118,9 +131,29 @@
         <div class="full-line"></div>
       </div>
     </div>
+    <div class="wrapper">
+      <div class="price-card desktop-hide">
+        <div class="mobile-flex">
+          <div class="delivery-block">
+            <span class="price-card-delivery">Доставка</span>
+            <span class="price-card-delivery-price">Бесплатно</span>
+          </div>
+          <div class="delivery-price-block">
+            <span class="price-card-total-text">Итог</span>
+            <span class="price-card-total-price">₽ 24 000</span>
+          </div>
+        </div>
+        <button class="buy-btn btn-border promo-block-btn">КУПИТЬ</button>
+      </div>
+    </div>
   </section>
 
   <section class="product-config">
+    <div class="vertical-lines">
+      <div class="vertical-line"></div>
+      <div class="vertical-line"></div>
+      <div class="vertical-line"></div>
+    </div>
     <div class="wrapper">
       <div class="config">
         <div class="pay">
@@ -146,6 +179,7 @@
           </span>
         </div>
       </div>
+      <div class="full-line desktop-hide"></div>
       <div class="client">
         <span class="client-header">Покупатель</span>
         <div class="client-config">
@@ -153,7 +187,7 @@
           <input type="text" class="client-config-field rectangle" placeholder="Телефон">
           <input type="text" class="client-config-field rectangle" placeholder="E-mail">
           <input type="text" class="client-config-field rectangle" placeholder="Адрес">
-          <input type="text" class="client-config-field comment rectangle" placeholder="Комментарий">
+          <textarea type="text" class="client-config-field comment rectangle" placeholder="Комментарий"></textarea>
         </div>
         <div class="checkout-btn">
           <span>Оформить заказ</span>
@@ -168,6 +202,11 @@
   <!-- features -->
 
   <section class="shop-features">
+    <div class="vertical-lines">
+      <div class="vertical-line"></div>
+      <div class="vertical-line"></div>
+      <div class="vertical-line"></div>
+    </div>
     <div class="wrapper">
       <div class="features-wrapper">
         <div class="feature">
