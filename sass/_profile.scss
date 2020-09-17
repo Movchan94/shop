@@ -3,6 +3,7 @@
     display: grid;
     // grid-template-columns: 385px auto;
     grid-template-columns: minmax(auto , 385px) auto;
+    grid-template-areas: "profile orders";
   }
 
   .header {
@@ -18,6 +19,7 @@
   flex-direction: column;
   padding-right: 21px;
   border-right: 1px solid #EEEEEE;
+  grid-area: profile;
 
   .header {
     margin-bottom: 30px;
@@ -176,6 +178,7 @@
 
 .orders {
   padding-left: 29px;
+  grid-area: orders;
 }
 
 .order-list {

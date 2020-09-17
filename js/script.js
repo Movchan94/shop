@@ -60,7 +60,7 @@ $(document).ready(function(){
 		centerMode:false,
 		responsive:[
 			{
-				breakpoint: 768,
+				breakpoint: 800,
 				settings: {
 					slidesToShow:2
 				}

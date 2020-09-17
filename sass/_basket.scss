@@ -4,6 +4,7 @@
   border: 1px solid #EEEEEE;
   box-sizing: border-box;
   height: 230px;
+  position: relative;
   .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -26,6 +27,10 @@
 }
 
 //cards 
+
+.basket-card {
+  position: relative;
+}
 
 .basket-wrapper {
   display: flex;
@@ -127,6 +132,7 @@
     border-bottom: 1px solid #777777;
     cursor: pointer;
     width: fit-content;
+    height: fit-content;
   }
 
   .price-card-control {
@@ -140,7 +146,7 @@
   }
 
   .border {
-    border-right: 1px solid #EEEEEE;
+    // border-right: 1px solid #EEEEEE;
     max-width: 380px;
     width: 100%;
     padding: 16px 0 22px 0;
@@ -209,10 +215,14 @@
 //   display: inline-block;
 // }
 
+.product-config {
+  position: relative;
+}
+
 .config {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  margin-top: 90px;
+  padding: 90px 0 72px 0;
 
   .pay {
     max-width: 320px;
@@ -284,13 +294,14 @@
     grid-column: 1/5;
     width: 100%;
     max-width: 1463px;
+    padding-top: 30px;
   }
 
   .checkout-btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 36px 0 95px 0;
+    padding: 36px 0 95px 0;
     font-size: 20px;
     text-transform: uppercase;
     color: $main-text;
@@ -300,5 +311,8 @@
       margin-left: 15px;
     }
   }
-  
+}
+
+.shop-features {
+  position: relative;
 }

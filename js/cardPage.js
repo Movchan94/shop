@@ -5,13 +5,13 @@ $(document).ready(function(){
     dots:false,
     slidesToShow:3,
     centerMode:false,
-    vertical:true,
+    vertical:false,
     asNavFor:'.big-slider-content',
     responsive:[
       {
-        breakpoint: 768,
+        breakpoint: 800,
         settings: {
-          slidesToShow:2
+          slidesToShow:3
         }
       },
       {
@@ -32,13 +32,13 @@ $(document).ready(function(){
   $('.big-slider-content').slick({
     arrows:false,
     dots:false,
-    vertical:true,
+    vertical:false,
     asNavFor:'.mini-slider-content',
     responsive:[
       {
-        breakpoint: 768,
+        breakpoint: 800,
         settings: {
-          slidesToShow:2
+          slidesToShow:1,
         }
       },
       {
@@ -49,4 +49,38 @@ $(document).ready(function(){
       }
     ]
   });
+
+  $('.other-products-slider').slick({
+    arrows:false,
+    dots:false,
+    slidesToShow:4,
+    centerMode:false,
+    responsive:[
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow:3
+        }
+      },
+      {
+        breakpoint: 550,
+        settings: {
+          slidesToShow:2
+        }
+      }
+    ]
+  });
+  $('.other-img-left').click(function(event) {
+    $('.other-products-slider').slick('slickPrev');
+  });
+  $('.other-img-right').click(function(event) {
+    $('.other-products-slider').slick('slickNext');
+  });
 });
+
+$(function() {
+  $('.card-select').selectric({
+		forceRenderAbove:true,
+	});
+});
+
