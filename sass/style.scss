@@ -6,6 +6,10 @@
 @import 'card';
 @import 'basket';
 @import 'profile';
+@import 'delivery';
+@import 'personal-expert';
+@import 'ceo';
+@import 'feedback';
 
 body {
   box-sizing: border-box;
@@ -289,7 +293,7 @@ img {
   background: #fff;
   cursor: pointer;
   overflow-y: visible;
-  
+
   &-img {
     display: block;
     margin: 0 auto 36px auto;
@@ -384,9 +388,9 @@ img {
 .future {
   border-top: 1px solid #DDDDDD;
   border-bottom: 1px solid #DDDDDD;
-  
+
   &-wrapper {
-    
+
     margin: 0 auto;
     width: 100%;
     max-width: 1400px;
@@ -421,7 +425,7 @@ img {
     flex-direction: column;
     justify-content: space-between;
     align-items: baseline;
-    font-family: 'Cormorant', serif;
+    font-family: 'Circle-light';
   }
 
   &-header-2 {
@@ -519,7 +523,7 @@ img {
   }
 
   &-info {
-  
+
   }
 
   &-header {
@@ -559,7 +563,7 @@ img {
   &-counter-number {
     font-family: 'Circle-Bold';
   }
-  
+
   &-acc-info {
     &-item {
       font-size: 14px;
@@ -577,7 +581,7 @@ img {
 .brands {
   height: 230px;
   display: flex;
-  
+
   .slick-track {
     align-items: center;
     justify-content: space-between;
@@ -656,7 +660,7 @@ img {
   }
 }
 
-//expert 
+//expert
 
 .expert {
 
@@ -682,27 +686,27 @@ img {
 
 .newest {
   position: relative;
-  
+
   .slick-track {
     justify-content: space-around;
   }
 
   .slick-list {
     width: 100%;
-    padding: 50px 0;
+    padding: 30px 0;
   }
 }
 
 .sales {
   position: relative;
-  
+
   .slick-track {
     justify-content: space-around;
   }
 
   .slick-list {
     width: 100%;
-    padding: 50px 0;
+    padding: 30px 0;
   }
 }
 
@@ -731,7 +735,7 @@ img {
     text-align: center;
     margin-right: 54px;
   }
-  
+
   .carousel-cell {
     margin-right: 54px;
   }

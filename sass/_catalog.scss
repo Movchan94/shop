@@ -1,15 +1,21 @@
 .grid-container {
+  position: relative;
   display: grid;
   grid-template-areas: "nav article";
-  grid-template-columns: 385px 1fr;
+  grid-template-columns: 583px 1fr;
   margin: 0;
+  border: 1px solid #EEEEEE;
+
 
   #mainArticle {
     grid-area: article;
+    margin: 0;
   }
 
   #mainNav {
+    border-right: 1px solid #EEEEEE;
     grid-area: nav;
+    margin-left: 197px;
   }
 
 }
@@ -21,7 +27,7 @@
 
   &-horizontal-line {
     width: 385px;
-    border: 1px solid #E5E5E5;
+    border-top: 1px solid #E5E5E5;
     margin-top: 23px;
     margin-bottom: 28px;
   }
@@ -41,19 +47,19 @@
       line-height: 30px;
       font-family: 'Circle-Regular';
       list-style-position: inside;
-
-      &:hover {
-        color: $text-rose;
-      }
-
     }
 
   }
 
-  .filter-header {
+  .category-2-name {
+    cursor: pointer;
+
     &:hover {
       color: $text-rose;
     }
+  }
+
+  .filter-header {
 
     display: flex;
     justify-content: left;
@@ -71,7 +77,6 @@
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     padding: 5px;
-    cursor: pointer;
 
 
     &-button {
@@ -88,8 +93,13 @@
     }
 
     &-name {
+      cursor: pointer;
       margin-top: 3px;
       margin-left: 8px;
+
+      &:hover {
+        color: $text-rose;
+      }
     }
   }
 
@@ -222,6 +232,7 @@
 }
 
 .catalog {
+  margin-left: 26px;
   margin-top: 40px;
 
   &-header {
@@ -237,7 +248,7 @@
   }
 
   &-header-img {
-    margin-left: -52px;
+    margin-left: -78px;
   }
 
   &-sorting-top {
@@ -287,11 +298,11 @@
 
   .catalog-1 {
     margin-top: 65px;
-    margin-left: 26px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: 320px 320px 320px;
     grid-row-gap: 36px;
-    grid-column-gap: 34px;
+    grid-column-gap: 60px;
+    //border: 1px solid red;
   }
 
 }
@@ -314,20 +325,36 @@
 
 
     &-current {
+      cursor: pointer;
+
+      &:hover {
+        color: $text-rose;
+      }
+
+      margin-top: -10px;
       margin-right: 20px;
-      font-size: 40px;
+      font-size: 30px;
       text-decoration: underline;
     }
 
     &-all {
+      cursor: pointer;
+
+      &:hover {
+        color: $text-rose;
+      }
+
       margin-right: 20px;
       font-size: 20px;
     }
   }
 }
 
+.subcategory-list {
+  &-item:hover {
+    color: $text-rose;
+  }
 
-.subcategory-list-ul {
   margin-left: 20px;
   color: #C4C4C4;
 }
@@ -367,10 +394,19 @@ input:checked + label:before {
 
 }
 
+.catalog-vertical-line-1 {
+  position: absolute;
+  height: 100%;
+  border-left: 1px solid #EEEEEE;
+  left: 960px;
+}
 
-
-
-
+.catalog-vertical-line-2 {
+  position: absolute;
+  height: 100%;
+  border-left: 1px solid #EEEEEE;
+  left: 1340px;
+}
 
 
 
