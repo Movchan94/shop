@@ -459,8 +459,14 @@
   margin-left: 26px;
   color: #1A1A1A;
 }
+.catalog #mob-catalog-header-img {
+  display: none;
+}
 .catalog-header-img {
   margin-left: -78px;
+}
+.catalog .mob-catalog-sorting-top {
+  display: none;
 }
 .catalog-sorting-top {
   margin-top: 23px;
@@ -597,6 +603,372 @@ input:checked + label:before {
   left: 1340px;
 }
 
+/*******MEDIA**********/
+/*375 px*/
+@media (max-width: 375px) {
+  /*  .grid-container {
+      position: relative;
+      display: grid;
+      grid-template-areas: "article";
+      grid-template-columns: 375px;
+      margin: 0;
+      border: 1px solid #EEEEEE;
+
+
+      #mainArticle {
+        grid-area: article;
+        margin: 0;
+      }
+
+    }*/
+  .grid-container {
+    grid-template-areas: "nav" "article";
+  }
+
+  .sidebar-left {
+    width: 387px;
+    left: 196px;
+    margin-top: 160px;
+  }
+  .sidebar-left-horizontal-line {
+    width: 385px;
+    border-top: 1px solid #E5E5E5;
+    margin-top: 23px;
+    margin-bottom: 28px;
+  }
+  .sidebar-left .category-list {
+    margin-top: 14px;
+  }
+  .sidebar-left .category-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .sidebar-left .category-list-item {
+    line-height: 30px;
+    font-family: "Circle-Regular";
+    list-style-position: inside;
+  }
+  .sidebar-left .category-2-name {
+    cursor: pointer;
+  }
+  .sidebar-left .category-2-name:hover {
+    color: #CC32A1;
+  }
+  .sidebar-left .filter-header {
+    display: flex;
+    justify-content: left;
+    height: 25px;
+    margin-top: 3px;
+    font-family: "Circle-Bold";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 25px;
+    /* identical to box height */
+    text-transform: uppercase;
+    color: #1A1A1A;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 5px;
+  }
+  .sidebar-left .filter-header-button {
+    width: 30px;
+    height: 30px;
+    background-color: #fbfbfb;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    margin-left: 2px;
+    text-align: center;
+  }
+  .sidebar-left .filter-header-name {
+    cursor: pointer;
+    margin-top: 3px;
+    margin-left: 8px;
+  }
+  .sidebar-left .filter-header-name:hover {
+    color: #CC32A1;
+  }
+  .sidebar-left .filter-price-from-to {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    width: 351px;
+    font-family: "Circle-Regular";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 30px;
+  }
+  .sidebar-left .filter-price .slider {
+    -webkit-appearance: none;
+    width: 351px;
+    height: 2px;
+    border-radius: 5px;
+    background: #C4C4C4;
+    outline: none;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+  }
+  .sidebar-left .filter-price .slider:hover {
+    opacity: 1;
+  }
+  .sidebar-left .filter-price .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 12px;
+    height: 12px;
+    background: #FFFFFF;
+    cursor: pointer;
+    border: 3px solid #CC32A1;
+    border-radius: 10px;
+  }
+  .sidebar-left .filter-price .sidebar-left-horizontal-line {
+    margin-top: 30px;
+  }
+  .sidebar-left .filter-1-checkbox-container {
+    margin-top: 14px;
+    margin-left: 14px;
+  }
+  .sidebar-left .filter-1-checkbox-item {
+    display: flex;
+    justify-content: left;
+    font-family: "Circle-Regular";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 30px;
+    /* or 176% */
+    color: #1A1A1A;
+  }
+  .sidebar-left .show {
+    width: 351px;
+  }
+  .sidebar-left .show .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sidebar-left .show-header {
+    font-family: "Circle-Bold";
+    font-style: normal;
+    font-size: 14px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #CC32A1;
+  }
+  .sidebar-left .show-line {
+    width: 351px;
+    height: 2px;
+    background: #CC32A1;
+    margin-top: 4px;
+  }
+  .sidebar-left .discard {
+    width: 351px;
+    margin-top: 21px;
+  }
+  .sidebar-left .discard .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sidebar-left .discard-header {
+    font-family: "Circle-Bold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #D1D0D0;
+  }
+  .sidebar-left .discard-line {
+    width: 351px;
+    height: 2px;
+    background: #D1D0D0;
+    margin-top: 4px;
+  }
+
+  .catalog {
+    margin-left: 16px;
+    margin-top: 39px;
+    margin-right: 11px;
+    box-sizing: border-box;
+  }
+  .catalog-header {
+    font-family: Cormorant;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 27px;
+    margin-top: 78px;
+    margin-left: 16px;
+    margin-bottom: 0;
+    color: #1A1A1A;
+  }
+  .catalog-header-img {
+    margin-left: 0;
+  }
+  .catalog #catalog-header-img {
+    display: none;
+  }
+  .catalog #mob-catalog-header-img {
+    display: block;
+  }
+  .catalog-sorting-top {
+    display: none;
+  }
+  .catalog .mob-catalog-sorting-top {
+    margin-top: 49px;
+    display: block;
+  }
+  .catalog .mob-catalog-sorting-top-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  .catalog .mob-catalog-sorting-top-button button {
+    padding-left: 12px;
+    padding-right: 18px;
+    display: flex;
+    align-items: center;
+    height: 51px;
+    width: 257px;
+    background: #FBFBFB;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    border-radius: 90px;
+    outline: none;
+    cursor: pointer;
+  }
+  .catalog .mob-catalog-sorting-top-img {
+    margin: 0 auto;
+    width: 72px;
+    height: 72px;
+    background: #191919;
+    border-radius: 72px;
+  }
+  .catalog .mob-catalog-sorting-top-img img {
+    margin: 18px;
+  }
+  .catalog #sel {
+    margin-left: 5px;
+    width: 110%;
+    outline: none;
+    border: none;
+    background: #fbfbfb;
+    background: url(../img/svg/mob-catalog-sorting-arrow-down.svg) no-repeat right;
+    -webkit-appearance: none;
+    font-family: "Circle-Regular";
+    font-style: normal;
+    font-weight: normal;
+  }
+  .catalog .sort-name {
+    font-size: 15px;
+    line-height: 30px;
+    color: #777777;
+    font-family: "Circle-Regular";
+    font-style: normal;
+    font-weight: normal;
+  }
+  .catalog .catalog-1 {
+    margin-top: 49px;
+    display: grid;
+    grid-template-columns: 163px 163px;
+    grid-row-gap: 20px;
+    grid-column-gap: 16px;
+  }
+
+  .pagination {
+    margin-top: 146px;
+    margin-bottom: 138px;
+    margin-left: 26px;
+    width: 1079px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .pagination-pages {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .pagination-pages-current {
+    cursor: pointer;
+    margin-top: -10px;
+    margin-right: 20px;
+    font-size: 30px;
+    text-decoration: underline;
+  }
+  .pagination-pages-current:hover {
+    color: #CC32A1;
+  }
+  .pagination-pages-all {
+    cursor: pointer;
+    margin-right: 20px;
+    font-size: 20px;
+  }
+  .pagination-pages-all:hover {
+    color: #CC32A1;
+  }
+
+  .subcategory-list {
+    margin-left: 20px;
+    color: #C4C4C4;
+  }
+  .subcategory-list-item:hover {
+    color: #CC32A1;
+  }
+
+  input[type=checkbox] {
+    display: none;
+  }
+
+  label {
+    color: #000;
+    cursor: pointer;
+    line-height: 16px;
+    margin-top: 15px;
+  }
+
+  label:before {
+    cursor: pointer;
+    content: " ";
+    color: #1A1A1A;
+    display: inline-block;
+    margin-right: 15px;
+    position: relative;
+    text-align: center;
+    width: 16px;
+    height: 16px;
+    background: #F2F2F2;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 2px;
+    vertical-align: middle;
+  }
+
+  /* вариации внешнего вида в зав-ти от статуса checkbox */
+  /* checked */
+  input:checked + label:before {
+    content: url("../img/svg/checkmark.svg");
+  }
+
+  .catalog-vertical-line-1 {
+    position: absolute;
+    height: 100%;
+    border-left: 1px solid #EEEEEE;
+    left: 960px;
+  }
+
+  .catalog-vertical-line-2 {
+    position: absolute;
+    height: 100%;
+    border-left: 1px solid #EEEEEE;
+    left: 1340px;
+  }
+}
 .wrapper-card-page {
   font-family: "Circle-Regular";
 }
