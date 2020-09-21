@@ -372,7 +372,7 @@
             <div class="sidebar-left-horizontal-line"></div>
 
             <div class="show">
-                <div class="wrapper">
+                <div class="show-wrapper">
                     <div class="show-header"><a href="#">Показать</a></div>
                     <div class="show-button">
                         <a href="#"><img src="img/svg/catalog-sidebar-show-vector.svg"/></a>
@@ -381,7 +381,7 @@
                 <div class="show-line"></div>
             </div>
             <div class="discard">
-                <div class="wrapper">
+                <div class="discard-wrapper">
                     <div class="discard-header"><a href="#">Сбросить</a></div>
                     <div class="discard-button">
                         <a href="#"><img src="img/svg/catalog-sidebar-discard-vector.svg"/></a>
@@ -389,6 +389,7 @@
                 </div>
                 <div class="discard-line"></div>
             </div>
+        </div>
     </nav>
 
     <!--CATALOG-->
@@ -400,19 +401,13 @@
                     <img id="catalog-header-img" src="img/catalog-header-img.png"/>
                     <img id="mob-catalog-header-img" src="../shop/img/carriage-mob.png"/>
                 </div>
-                <div class="catalog-sorting-top">
-                    <span class="catalog-sorting-top-name">Сортировать:</span>
-                    <span class="catalog-sorting-top-by-date"><button>По дате</button></span>
-                    <span class="catalog-sorting-top-price-low"><button>По возрастанию цены</button></span>
-                    <span class="catalog-sorting-top-price-high"><button>По убыванию цены</button></span>
-                </div>
                 <div class="mob-catalog-sorting-top">
                     <div class="mob-catalog-sorting-top-wrapper">
                         <div class="mob-catalog-sorting-top-button">
                             <button>
                                 <span class="sort-name">Сортировать:</span>
                                 <span>
-                                      <select name="" id="sel" >
+                                      <select name="" id="sel">
               <option value="0">По дате</option>
               <option value="0">По возростанию</option>
               <option value="0">По убыванию</option>
@@ -424,7 +419,12 @@
                             <img src="../shop/img/svg/mob-btn-sorting-settings.svg"/>
                         </div>
                     </div>
-
+                </div>
+                <div class="catalog-sorting-top">
+                    <span class="catalog-sorting-top-name">Сортировать:</span>
+                    <span class="catalog-sorting-top-by-date"><button>По дате</button></span>
+                    <span class="catalog-sorting-top-price-low"><button>По возрастанию цены</button></span>
+                    <span class="catalog-sorting-top-price-high"><button>По убыванию цены</button></span>
                 </div>
                 <div class="catalog-1">
                     <div class="catalog-1-item">

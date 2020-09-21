@@ -25,6 +25,20 @@ img {
   cursor: pointer;
 }
 
+.mobile {
+  display: none;
+}
+
+.mobile-flex {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.desktop-hide {
+  display: none;
+}
+
 .wrapper {
   max-width: 1524px;
   margin: 0 auto;
@@ -94,6 +108,7 @@ img {
   height: 51px;
   font-family: 'Circle-Bold';
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .btn-border:hover {
@@ -108,6 +123,89 @@ img {
     margin-left: 10px;
   }
 }
+
+
+.promo-block {
+  .promo-block-btn {
+    color: $text-rose;
+    border-color: $text-rose;
+    &:after {
+      content: "";
+      display: inline-block;
+      background: url(../img/rose-btn.svg) no-repeat center center;
+      width: 7px;
+      height: 12px;
+      margin-left: 10px;
+    }
+    &:hover {
+      color: $main-text;
+      border-color: #eee;
+      &:after {
+        content: "";
+        display: inline-block;
+        background: url(../img/black-arrow.png) no-repeat center center;
+        width: 7px;
+        height: 12px;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.price-card {
+  .promo-block-btn {
+    color: $text-rose;
+    border-color: $text-rose;
+    &:after {
+      content: "";
+      display: inline-block;
+      background: url(../img/rose-btn.svg) no-repeat center center;
+      width: 7px;
+      height: 12px;
+      margin-left: 10px;
+    }
+    &:hover {
+      color: $main-text;
+      border-color: #eee;
+      &:after {
+        content: "";
+        display: inline-block;
+        background: url(../img/black-arrow.png) no-repeat center center;
+        width: 7px;
+        height: 12px;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.profile-buttons {
+  .promo-block-btn {
+    color: $text-rose;
+    border-color: $text-rose;
+    &:after {
+      content: "";
+      display: inline-block;
+      background: url(../img/rose-btn.svg) no-repeat center center;
+      width: 7px;
+      height: 12px;
+      margin-left: 10px;
+    }
+    &:hover {
+      color: $main-text;
+      border-color: #eee;
+      &:after {
+        content: "";
+        display: inline-block;
+        background: url(../img/black-arrow.png) no-repeat center center;
+        width: 7px;
+        height: 12px;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
 
 .btn-border:after {
   content: "";
@@ -140,7 +238,7 @@ img {
     &:after {
       content: '';
       display: inline-block;
-      background: url(../img/black-arrow.png) no-repeat center center;
+      background: url(../img/black-arrow.svg) no-repeat center center;
       width: 7px;
       height: 12px;
       margin-left: 10px;
@@ -359,7 +457,7 @@ img {
 .features-wrapper {
   display: flex;
   justify-content: space-around;
-  margin: 125px 0;
+  padding: 125px 0;
   font-family: 'Circle-Regular';
 
   .feature {
@@ -520,7 +618,7 @@ img {
     overflow: hidden;
     position: relative;
   }
-  img {
+  .shadow {
     position: absolute;
     top: -211px;
     left: -151px;
@@ -581,8 +679,6 @@ img {
   &-bold {
     font-family: 'Cormorant', serif;
     font-weight: bold;
-    font-size: 60px;
-    line-height: 60px;
   }
 }
 
@@ -619,6 +715,22 @@ img {
 .mslider {
   position: relative;
 
+  .slick-center {
+    .side-name {
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 48px;
+      text-transform: uppercase;
+    }
+    .mslider-mid-description {
+      display: block;
+    }
+  }
+    .mslider-mid-description {
+      display: none;
+    }
+
+
   &-content {
     text-align: center;
     margin-right: 54px;
@@ -649,6 +761,7 @@ img {
     line-height: 24px;
     text-transform: uppercase;
     color: $main-text;
+    display: block;
   }
 
   .mid {
@@ -665,8 +778,10 @@ img {
   &-control {
     display: flex;
     justify-content: space-between;
-    margin-top: 29px;
-  }
+    // margin-top: 29px;
+    margin-top: -80px;
+    position: relative;
+  }  
 
   &-mid-description {
     max-width: 709px;
@@ -756,8 +871,12 @@ img {
   }
 
   &-slider-img {
-    width: 604px;
-    height: 764px;
+    width: 100%;
+  }
+
+  &-slider-img-wrapper {
+    max-width: 604px;
+    max-height: 764px;
   }
 
   .slick-slider {
@@ -805,6 +924,9 @@ img {
    }
   }
 }
+
+@import 'mobile';
+
 
 
 
