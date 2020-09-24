@@ -4,20 +4,23 @@ $(document).ready(function(){
     arrows:false,
     dots:false,
     slidesToShow:3,
-    centerMode:false,
-    vertical:false,
+    vertical:true,
+    verticalSwiping: true,
     asNavFor:'.big-slider-content',
     responsive:[
       {
         breakpoint: 800,
         settings: {
-          slidesToShow:3
+          slidesToShow:3,
+          vertical:false,
+          verticalSwiping: false,
         }
       },
       {
         breakpoint: 550,
         settings: {
-          slidesToShow:1
+          slidesToShow:1,
+          vertical:false
         }
       }
     ]
@@ -32,19 +35,24 @@ $(document).ready(function(){
   $('.big-slider-content').slick({
     arrows:false,
     dots:false,
-    vertical:false,
+    vertical:true,
+    swipeToSlide:true,
+    verticalSwiping: true,
     asNavFor:'.mini-slider-content',
     responsive:[
       {
         breakpoint: 800,
         settings: {
           slidesToShow:1,
+          vertical:false,
+          verticalSwiping:false,
         }
       },
       {
         breakpoint: 550,
         settings: {
-          slidesToShow:1
+          slidesToShow:1,
+          vertical:false
         }
       }
     ]

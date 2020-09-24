@@ -5,11 +5,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 75px;
+    flex-wrap: wrap;
+  }
+
+  &-nav {
+    flex-basis: 100%;
   }
 
   &-logo {
-    margin-left: -5px;
+    margin: 5px 0 0 -5px;
   }
   
   &-search {
@@ -137,7 +141,8 @@
   border-radius: 20px;
   overflow: hidden;
   position: absolute;
-  right: 22%;
+  right: 0;
+  top: 165px;
   z-index: 200;
   transition: opacity 1s linear;
   opacity: 0;
