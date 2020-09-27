@@ -694,6 +694,7 @@ input:checked + label:before {
   .sidebar-left {
     max-width: 375px;
     width: 100%;
+    margin-left: 16px;
 
     &-horizontal-line {
       width: 335px;
