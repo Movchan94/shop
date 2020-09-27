@@ -80,7 +80,7 @@
 }
 
 /*******MEDIA**********/
-/*375 px*/
+/*800 px*/
 @media (max-width: 800px) {
   .feedback {
     width: 700px;
@@ -90,7 +90,8 @@
     }
 
     &-input-your-name, #input-your-feedback-name {
-      width: 370px;
+      margin-left: -10px;
+      width: 340px;
     }
     #checkout-btn-img {
       margin-left: 30px;
@@ -98,6 +99,14 @@
   }
   div.checkout-btn-img {
     width: 50px;
+  }
+
+  .feedback-input-name-rating {
+    margin-left: 0;
+  }
+
+  .rating {
+    width: 260px;
   }
 
 }
@@ -125,6 +134,7 @@
   }
 
   .feedback-input-your-name {
+    margin-left: 0;
     width: 332px;
     height: 51px;
     order: 1;
