@@ -42,3 +42,19 @@ $("#filter-1-header-button, #filter-1-header-name").click(function(){
 });
 
 ///
+/*$(".mob-catalog-sorting-top-img").click(function(){
+    if ($(".sidebar-left").css("display") === "none")
+        $(".sidebar-left").css({'display':'block','margin-left':'16px', 'transition': 'left 0.3s', 'z-index':'2000'});
+    else
+        $(".sidebar-left").css({'display':'none'});
+
+});*/
+////
+$( document ).ready(function(){
+    $( ".mob-catalog-sorting-top-img" ).click(function(){ // задаем функцию при нажатиии на элемент с классом slide-toggle
+        $( ".sidebar-left" ).slideToggle(); // плавно скрываем, или отображаем все элементы <div>
+    });
+});
+
+
+
