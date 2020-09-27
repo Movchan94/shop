@@ -92,16 +92,22 @@
 /*375 px*/
 @media (max-width: 375px) {
 
+  #mainArticle {
+    width: 375px;
+  }
+
+
   .grid-container-delivery {
     grid-template-areas: "nav" "article";
     border: none;
 
   }
   .delivery-container {
-    margin-left: 18px;
+    margin-left: 0px;
   }
 
   .delivery-product-info {
+    margin-left: 18px;
     max-width: 332px;
   }
 

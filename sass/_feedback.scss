@@ -3,6 +3,10 @@
   margin: 0 auto;
 }
 
+.feedback-input {
+  margin-bottom: 100px;
+}
+
 .feedback-input-name-rating {
   display: flex;
   flex-direction: column;
@@ -110,7 +114,7 @@
 
   }
   .rating {
-    margin-left: 50px;
+    margin-left: 28px;
     margin-top: 21px;
     order: 2;
     max-width: 258px;
