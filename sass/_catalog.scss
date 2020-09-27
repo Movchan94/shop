@@ -360,6 +360,10 @@
   }
 }
 
+.mob-pagination {
+  display: none;
+}
+
 .subcategory-list {
   &-item:hover {
     color: $text-rose;
@@ -418,32 +422,9 @@ input:checked + label:before {
   left: 1340px;
 }
 
-/*******MEDIA**********/
-
-@media (max-width: 1300px) {
-  .catalog .catalog-1 {
-    grid-template-columns: 320px 320px;
-    grid-row-gap: 36px;
-    grid-column-gap: 60px;
-  }
-  .grid-container {
-    grid-template-columns: 387px 1fr;
-    margin-left: 20px;
-
-    #mainArticle {
-      grid-area: article;
-      margin: 0;
-      width: 793px;
-    }
-  }
-  .catalog-vertical-line-2 {
-    display: none;
-  }
-  .pagination {
-    width: 705px;
-  }
-
-}
+/***************
+****MEDIA****
+*************/
 
 @media (max-width: 1600px) {
   .grid-container {
@@ -470,13 +451,63 @@ input:checked + label:before {
 
 }
 
-/*375 px*/
-@media (max-width: 375px) {
+@media (max-width: 1300px) {
+  .catalog .catalog-1 {
+    grid-template-columns: 320px 320px;
+    grid-row-gap: 36px;
+    grid-column-gap: 60px;
+  }
+  .grid-container {
+    grid-template-columns: 387px 1fr;
+    margin-left: 20px;
 
+    #mainArticle {
+      grid-area: article;
+      margin: 0;
+      width: 793px;
+    }
+  }
+  .catalog-vertical-line-2 {
+    display: none;
+  }
+  .pagination {
+    width: 705px;
+  }
+
+}
+
+@media (max-width: 1100px) {
+  .catalog .catalog-1 {
+    grid-column-gap: 30px;
+  }
+  .grid-container {
+    #mainArticle {
+      width: 693px;
+    }
+  }
+  .pagination {
+    width: 680px;
+  }
+  .catalog-vertical-line-1 {
+    left: 747px;
+  }
+  .catalog-header {
+    font-size: 50px;
+  }
+
+
+}
+
+@media (max-width: 800px) {
   .grid-container {
     grid-template-areas: "nav" "article";
+    grid-template-columns: 800px 1fr;
     border: none;
     margin-left: 0px;
+
+    #mainArticle {
+      width: 800px;
+    }
 
 
     #mainNav {
@@ -485,21 +516,22 @@ input:checked + label:before {
       background: #fbfbfb;
       margin-top: 260px;
       margin-left: 0;
-      max-width: 374px;
       margin-bottom: 20px;
+      max-width: 800px;
+      width: 100%;
     }
   }
 
   .sidebar-left {
-    margin-left: 16px;
     display: none;
-    max-width: 375px;
+    max-width: 800px;
     width: 100%;
     margin-top: 38px;
+    margin-left: 200px;
 
 
     &-horizontal-line {
-      width: 335px;
+      width: 387px;
       border-top: 1px solid #E5E5E5;
       margin-top: 23px;
       margin-bottom: 28px;
@@ -531,11 +563,18 @@ input:checked + label:before {
     margin-right: 11px;
     box-sizing: border-box;
 
+    &-vertical-line-1 {
+      display: none;
+    }
+
+
     .mob-catalog-sorting-top {
+      justify-content: center;
       margin-top: 49px;
       display: block;
 
       &-wrapper {
+        justify-content: center;
         display: flex;
         align-items: center;
       }
@@ -545,7 +584,6 @@ input:checked + label:before {
           padding-left: 12px;
           padding-right: 18px;
           display: flex;
-          //justify-content: space-between;
           align-items: center;
           height: 51px;
           width: 257px;
@@ -579,7 +617,7 @@ input:checked + label:before {
       font-size: 22px;
       line-height: 27px;
       margin-top: 78px;
-      margin-left: 16px;
+      margin-left: 270px;
       margin-bottom: 0;
       color: $main-text;
 
@@ -593,14 +631,22 @@ input:checked + label:before {
       display: none;
     }
 
+    .catalog-header-img {
+      justify-content: center;
+      text-align: center;
+    }
+
     #mob-catalog-header-img {
+      margin: 0 auto;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
       display: block;
     }
 
     &-sorting-top {
       display: none;
     }
-
 
 
     #sel {
@@ -619,14 +665,62 @@ input:checked + label:before {
     }
 
     .catalog-1 {
+      justify-content: center;
       margin-top: 49px;
       display: grid;
-      grid-template-columns: 163px 163px;
+      grid-template-columns: 163px 163px 163px;
       grid-row-gap: 20px;
       grid-column-gap: 16px;
     }
 
   }
+  .pagination {
+    margin: 40px auto;
+  }
+
+}
+
+/*375 px*/
+@media (max-width: 375px) {
+
+  .grid-container {
+    grid-template-columns: 375px 1fr;
+
+    #mainArticle {
+      width: 375px;
+    }
+  }
+
+  .sidebar-left {
+    max-width: 375px;
+    width: 100%;
+
+    &-horizontal-line {
+      width: 335px;
+      border-top: 1px solid #E5E5E5;
+      margin-top: 23px;
+      margin-bottom: 28px;
+    }
+
+  }
+  .catalog {
+    &-header {
+      margin-left: 0;
+    }
+
+    .catalog-1 {
+      grid-template-columns: 163px 163px;
+    }
+
+  }
+  .pagination {
+    display: none;
+  }
+
+  .mob-pagination {
+    display: block;
+  }
+
 
 }
 
