@@ -158,7 +158,15 @@
 /***1100px***/
 @media (max-width: 1100px) {
  .delivery-container-personal-expert {
-   margin-left: 51px;
+   margin-left: 20px;
+ }
+
+}
+
+/***800px***/
+@media (max-width: 800px) {
+ .feedback .comment {
+   width: 700px;
  }
 
 }
