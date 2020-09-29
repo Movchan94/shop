@@ -87,10 +87,10 @@
 
     &-block-container {
       width: 700px;
+      justify-content: left;
     }
 
     &-input-your-name, #input-your-feedback-name {
-      margin-left: -10px;
       width: 340px;
     }
     #checkout-btn-img {
