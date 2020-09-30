@@ -4,7 +4,6 @@
     // grid-template-columns: 385px auto;
     grid-template-columns: minmax(auto , 385px) auto;
     grid-template-areas: "profile orders";
-    margin-bottom: 150px;
   }
 
   .header {
@@ -18,10 +17,10 @@
 .profile {
   display: flex;
   flex-direction: column;
-  padding-right: 21px;
   border-right: 1px solid #EEEEEE;
   grid-area: profile;
   z-index: 1;
+  padding: 56px 21px 150px 0;
 
   .header {
     margin-bottom: 30px;
@@ -181,6 +180,7 @@
 .orders {
   padding-left: 29px;
   grid-area: orders;
+  padding: 56px 0 150px 26px;
 }
 
 .order-list {

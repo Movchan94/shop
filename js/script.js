@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	// $('.promo-block').css('opacity', '1');
+	$('.promo-block').css('opacity', '1');
 
 	$('.showcase-slider').slick({
 		arrows:false,
@@ -60,7 +60,7 @@ $(document).ready(function(){
     centerMode:false,
     responsive:[
 			{
-				breakpoint: 800,
+				breakpoint: 1400,
 				settings: {
 					slidesToShow: 3
 				}
@@ -87,7 +87,7 @@ $(document).ready(function(){
 		centerMode:false,
 		responsive:[
 			{
-				breakpoint: 800,
+				breakpoint: 1400,
 				settings: {
 					slidesToShow: 3
 				}
