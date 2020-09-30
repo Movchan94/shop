@@ -1,5 +1,5 @@
 .call-container {
- margin-top: -300px;
+  margin-top: -300px;
   margin-bottom: 200px;
   display: flex;
   width: 1524px;
@@ -9,4 +9,27 @@
 
 .ceo-support-call {
   cursor: pointer;
+}
+
+/***1300px***/
+@media (max-width: 1300px) {
+  .call-container {
+    margin-top: -300px;
+    margin-bottom: 200px;
+    display: flex;
+    width: 100%;
+    position: absolute;
+    justify-content: flex-end;
+  }
+
+  .ceo-support-call {
+    margin-right: 20px;
+  }
+}
+
+/***375px***/
+@media (max-width: 375px) {
+  .call-container {
+    position: absolute;
+  }
 }

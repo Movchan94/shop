@@ -36,7 +36,8 @@
                         <li class="header-top-menu-link">Sale</li>
                         <li class="header-top-menu-img"><img src="img/header-profile.png" alt=""></li>
                         <li class="header-top-menu-img"><img src="img/header-favorite.png" alt=""></li>
-                        <li class="header-top-menu-img"><img src="img/header-search-mini.png" alt="" class="search-icon"></li>
+                        <li class="header-top-menu-img"><img src="img/header-search-mini.png" alt=""
+                                                             class="search-icon"></li>
                         <li class="header-top-menu-img last-img"><img src="img/header-shop.png" alt=""></li>
                         <li class="header-top-menu-link">Подарки</li>
                         <li class="header-top-menu-link">Trad-in</li>
@@ -78,8 +79,8 @@
     </header>
 </div>
 
-    <!--MAIN-->
-
+<!--MAIN-->
+<div class="wrapper">
     <div class="grid-container">
         <div class="catalog-vertical-line-1"></div>
         <div class="catalog-vertical-line-2"></div>
@@ -371,7 +372,7 @@
                 <div class="sidebar-left-horizontal-line"></div>
 
                 <div class="show">
-                    <div class="wrapper">
+                    <div class="show-wrapper">
                         <div class="show-header"><a href="#">Показать</a></div>
                         <div class="show-button">
                             <a href="#"><img src="img/svg/catalog-sidebar-show-vector.svg"/></a>
@@ -380,7 +381,7 @@
                     <div class="show-line"></div>
                 </div>
                 <div class="discard">
-                    <div class="wrapper">
+                    <div class="discard-wrapper">
                         <div class="discard-header"><a href="#">Сбросить</a></div>
                         <div class="discard-button">
                             <a href="#"><img src="img/svg/catalog-sidebar-discard-vector.svg"/></a>
@@ -388,6 +389,7 @@
                     </div>
                     <div class="discard-line"></div>
                 </div>
+            </div>
         </nav>
 
         <!--CATALOG-->
@@ -396,7 +398,27 @@
             <div>
                 <div class="catalog">
                     <div class="catalog-header-img">
-                        <img src="img/catalog-header-img.png"/>
+                        <img id="catalog-header-img" src="img/catalog-header-img.png"/>
+                        <img id="mob-catalog-header-img" src="../shop/img/carriage-mob.png"/>
+                    </div>
+                    <div class="mob-catalog-sorting-top">
+                        <div class="mob-catalog-sorting-top-wrapper">
+                            <div class="mob-catalog-sorting-top-button">
+                                <button>
+                                    <span class="sort-name">Сортировать:</span>
+                                    <span>
+                                      <select name="" id="sel">
+              <option value="0">По дате</option>
+              <option value="0">По возростанию</option>
+              <option value="0">По убыванию</option>
+            </select>
+                                </span>
+                                </button>
+                            </div>
+                            <div class="mob-catalog-sorting-top-img">
+                                <img src="../shop/img/svg/mob-btn-sorting-settings.svg"/>
+                            </div>
+                        </div>
                     </div>
                     <div class="catalog-sorting-top">
                         <span class="catalog-sorting-top-name">Сортировать:</span>
@@ -416,9 +438,13 @@
                                     <img src="img/tobuy.png" alt="" class="card-buy">
                                 </div>
                                 <select name="" id="" class="card-select">
-                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racecup: 22 000р.</option>
-                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinal: 215 000р.</option>
-                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinish: 1 000р.</option>
+                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racecup: 22 000р.
+                                    </option>
+                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinal: 215
+                                        000р.
+                                    </option>
+                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinish: 1 000р.
+                                    </option>
                                 </select>
                             </div>
                         </div>
@@ -433,9 +459,13 @@
                                     <img src="img/tobuy.png" alt="" class="card-buy">
                                 </div>
                                 <select name="" id="" class="card-select">
-                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racecup: 22 000р.</option>
-                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinal: 215 000р.</option>
-                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinish: 1 000р.</option>
+                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racecup: 22 000р.
+                                    </option>
+                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinal: 215
+                                        000р.
+                                    </option>
+                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinish: 1 000р.
+                                    </option>
                                 </select>
                             </div>
                         </div>
@@ -450,9 +480,13 @@
                                     <img src="img/tobuy.png" alt="" class="card-buy">
                                 </div>
                                 <select name="" id="" class="card-select">
-                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racecup: 22 000р.</option>
-                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinal: 215 000р.</option>
-                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinish: 1 000р.</option>
+                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racecup: 22 000р.
+                                    </option>
+                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinal: 215
+                                        000р.
+                                    </option>
+                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinish: 1 000р.
+                                    </option>
                                 </select>
                             </div>
                         </div>
@@ -467,9 +501,13 @@
                                     <img src="img/tobuy.png" alt="" class="card-buy">
                                 </div>
                                 <select name="" id="" class="card-select">
-                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racecup: 22 000р.</option>
-                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinal: 215 000р.</option>
-                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinish: 1 000р.</option>
+                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racecup: 22 000р.
+                                    </option>
+                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinal: 215
+                                        000р.
+                                    </option>
+                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinish: 1 000р.
+                                    </option>
                                 </select>
                             </div>
                         </div>
@@ -484,9 +522,13 @@
                                     <img src="img/tobuy.png" alt="" class="card-buy">
                                 </div>
                                 <select name="" id="" class="card-select">
-                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racecup: 22 000р.</option>
-                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinal: 215 000р.</option>
-                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinish: 1 000р.</option>
+                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racecup: 22 000р.
+                                    </option>
+                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinal: 215
+                                        000р.
+                                    </option>
+                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinish: 1 000р.
+                                    </option>
                                 </select>
                             </div>
                         </div>
@@ -501,9 +543,13 @@
                                     <img src="img/tobuy.png" alt="" class="card-buy">
                                 </div>
                                 <select name="" id="" class="card-select">
-                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racecup: 22 000р.</option>
-                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinal: 215 000р.</option>
-                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinish: 1 000р.</option>
+                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racecup: 22 000р.
+                                    </option>
+                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinal: 215
+                                        000р.
+                                    </option>
+                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinish: 1 000р.
+                                    </option>
                                 </select>
                             </div>
                         </div>
@@ -523,9 +569,13 @@
                                     <img src="img/tobuy.png" alt="" class="card-buy">
                                 </div>
                                 <select name="" id="" class="card-select">
-                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racecup: 22 000р.</option>
-                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinal: 215 000р.</option>
-                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinish: 1 000р.</option>
+                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racecup: 22 000р.
+                                    </option>
+                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinal: 215
+                                        000р.
+                                    </option>
+                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinish: 1 000р.
+                                    </option>
                                 </select>
                             </div>
                         </div>
@@ -540,9 +590,13 @@
                                     <img src="img/tobuy.png" alt="" class="card-buy">
                                 </div>
                                 <select name="" id="" class="card-select">
-                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racecup: 22 000р.</option>
-                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinal: 215 000р.</option>
-                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinish: 1 000р.</option>
+                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racecup: 22 000р.
+                                    </option>
+                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinal: 215
+                                        000р.
+                                    </option>
+                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinish: 1 000р.
+                                    </option>
                                 </select>
                             </div>
                         </div>
@@ -557,9 +611,13 @@
                                     <img src="img/tobuy.png" alt="" class="card-buy">
                                 </div>
                                 <select name="" id="" class="card-select">
-                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racecup: 22 000р.</option>
-                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinal: 215 000р.</option>
-                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinish: 1 000р.</option>
+                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racecup: 22 000р.
+                                    </option>
+                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinal: 215
+                                        000р.
+                                    </option>
+                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinish: 1 000р.
+                                    </option>
                                 </select>
                             </div>
                         </div>
@@ -574,9 +632,13 @@
                                     <img src="img/tobuy.png" alt="" class="card-buy">
                                 </div>
                                 <select name="" id="" class="card-select">
-                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racecup: 22 000р.</option>
-                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinal: 215 000р.</option>
-                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinish: 1 000р.</option>
+                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racecup: 22 000р.
+                                    </option>
+                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinal: 215
+                                        000р.
+                                    </option>
+                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinish: 1 000р.
+                                    </option>
                                 </select>
                             </div>
                         </div>
@@ -591,9 +653,13 @@
                                     <img src="img/tobuy.png" alt="" class="card-buy">
                                 </div>
                                 <select name="" id="" class="card-select">
-                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racecup: 22 000р.</option>
-                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinal: 215 000р.</option>
-                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinish: 1 000р.</option>
+                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racecup: 22 000р.
+                                    </option>
+                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinal: 215
+                                        000р.
+                                    </option>
+                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinish: 1 000р.
+                                    </option>
                                 </select>
                             </div>
                         </div>
@@ -608,9 +674,13 @@
                                     <img src="img/tobuy.png" alt="" class="card-buy">
                                 </div>
                                 <select name="" id="" class="card-select">
-                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racecup: 22 000р.</option>
-                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinal: 215 000р.</option>
-                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinish: 1 000р.</option>
+                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racecup: 22 000р.
+                                    </option>
+                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinal: 215
+                                        000р.
+                                    </option>
+                                    <option value="0"><span class="card-select-color">Цвет: </span>Cilek Racefinish: 1 000р.
+                                    </option>
                                 </select>
                             </div>
                         </div>
@@ -618,7 +688,7 @@
                 </div>
                 <!--PAGINATION-->
                 <div class="pagination">
-                    <div><img src="img/arrow-left.svg" alt=""></div>
+                    <div><img src="img/arrow-left.png" alt=""></div>
                     <div class="pagination-pages">
                         <a href="#" class="pagination-pages-current">01 </a>
                         <a href="#" class="pagination-pages-all">02</a>
@@ -631,10 +701,22 @@
                         <a href="#" class="pagination-pages-all">09</a>
                         <a href="#" class="pagination-pages-all">10</a>
                     </div>
-                    <div><img src="img/arrow-right.svg" alt="" class="slider-right"/></div>
+                    <div><img src="img/arrow-right.png" alt="" class="slider-right"/></div>
+                </div>
+                <div class="mob-pagination">
+                    <div class="slider-control">
+                        <img src="img/arrow-left.svg" alt="" class="sales-img-left mobile-arrow">
+                        <div class="slider-pages">
+                            <span class="slider-pages-current">01 </span>
+                            <span class="slider-pages-all">/ 09</span>
+                        </div>
+                        <img src="img/arrow-right.svg" alt="" class="sales-img-right mobile-arrow">
+                    </div>
                 </div>
         </article>
     </div>
+</div>
+
 
 
 <!-- personal expert -->
@@ -646,7 +728,9 @@
             <div class="future-info">
                 <img src="img/expert-header.png" alt="" class="future-header">
                 <h2 class="future-header-2">Персональный эксперт</h2>
-                <p class="future-description">Новый сервис в нашем интернет-магазине, позволяет переложить многочисленные мелкие дела на плечи персонального помощника и сосредоточиться на своей работе или отдыхе. Расширенная гарантия в подарок!</p>
+                <p class="future-description">Новый сервис в нашем интернет-магазине, позволяет переложить
+                    многочисленные мелкие дела на плечи персонального помощника и сосредоточиться на своей работе или
+                    отдыхе. Расширенная гарантия в подарок!</p>
                 <button class="future-about btn-line gift-about">ПОДРОБНЕЕ</button>
             </div>
         </div>
@@ -664,9 +748,23 @@
     <div class="seo-wrapper">
         <img src="img/seo-header.png" alt="" class="seo-header">
         <h2 class="seo-header-2">Длинный заголовок СЕО текста</h2>
-        <p class="seo-text">В XVIII веке в Великобритании герцог Девонширский попросил Уильяма Кента — художника, архитектора и ландшафтного дизайнера — создать коляску для своих детей. В 1733 году заказ был выполнен. От классической коляски в нашем понимании изделие Кента отличалось очень сильно. Это была очень красиво декорированная уменьшенная копия взрослой повозки, перемещать которую должен был пони или ослик. Ребёнок в этой коляске мог только сидеть.</p>
-        <p class="seo-text">Коляска быстро вошла в моду. Уже к 1840 году подобные коляски продавались в лавках и магазинах детских товаров. Даже королева Виктория приобрела для прогулок со своими наследниками три штуки. В некоторых моделях даже отказались от осликов, предоставив возможность тянуть коляску няням или родителям. Появились трехколёсные варианты. Чуть позже появились коляски-люльки, в которых можно было лежа прогуливать совсем маленьких детей. А в 1889 году Уильям Ричардсон запатентовал идею первой коляски, в которой положение сиденья можно было менять, ставя его как лицом к родителям, так и наоборот. Изобретатель также заменил жестко связанные осью колеса на независимые, что резко увеличило маневренность колясок.</p>
-        <p class="seo-text">С началом XX века родилась колясочная индустрия. Коляски стали дешевле и доступнее. Появилось множество моделей, в которых использовали большие колеса, капоры, тормоза, разные формы люлек. К середине века возникла проблема — громоздкие коляски было неудобно транспортировать в путешествиях. Потому изобрели лёгкие алюминиевые рамы и системы складывания колясок. Со временем детская индустрия адаптировала все современные технологичные достижения, сделав коляски очень легкими, компактными и удобными.</p>
+        <p class="seo-text">В XVIII веке в Великобритании герцог Девонширский попросил Уильяма Кента — художника,
+            архитектора и ландшафтного дизайнера — создать коляску для своих детей. В 1733 году заказ был выполнен. От
+            классической коляски в нашем понимании изделие Кента отличалось очень сильно. Это была очень красиво
+            декорированная уменьшенная копия взрослой повозки, перемещать которую должен был пони или ослик. Ребёнок в
+            этой коляске мог только сидеть.</p>
+        <p class="seo-text">Коляска быстро вошла в моду. Уже к 1840 году подобные коляски продавались в лавках и
+            магазинах детских товаров. Даже королева Виктория приобрела для прогулок со своими наследниками три штуки. В
+            некоторых моделях даже отказались от осликов, предоставив возможность тянуть коляску няням или родителям.
+            Появились трехколёсные варианты. Чуть позже появились коляски-люльки, в которых можно было лежа прогуливать
+            совсем маленьких детей. А в 1889 году Уильям Ричардсон запатентовал идею первой коляски, в которой положение
+            сиденья можно было менять, ставя его как лицом к родителям, так и наоборот. Изобретатель также заменил
+            жестко связанные осью колеса на независимые, что резко увеличило маневренность колясок.</p>
+        <p class="seo-text">С началом XX века родилась колясочная индустрия. Коляски стали дешевле и доступнее.
+            Появилось множество моделей, в которых использовали большие колеса, капоры, тормоза, разные формы люлек. К
+            середине века возникла проблема — громоздкие коляски было неудобно транспортировать в путешествиях. Потому
+            изобрели лёгкие алюминиевые рамы и системы складывания колясок. Со временем детская индустрия адаптировала
+            все современные технологичные достижения, сделав коляски очень легкими, компактными и удобными.</p>
     </div>
 </section>
 
@@ -681,7 +779,8 @@
             <div class="future-info">
                 <img src="img/gift-header.png" alt="" class="future-header">
                 <h2 class="future-header-2">Подарочный сертификат</h2>
-                <p class="future-description">Сделайте приятно любимым! Наши подарочные сертификаты не имеют ограничений по сумме или сроку годности.
+                <p class="future-description">Сделайте приятно любимым! Наши подарочные сертификаты не имеют ограничений
+                    по сумме или сроку годности.
                     Оплата осуществляется любым удобным способом.</p>
                 <button class="future-about btn-line">ПОДРОБНЕЕ</button>
             </div>
@@ -695,7 +794,8 @@
 <section class="brands">
     <div class="wrapper">
         <div class="brands-slider">
-            <div class="brands-slider-arrows-left"><img src="img/arrow-left.svg" alt="" class="brand-slider-img-left"></div>
+            <div class="brands-slider-arrows-left"><img src="img/arrow-left.png" alt="" class="brand-slider-img-left">
+            </div>
             <div class="brands-slider-content brand-slider">
                 <div class="brands-slider-items-item"><img src="img/brand-1.png" alt=""></div>
                 <div class="brands-slider-items-item"><img src="img/brand-2.png" alt=""></div>
@@ -708,7 +808,8 @@
                 <div class="brands-slider-items-item"><img src="img/brand-4.png" alt=""></div>
                 <div class="brands-slider-items-item"><img src="img/brand-5.png" alt=""></div>
             </div>
-            <div class="brands-slider-arrows-right"><img src="img/arrow-right.svg" alt="" class="brand-slider-img-right"></div>
+            <div class="brands-slider-arrows-right"><img src="img/arrow-right.png" alt=""
+                                                         class="brand-slider-img-right"></div>
         </div>
     </div>
 </section>
