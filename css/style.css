@@ -273,7 +273,7 @@
   grid-template-areas: "nav article";
   grid-template-columns: 387px 1fr;
   margin: 0;
-  border-top: 1px solid #EEEEEE;
+  border-top: none;
   border-bottom: 1px solid #EEEEEE;
 }
 .grid-container #mainArticle {
@@ -615,7 +615,7 @@ input:checked + label:before {
 /***************
 ****MEDIA****
 *************/
-@media (max-width: 1600px) {
+@media (max-width: 1599px) {
   .catalog-sorting-top {
     margin-right: 20px;
   }
@@ -628,7 +628,7 @@ input:checked + label:before {
     left: 1143px;
   }
 }
-@media (max-width: 1300px) {
+@media (max-width: 1299px) {
   .catalog .catalog-1 {
     grid-template-columns: 320px 320px;
     grid-row-gap: 36px;
@@ -653,11 +653,15 @@ input:checked + label:before {
     width: 705px;
   }
 }
-@media (max-width: 1100px) {
+@media (max-width: 1099px) {
   .catalog .catalog-1 {
     grid-column-gap: 30px;
   }
 
+  .grid-container {
+    grid-template-columns: 355px 1fr;
+    border-top: none;
+  }
   .grid-container #mainArticle {
     width: 693px;
   }
@@ -667,14 +671,26 @@ input:checked + label:before {
   }
 
   .catalog-vertical-line-1 {
-    left: 747px;
+    left: 715px;
   }
 
   .catalog-header {
     font-size: 50px;
   }
+
+  .sidebar-left, .sidebar-left-horizontal-line {
+    width: 355px;
+  }
+
+  #catalog-header-img {
+    width: 745px;
+  }
+
+  .pagination {
+    width: 650px;
+  }
 }
-@media (max-width: 800px) {
+@media (max-width: 799px) {
   .grid-container {
     grid-template-areas: "nav" "article";
     grid-template-columns: 800px 1fr;
@@ -711,7 +727,7 @@ input:checked + label:before {
   .sidebar-left .category-list {
     margin-top: 14px;
   }
-  .sidebar-left .category .wrapper {
+  .sidebar-left .category .wrapper-catalog {
     padding-left: 0;
   }
   .sidebar-left .category-list-item {
@@ -820,18 +836,21 @@ input:checked + label:before {
   }
 }
 /*375 px*/
-@media (max-width: 375px) {
+@media (max-width: 374px) {
   .grid-container {
     grid-template-columns: 345px 1fr;
   }
   .grid-container #mainArticle {
     width: 345px;
   }
+  .grid-container #mainNav {
+    border-right: none;
+  }
 
   .sidebar-left {
     max-width: 375px;
     width: 100%;
-    margin-left: 16px;
+    margin-left: 0px;
   }
   .sidebar-left-horizontal-line {
     width: 335px;
@@ -1762,7 +1781,7 @@ input:checked + label:before {
     grid-template-columns: 387px 1fr;
   }
   .grid-container-delivery #mainNav {
-    margin-left: 80px;
+    margin-left: 50px;
   }
 }
 /*1300 px*/

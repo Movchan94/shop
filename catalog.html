@@ -14,48 +14,64 @@
 
 <!-- header -->
 
-<div class="wrapper">
-    <header class="header">
-        <div class="wrapper">
-            <div class="header-top">
-                <img src="img/logo.png" alt="" class="header-logo">
-                <div class="header-search hide">
-                    <div class="search-logo">
-                        <img src="img/search-logo.png" alt="" class="search-icon">
-                    </div>
-                    <input type="text" name="" id="" placeholder="Введите текст" class="search-field">
-                    <div class="reset-search">
-                        <img src="img/close-search.png" alt="" class="close-search">
-                    </div>
+<div class="mobile-bacckground hide"></div>
+<header class="header">
+    <div class="wrapper">
+        <div class="header-top-mobile desktop-hide">
+            <div class="flex">
+                <div class="hamburger-btn">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
                 </div>
-                <div class="header-top-menu">
-                    <ul class="header-top-menu-items">
-                        <li class="header-top-menu-link">Оплата</li>
-                        <li class="header-top-menu-link">Доставка</li>
-                        <li class="header-top-menu-link">Новинки</li>
-                        <li class="header-top-menu-link">Sale</li>
-                        <li class="header-top-menu-img"><img src="img/header-profile.png" alt=""></li>
-                        <li class="header-top-menu-img"><img src="img/header-favorite.png" alt=""></li>
-                        <li class="header-top-menu-img"><img src="img/header-search-mini.png" alt=""
-                                                             class="search-icon"></li>
-                        <li class="header-top-menu-img last-img"><img src="img/header-shop.png" alt=""></li>
-                        <li class="header-top-menu-link">Подарки</li>
-                        <li class="header-top-menu-link">Trad-in</li>
-                        <li class="header-top-menu-link">Персональный эксперт</li>
-                    </ul>
+                <img src="img/mobile-header.svg" alt="" class="header-logo-mobile">
+            </div>
+            <div class="flex">
+                <img src="img/header-profile.svg" alt="">
+                <img src="img/header-shop.svg" alt="" class="shop-logo-mobile">
+            </div>
+        </div>
+        <div class="header-top">
+            <img src="img/logo.png" alt="" class="header-logo mobile-hide">
+            <div class="header-search hide">
+                <div class="search-logo">
+                    <img src="img/header-search-mini.svg" alt="" class="search-icon mobile-hide">
+                    <img src="img/search-mobile.svg" alt="" class="search-icon desktop-hide">
                 </div>
-                <div class="header-contacts">
-                    <div class="header-contacts-pnones">
-                        <span class="phone_rose">+7 (495) 374-72-97</span>
-                        <span>/ 8-800-707-53-34</span>
-                    </div>
-                    <div class="header-contacts-delivery">
-                        <span>Экспресс - доставка по всей Росии и СНГ</span>
-                    </div>
+                <input type="text" name="" id="" placeholder="Введите текст" class="search-field">
+                <div class="reset-search">
+                    <img src="img/close-search.png" alt="" class="close-search mobile-hide">
+                    <div class="close-search desktop-hide">></div>
+                </div>
+            </div>
+            <div class="header-top-menu">
+                <ul class="header-top-menu-items">
+                    <li class="header-top-menu-link mobile-list-header desktop-hide">ИНФОРМАЦИЯ</li>
+                    <li class="header-top-menu-link">Оплата</li>
+                    <li class="header-top-menu-link">Доставка</li>
+                    <li class="header-top-menu-link">Новинки</li>
+                    <li class="header-top-menu-link">Sale</li>
+                    <li class="header-top-menu-img"><img src="img/header-profile.svg" alt=""></li>
+                    <li class="header-top-menu-img"><img src="img/header-favorite.svg" alt=""></li>
+                    <li class="header-top-menu-img"><img src="img/header-search-mini.svg" alt="" class="search-icon"></li>
+                    <li class="header-top-menu-img last-img"><img src="img/header-shop.svg" alt=""></li>
+                    <li class="header-top-menu-link">Подарки</li>
+                    <li class="header-top-menu-link">Trad-in</li>
+                    <li class="header-top-menu-link">Персональный эксперт</li>
+                </ul>
+            </div>
+            <div class="header-contacts">
+                <div class="header-contacts-pnones">
+                    <span class="phone_rose">+7 (495) 374-72-97</span>
+                    <span>/ 8-800-707-53-34</span>
+                </div>
+                <div class="header-contacts-delivery">
+                    <span>Экспресс - доставка по всей Росии и СНГ</span>
                 </div>
             </div>
             <nav class="header-nav">
                 <ul class="header-nav-list">
+                    <li class="header-nav-list-item mobile-list-header desktop-hide">КАТАЛОГ</li>
                     <li class="header-nav-list-item">бренды</li>
                     <li class="header-nav-list-item">летние товары</li>
                     <li class="header-nav-list-item">для школы</li>
@@ -76,8 +92,100 @@
                 </ul>
             </nav>
         </div>
-    </header>
-</div>
+    </div>
+</header>
+
+
+<!-- mobile-categories -->
+
+<section class="mobile-categories white desktop-hide">
+    <div class="categories">
+        <span class="categories-header">Каталог товаров</span>
+        <img src="img/rose-btn.svg" alt="" width="7" height="12" class="category-header-btn">
+    </div>
+    <div class="wrapper">
+        <ul class="categories-list desktop-hide">
+            <li class="categories-list-item">Бренды
+                <div class="category-btn">+</div></li>
+            <ul class="category">
+                <li class="category-sub">Категория 1</li>
+                <li class="category-sub">Категория 2</li>
+                <li class="category-sub">Категория 3</li>
+            </ul>
+            <li class="categories-list-item">Летние товары
+                <div class="category-btn">+</div></li>
+            <ul class="category">
+                <li class="category-sub">Категория 1</li>
+                <li class="category-sub">Категория 2</li>
+                <li class="category-sub">Категория 3</li>
+            </ul>
+            <li class="categories-list-item">Для школы
+                <div class="category-btn">+</div></li>
+            <ul class="category">
+                <li class="category-sub">Категория 1</li>
+                <li class="category-sub">Категория 2</li>
+                <li class="category-sub">Категория 3</li>
+            </ul>
+            <li class="categories-list-item">Траснпорт
+                <div class="category-btn">+</div></li>
+            <ul class="category">
+                <li class="category-sub">Категория 1</li>
+                <li class="category-sub">Категория 2</li>
+                <li class="category-sub">Категория 3</li>
+            </ul>
+            <li class="categories-list-item">Коляски
+                <div class="category-btn">+</div></li>
+            <ul class="category">
+                <li class="category-sub">Категория 1</li>
+                <li class="category-sub">Категория 2</li>
+                <li class="category-sub">Категория 3</li>
+            </ul>
+            <li class="categories-list-item">Автокресла
+                <div class="category-btn">+</div></li>
+            <ul class="category">
+                <li class="category-sub">Категория 1</li>
+                <li class="category-sub">Категория 2</li>
+                <li class="category-sub">Категория 3</li>
+            </ul>
+            <li class="categories-list-item">Комната и сон
+                <div class="category-btn">+</div></li>
+            <ul class="category">
+                <li class="category-sub">Категория 1</li>
+                <li class="category-sub">Категория 2</li>
+                <li class="category-sub">Категория 3</li>
+            </ul>
+            <li class="categories-list-item">Комфорт и безопасность
+                <div class="category-btn">+</div></li>
+            <ul class="category">
+                <li class="category-sub">Категория 1</li>
+                <li class="category-sub">Категория 2</li>
+                <li class="category-sub">Категория 3</li>
+            </ul>
+            <li class="categories-list-item">Новорожденным
+                <div class="category-btn">+</div></li>
+            <ul class="category">
+                <li class="category-sub">Категория 1</li>
+                <li class="category-sub">Категория 2</li>
+                <li class="category-sub">Категория 3</li>
+            </ul>
+            <li class="categories-list-item">Для Мамы
+                <div class="category-btn">+</div></li>
+            <ul class="category">
+                <li class="category-sub">Категория 1</li>
+                <li class="category-sub">Категория 2</li>
+                <li class="category-sub">Категория 3</li>
+            </ul>
+            <li class="categories-list-item">Игрушки
+                <div class="category-btn">+</div></li>
+            <ul class="category">
+                <li class="category-sub">Категория 1</li>
+                <li class="category-sub">Категория 2</li>
+                <li class="category-sub">Категория 3</li>
+            </ul>
+        </ul>
+    </div>
+</section>
+
 
 <!--MAIN-->
 <div class="wrapper">
@@ -89,7 +197,7 @@
         <nav id="mainNav">
             <div class="sidebar-left">
                 <div class="category">
-                    <div class="wrapper">
+                    <div class="wrapper-catalog">
                         <div class="filter-header">
                             <button id="category-header-button" class="filter-header-button">
                                 <img src="img/svg/filter-vector-2.svg" id="category-header-button-img"
@@ -774,13 +882,16 @@
 <section class="gift">
     <div class="future">
         <div class="future-wrapper">
-            <div class="future-img"><img src="img/sertificate-shadow.png" alt=""></div>
-            <!-- <img src="img/shadow.png" alt="" class="gift-shadow"> -->
+            <div class="future-img">
+                <picture>
+                    <source media="(max-width:800px)" srcset="img/sertificate-shadow-mobile.png">
+                    <img src="img/sertificate-shadow.png" alt="" class="shadow">
+                </picture>
+            </div>
             <div class="future-info">
-                <img src="img/gift-header.png" alt="" class="future-header">
+                <img src="img/gift-header.svg" alt="" class="future-header">
                 <h2 class="future-header-2">Подарочный сертификат</h2>
-                <p class="future-description">Сделайте приятно любимым! Наши подарочные сертификаты не имеют ограничений
-                    по сумме или сроку годности.
+                <p class="future-description">Сделайте приятно любимым! Наши подарочные сертификаты не имеют ограничений по сумме или сроку годности.
                     Оплата осуществляется любым удобным способом.</p>
                 <button class="future-about btn-line">ПОДРОБНЕЕ</button>
             </div>
@@ -843,11 +954,15 @@
                     <span class="subscribe-news">Подписаться на новости</span>
                     <div class="subscribe-block">
                         <input type="email" name="" id="" class="subscribe-field" placeholder="Ваш E-mail">
-                        <button class="subscribe-send"><img src="img/footer-button.png" alt=""></button>
+                        <button class="subscribe-send">
+                            <picture>
+                                <source media="(max-width:800px)" srcset="img/footer-btn-mobile.svg">
+                                <img src="img/footer-button.png" alt="">
+                            </picture></button>
                     </div>
                 </div>
             </div>
-            <div class="foooter-links">
+            <div class="footer-links">
                 <ul class="footer-links-items footer-links-items-right">
                     <li class="footer-links-items-item footer-links-items-item-header">Ифнормация</li>
                     <li class="footer-links-items-item"><a href="">О нас</a></li>
@@ -881,6 +996,6 @@
 <script src="js/script.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/jquery.selectric.js"></script>
-<script></script>
+<script src="js/header.js"></script>
 </body>
 </html>
