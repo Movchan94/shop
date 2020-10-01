@@ -13,30 +13,47 @@
 
 <!-- header -->
 
+<div class="mobile-bacckground hide"></div>
 <header class="header">
     <div class="wrapper">
+        <div class="header-top-mobile desktop-hide">
+            <div class="flex">
+                <div class="hamburger-btn">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <img src="img/mobile-header.svg" alt="" class="header-logo-mobile">
+            </div>
+            <div class="flex">
+                <img src="img/header-profile.svg" alt="">
+                <img src="img/header-shop.svg" alt="" class="shop-logo-mobile">
+            </div>
+        </div>
         <div class="header-top">
-            <img src="img/logo.png" alt="" class="header-logo">
+            <img src="img/logo.png" alt="" class="header-logo mobile-hide">
             <div class="header-search hide">
                 <div class="search-logo">
-                    <img src="img/header-search-mini.png" alt="" class="search-icon">
+                    <img src="img/header-search-mini.svg" alt="" class="search-icon mobile-hide">
+                    <img src="img/search-mobile.svg" alt="" class="search-icon desktop-hide">
                 </div>
                 <input type="text" name="" id="" placeholder="Введите текст" class="search-field">
                 <div class="reset-search">
-                    <img src="img/close-search.png" alt="" class="close-search">
+                    <img src="img/close-search.png" alt="" class="close-search mobile-hide">
+                    <div class="close-search desktop-hide">></div>
                 </div>
             </div>
             <div class="header-top-menu">
                 <ul class="header-top-menu-items">
+                    <li class="header-top-menu-link mobile-list-header desktop-hide">ИНФОРМАЦИЯ</li>
                     <li class="header-top-menu-link">Оплата</li>
                     <li class="header-top-menu-link">Доставка</li>
                     <li class="header-top-menu-link">Новинки</li>
                     <li class="header-top-menu-link">Sale</li>
-                    <li class="header-top-menu-img"><img src="img/header-profile.png" alt=""></li>
-                    <li class="header-top-menu-img"><img src="img/header-favorite.png" alt=""></li>
-                    <li class="header-top-menu-img"><img src="img/header-search-mini.png" alt="" class="search-icon">
-                    </li>
-                    <li class="header-top-menu-img last-img"><img src="img/header-shop.png" alt=""></li>
+                    <li class="header-top-menu-img"><img src="img/header-profile.svg" alt=""></li>
+                    <li class="header-top-menu-img"><img src="img/header-favorite.svg" alt=""></li>
+                    <li class="header-top-menu-img"><img src="img/header-search-mini.svg" alt="" class="search-icon"></li>
+                    <li class="header-top-menu-img last-img"><img src="img/header-shop.svg" alt=""></li>
                     <li class="header-top-menu-link">Подарки</li>
                     <li class="header-top-menu-link">Trad-in</li>
                     <li class="header-top-menu-link">Персональный эксперт</li>
@@ -51,30 +68,121 @@
                     <span>Экспресс - доставка по всей Росии и СНГ</span>
                 </div>
             </div>
+            <nav class="header-nav">
+                <ul class="header-nav-list">
+                    <li class="header-nav-list-item mobile-list-header desktop-hide">КАТАЛОГ</li>
+                    <li class="header-nav-list-item">бренды</li>
+                    <li class="header-nav-list-item">летние товары</li>
+                    <li class="header-nav-list-item">для школы</li>
+                    <li class="header-nav-list-item">траснпорт</li>
+                    <li class="header-nav-list-item">коляски</li>
+                    <li class="header-nav-list-item">автокресла</li>
+                    <li class="header-nav-list-item">комната и сон</li>
+                    <li class="header-nav-list-item">комфорт и безопасность</li>
+                    <li class="header-nav-list-item">новорожденным</li>
+                    <li class="header-nav-list-item">для мамы</li>
+                    <li class="header-nav-list-item more-categories">
+                        + 2 категории
+                        <ul class="more-categories-items hide">
+                            <li class="more-categories-item">КАТЕГОРИЯ 1</li>
+                            <li class="more-categories-item">КАТЕГОРИЯ 2</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav class="header-nav">
-            <ul class="header-nav-list">
-                <li class="header-nav-list-item">бренды</li>
-                <li class="header-nav-list-item">летние товары</li>
-                <li class="header-nav-list-item">для школы</li>
-                <li class="header-nav-list-item">траснпорт</li>
-                <li class="header-nav-list-item">коляски</li>
-                <li class="header-nav-list-item">автокресла</li>
-                <li class="header-nav-list-item">комната и сон</li>
-                <li class="header-nav-list-item">комфорт и безопасность</li>
-                <li class="header-nav-list-item">новорожденным</li>
-                <li class="header-nav-list-item">для мамы</li>
-                <li class="header-nav-list-item more-categories">
-                    + 2 категории
-                    <ul class="more-categories-items hide">
-                        <li class="more-categories-item">КАТЕГОРИЯ 1</li>
-                        <li class="more-categories-item">КАТЕГОРИЯ 2</li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
     </div>
 </header>
+
+<!-- mobile-categories -->
+
+<section class="mobile-categories white desktop-hide">
+    <div class="categories">
+        <span class="categories-header">Каталог товаров</span>
+        <img src="img/rose-btn.svg" alt="" width="7" height="12" class="category-header-btn">
+    </div>
+    <div class="wrapper">
+        <ul class="categories-list desktop-hide">
+            <li class="categories-list-item">Бренды
+                <div class="category-btn">+</div></li>
+            <ul class="category">
+                <li class="category-sub">Категория 1</li>
+                <li class="category-sub">Категория 2</li>
+                <li class="category-sub">Категория 3</li>
+            </ul>
+            <li class="categories-list-item">Летние товары
+                <div class="category-btn">+</div></li>
+            <ul class="category">
+                <li class="category-sub">Категория 1</li>
+                <li class="category-sub">Категория 2</li>
+                <li class="category-sub">Категория 3</li>
+            </ul>
+            <li class="categories-list-item">Для школы
+                <div class="category-btn">+</div></li>
+            <ul class="category">
+                <li class="category-sub">Категория 1</li>
+                <li class="category-sub">Категория 2</li>
+                <li class="category-sub">Категория 3</li>
+            </ul>
+            <li class="categories-list-item">Траснпорт
+                <div class="category-btn">+</div></li>
+            <ul class="category">
+                <li class="category-sub">Категория 1</li>
+                <li class="category-sub">Категория 2</li>
+                <li class="category-sub">Категория 3</li>
+            </ul>
+            <li class="categories-list-item">Коляски
+                <div class="category-btn">+</div></li>
+            <ul class="category">
+                <li class="category-sub">Категория 1</li>
+                <li class="category-sub">Категория 2</li>
+                <li class="category-sub">Категория 3</li>
+            </ul>
+            <li class="categories-list-item">Автокресла
+                <div class="category-btn">+</div></li>
+            <ul class="category">
+                <li class="category-sub">Категория 1</li>
+                <li class="category-sub">Категория 2</li>
+                <li class="category-sub">Категория 3</li>
+            </ul>
+            <li class="categories-list-item">Комната и сон
+                <div class="category-btn">+</div></li>
+            <ul class="category">
+                <li class="category-sub">Категория 1</li>
+                <li class="category-sub">Категория 2</li>
+                <li class="category-sub">Категория 3</li>
+            </ul>
+            <li class="categories-list-item">Комфорт и безопасность
+                <div class="category-btn">+</div></li>
+            <ul class="category">
+                <li class="category-sub">Категория 1</li>
+                <li class="category-sub">Категория 2</li>
+                <li class="category-sub">Категория 3</li>
+            </ul>
+            <li class="categories-list-item">Новорожденным
+                <div class="category-btn">+</div></li>
+            <ul class="category">
+                <li class="category-sub">Категория 1</li>
+                <li class="category-sub">Категория 2</li>
+                <li class="category-sub">Категория 3</li>
+            </ul>
+            <li class="categories-list-item">Для Мамы
+                <div class="category-btn">+</div></li>
+            <ul class="category">
+                <li class="category-sub">Категория 1</li>
+                <li class="category-sub">Категория 2</li>
+                <li class="category-sub">Категория 3</li>
+            </ul>
+            <li class="categories-list-item">Игрушки
+                <div class="category-btn">+</div></li>
+            <ul class="category">
+                <li class="category-sub">Категория 1</li>
+                <li class="category-sub">Категория 2</li>
+                <li class="category-sub">Категория 3</li>
+            </ul>
+        </ul>
+    </div>
+</section>
 
 <!-- top-section -->
 <div class="wrapper">
@@ -342,11 +450,15 @@
                     <span class="subscribe-news">Подписаться на новости</span>
                     <div class="subscribe-block">
                         <input type="email" name="" id="" class="subscribe-field" placeholder="Ваш E-mail">
-                        <button class="subscribe-send"><img src="img/footer-button.png" alt=""></button>
+                        <button class="subscribe-send">
+                            <picture>
+                                <source media="(max-width:800px)" srcset="img/footer-btn-mobile.svg">
+                                <img src="img/footer-button.png" alt="">
+                            </picture></button>
                     </div>
                 </div>
             </div>
-            <div class="foooter-links">
+            <div class="footer-links">
                 <ul class="footer-links-items footer-links-items-right">
                     <li class="footer-links-items-item footer-links-items-item-header">Ифнормация</li>
                     <li class="footer-links-items-item"><a href="">О нас</a></li>
@@ -381,6 +493,7 @@
 <script src="js/slick.min.js"></script>
 <script src="js/cardPage.js"></script>
 <script type="text/javascript" src="../shop/js/catalog.js"></script>
+<script src="js/header.js"></script>
 
 </body>
 </html>
