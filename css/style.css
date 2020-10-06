@@ -2790,13 +2790,31 @@ img {
 }
 
 .delivery-header {
+  font-family: Cormorant;
+  font-style: normal;
+  font-weight: 600;
   font-size: 30px;
   line-height: 60px;
   margin-bottom: -35px;
 }
+.delivery .future-header-2 {
+  font-family: "Cormorant";
+  font-style: normal;
+}
+.delivery .future-header-2 span {
+  font-weight: 600;
+}
 .delivery-bold {
   font-family: "Cormorant", serif;
   font-weight: bold;
+}
+
+.future-header-2 {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 60px;
 }
 
 .newest {
