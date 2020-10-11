@@ -92,3 +92,13 @@ $(function() {
 	});
 });
 
+$("#product-info-btn-feedback").click(function(){
+  $('.feedback-container').css({'display':'block'});
+  $('#description').css({'display':'none'});
+});
+
+$("#product-info-btn-description").click(function(){
+  $('.feedback-container').css({'display':'none'});
+  $('#description').css({'display':'block'});
+});
+
