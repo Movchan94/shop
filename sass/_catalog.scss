@@ -14,7 +14,6 @@
   }
 
   #mainNav {
-    border-right: 1px solid #EEEEEE;
     grid-area: nav;
   }
 
@@ -237,12 +236,12 @@
   margin-top: 40px;
 
   &-header {
-    font-family: Carolina;
+    font-family: 'Carolina';
     font-style: normal;
     font-weight: normal;
     font-size: 65px;
     line-height: 103px;
-    margin-top: 72px;
+    margin-top: -20px;
     margin-left: 26px;
     color: $main-text;
 
@@ -309,6 +308,7 @@
 
   .catalog-1 {
     margin-top: 65px;
+    margin-bottom: 50px;
     display: grid;
     grid-template-columns: 320px 320px 320px;
     grid-row-gap: 36px;
@@ -422,6 +422,13 @@ input:checked + label:before {
   left: 1144px;
 }
 
+.catalog-vertical-line-3 {
+  position: absolute;
+  height: 100%;
+  border-left: 1px solid #EEEEEE;
+  left: 387px;
+}
+
 /***************
 ****MEDIA****
 *************/
@@ -486,16 +493,16 @@ input:checked + label:before {
   .catalog-vertical-line-1 {
     left: 715px;
   }
+
+  .catalog-vertical-line-3 {
+    left: 355px;
+  }
   .catalog-header {
     font-size: 50px;
   }
 
   .sidebar-left, .sidebar-left-horizontal-line  {
     width: 355px;
-  }
-
-  #catalog-header-img {
-    width: 745px;
   }
 
   .pagination {
@@ -520,6 +527,14 @@ input:checked + label:before {
     #mainArticle {
       width: 100%;
       max-width: 800px;
+    }
+
+    .catalog-vertical-line-3 {
+      display: none;
+    }
+
+    #catalog-header-1 {
+      display: none;
     }
 
 
@@ -624,6 +639,7 @@ input:checked + label:before {
     }
 
     &-header {
+      display: none;
       font-family: Cormorant;
       font-style: normal;
       font-weight: normal;
