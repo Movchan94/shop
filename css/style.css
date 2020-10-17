@@ -1410,6 +1410,9 @@ input:checked + label:before {
   align-items: center;
 }
 .basket-card .price-card {
+  position: fixed;
+  top: 40%;
+  right: 40px;
   margin: 0;
   max-width: 333px;
   width: 100%;
@@ -2034,15 +2037,22 @@ input:checked + label:before {
   }
 }
 .call-container {
-  margin-top: -300px;
+  margin-top: 300px;
   margin-bottom: 200px;
   display: flex;
-  width: 1524px;
-  position: absolute;
+  width: 90%;
+  position: fixed;
   justify-content: flex-end;
 }
 
 .ceo-support-call {
+  z-index: 1;
+  position: fixed;
+  /* Фиксированное положение */
+  right: 30px;
+  /* Расстояние от правого края окна браузера */
+  top: 70%;
+  /* Расстояние сверху */
   cursor: pointer;
 }
 

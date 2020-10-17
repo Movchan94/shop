@@ -27,7 +27,7 @@
   margin: 0 auto;
 }
 
-//cards 
+//cards
 
 .basket-card {
   position: relative;
@@ -113,13 +113,13 @@
       border-radius: 68px 0 0 68px;
       width: 38px;
     }
-  
+
     &-quantity {
       border-top: 1px solid #EEEEEE;
       border-bottom: 1px solid #EEEEEE;
       width: 47px;
     }
-  
+
     &-plus {
       border-radius: 0 68px 68px 0;
       width: 38px;
@@ -168,6 +168,9 @@
   }
 
   .price-card {
+    position: fixed;
+    top: 40%;
+    right: 40px;
     margin: 0;
     max-width: 333px;
     width: 100%;
@@ -277,7 +280,7 @@
     justify-items: center;
     row-gap: 21px;
     margin-top: 22px;
-    
+
     &-field {
       border: none;
       outline: none;
