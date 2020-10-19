@@ -180,9 +180,9 @@
     cursor: pointer;
     margin-right: 14px;
 
-    &:hover {
-      border-color: #1A1A1A;
-    }
+    // &:hover {
+    //   border-color: #1A1A1A;
+    // }
 
     &:nth-child(1) {
       div {
@@ -435,4 +435,8 @@
   line-height: 32px;
 }
 
+.active-color {
+    border-color: #1A1A1A;
+}
 
+// #DDDDDD

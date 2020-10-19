@@ -1025,9 +1025,6 @@ input:checked + label:before {
   cursor: pointer;
   margin-right: 14px;
 }
-.card-control-img:hover {
-  border-color: #1A1A1A;
-}
 .card-control-img:nth-child(1) div {
   background: #E5E5E5;
 }
@@ -1230,6 +1227,10 @@ input:checked + label:before {
   font-family: "Circle-Regular";
   font-size: 22px;
   line-height: 32px;
+}
+
+.active-color {
+  border-color: #1A1A1A;
 }
 
 .basket-header {
@@ -2846,6 +2847,9 @@ img {
 .mslider .slick-center .mslider-mid-description {
   display: block;
 }
+.mslider .slick-center .side-name {
+  display: block;
+}
 .mslider .mslider-mid-description {
   display: none;
 }
@@ -2874,7 +2878,7 @@ img {
   line-height: 24px;
   text-transform: uppercase;
   color: #1A1A1A;
-  display: block;
+  display: none;
 }
 .mslider .mid {
   width: 709px;
@@ -3025,6 +3029,24 @@ img {
 
 .desktop-hide {
   display: none;
+}
+
+.arrows-name {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.arrows-name-left {
+  align-items: flex-end;
+}
+
+.mslider-control .slide-name {
+  position: absolute;
+  top: -67px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: "Cormorant", serif;
 }
 
 @media (max-width: 1600px) {
@@ -4183,6 +4205,7 @@ img {
     color: #1A1A1A;
     text-transform: uppercase;
     margin-top: 7px;
+    position: initial;
   }
 
   .expert .future-wrapper {
@@ -4229,6 +4252,7 @@ img {
   .gift .future-img {
     z-index: -1;
     margin-bottom: -157px;
+    min-width: initial;
   }
   .gift .future-header {
     height: 50px;
