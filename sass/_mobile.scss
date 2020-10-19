@@ -1231,6 +1231,7 @@
         color: $main-text;
         text-transform: uppercase;
         margin-top: 7px;
+        position: initial;
       }
     }
   }
@@ -1293,6 +1294,7 @@
       &-img {
         z-index: -1;
         margin-bottom: -157px;
+        min-width: initial;
       }
 
       &-header {
