@@ -281,7 +281,6 @@
   margin: 0;
 }
 .grid-container #mainNav {
-  border-right: 1px solid #EEEEEE;
   grid-area: nav;
 }
 
@@ -455,12 +454,12 @@
   margin-top: 40px;
 }
 .catalog-header {
-  font-family: Carolina;
+  font-family: "Carolina";
   font-style: normal;
   font-weight: normal;
   font-size: 65px;
   line-height: 103px;
-  margin-top: 72px;
+  margin-top: -20px;
   margin-left: 26px;
   color: #1A1A1A;
 }
@@ -513,6 +512,7 @@
 }
 .catalog .catalog-1 {
   margin-top: 65px;
+  margin-bottom: 50px;
   display: grid;
   grid-template-columns: 320px 320px 320px;
   grid-row-gap: 36px;
@@ -614,10 +614,17 @@ input:checked + label:before {
   left: 1144px;
 }
 
+.catalog-vertical-line-3 {
+  position: absolute;
+  height: 100%;
+  border-left: 1px solid #EEEEEE;
+  left: 387px;
+}
+
 /***************
 ****MEDIA****
 *************/
-@media (max-width: 1599px) {
+@media (max-width: 1600px) {
   .catalog-sorting-top {
     margin-right: 20px;
   }
@@ -630,7 +637,7 @@ input:checked + label:before {
     left: 1143px;
   }
 }
-@media (max-width: 1299px) {
+@media (max-width: 1525px) {
   .catalog .catalog-1 {
     grid-template-columns: 320px 320px;
     grid-row-gap: 36px;
@@ -655,7 +662,7 @@ input:checked + label:before {
     width: 705px;
   }
 }
-@media (max-width: 1099px) {
+@media (max-width: 1100px) {
   .catalog .catalog-1 {
     grid-column-gap: 30px;
   }
@@ -676,6 +683,10 @@ input:checked + label:before {
     left: 715px;
   }
 
+  .catalog-vertical-line-3 {
+    left: 355px;
+  }
+
   .catalog-header {
     font-size: 50px;
   }
@@ -684,23 +695,31 @@ input:checked + label:before {
     width: 355px;
   }
 
-  #catalog-header-img {
-    width: 745px;
-  }
-
   .pagination {
     width: 650px;
   }
+
+  .catalog-sorting-top {
+    width: 700px;
+  }
 }
-@media (max-width: 799px) {
+@media (max-width: 800px) {
   .grid-container {
     grid-template-areas: "nav" "article";
-    grid-template-columns: 800px 1fr;
+    grid-template-columns: 100% 1fr;
+    max-width: 800px;
     border: none;
     margin-left: 0px;
   }
   .grid-container #mainArticle {
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
+  }
+  .grid-container .catalog-vertical-line-3 {
+    display: none;
+  }
+  .grid-container #catalog-header-1 {
+    display: none;
   }
   .grid-container #mainNav {
     position: absolute;
@@ -718,7 +737,7 @@ input:checked + label:before {
     max-width: 800px;
     width: 100%;
     margin-top: 38px;
-    margin-left: 200px;
+    margin-left: 20%;
   }
   .sidebar-left-horizontal-line {
     width: 387px;
@@ -782,13 +801,14 @@ input:checked + label:before {
     margin: 18px;
   }
   .catalog-header {
+    display: none;
     font-family: Cormorant;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
     line-height: 27px;
     margin-top: 78px;
-    margin-left: 270px;
+    text-align: center;
     margin-bottom: 0;
     color: #1A1A1A;
   }
@@ -834,11 +854,20 @@ input:checked + label:before {
   }
 
   .pagination {
-    margin: 40px auto;
+    display: none;
+  }
+
+  .mob-pagination {
+    display: block;
+  }
+}
+@media (max-width: 570px) {
+  .catalog .catalog-1 {
+    grid-template-columns: 163px 163px;
   }
 }
 /*375 px*/
-@media (max-width: 374px) {
+@media (max-width: 375px) {
   .grid-container {
     grid-template-columns: 345px 1fr;
   }
@@ -1233,6 +1262,14 @@ input:checked + label:before {
   border-color: #1A1A1A;
 }
 
+.feedback-container {
+  display: none;
+}
+
+.video-block, .product-info-img, .product-info-header {
+  text-align: center;
+}
+
 .basket-header {
   border: 1px solid #EEEEEE;
   border-top: none;
@@ -1374,6 +1411,9 @@ input:checked + label:before {
   align-items: center;
 }
 .basket-card .price-card {
+  position: fixed;
+  top: 40%;
+  right: 40px;
   margin: 0;
   max-width: 333px;
   width: 100%;
@@ -1998,15 +2038,22 @@ input:checked + label:before {
   }
 }
 .call-container {
-  margin-top: -300px;
+  margin-top: 300px;
   margin-bottom: 200px;
   display: flex;
-  width: 1524px;
-  position: absolute;
+  width: 90%;
+  position: fixed;
   justify-content: flex-end;
 }
 
 .ceo-support-call {
+  z-index: 1;
+  position: fixed;
+  /* Фиксированное положение */
+  right: 30px;
+  /* Расстояние от правого края окна браузера */
+  top: 70%;
+  /* Расстояние сверху */
   cursor: pointer;
 }
 

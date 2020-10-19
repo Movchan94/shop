@@ -5,6 +5,7 @@
     width: inherit;
   }
 
+
   .vertical-lines {
     display: none !important;
   }
@@ -151,7 +152,7 @@
     margin-top: 65px;
   }
 
-  // basket 
+  // basket
 
   .basket-header {
     border: none;
@@ -275,7 +276,7 @@
         font-size: 30px;
         line-height: 30px;
       }
-      
+
       .promo-block-btn {
         width: 308px;
         margin: 27px 17px 0 17px;
@@ -303,7 +304,7 @@
 
     &-img {
       max-width: 117px;
-      
+
     }
 
     &-img {
@@ -512,14 +513,14 @@
         &-control {
           margin: 0;
         }
-        
+
         .buy-btn {
           margin: 0;
           width: 100%;
           max-width: 314px;
         }
       }
-  
+
       .page-card-description {
         order: 3;
         font-size: 15px;
@@ -612,7 +613,7 @@
       height: 82px;
     }
   }
-  
+
   .big-slider {
     order: 1;
     &-item {
@@ -683,7 +684,7 @@
       font-size: 30px;
     }
   }
-  
+
   .product-description {
     margin: 30px 0 60px 0;
     font-size: 15px;
@@ -732,9 +733,9 @@
     img {
       height: 231px;
     }
-    
+
   }
-  
+
   .newest {
     .wrapper {
       padding: 0;
@@ -861,14 +862,14 @@
       }
     }
   }
-  
-  // main-page 
+
+  // main-page
   body.lock {
       overflow: hidden;
   }
 
   .header {
-    background: $main-background; 
+    background: $main-background;
     position: relative;
     .wrapper {
       padding: 0;
@@ -886,10 +887,10 @@
     background: #ffffff;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: 
-      "top top" 
-      "search search" 
-      "catalog  information" 
+    grid-template-areas:
+      "top top"
+      "search search"
+      "catalog  information"
       "contacts contacts";
 
     &-mobile {
@@ -1022,7 +1023,7 @@
       padding: 40px 0 34px 0;
     }
   }
-  
+
   .mobile-list-header {
     color: #777777;
   }
@@ -1172,7 +1173,7 @@
     .wrapper {
       padding: 0;
     }
-  
+
     .description-items {
       flex-direction: column;
       .all-categories {
@@ -1300,7 +1301,7 @@
         height: 50px;
       }
     }
-    
+
     .shadow {
       position: initial;
     }
@@ -1331,7 +1332,7 @@
   }
 
   // gallery
-  
+
   .gallery {
     &-wrapper {
       padding: 0 15px;
@@ -1369,7 +1370,7 @@
       &-subscribe {
         display: none;
       }
-      
+
       &-avatar {
         height: 80px;
         width: 80px;
