@@ -168,9 +168,10 @@
   }
 
   .price-card {
-    position: fixed;
+    //position: fixed;
+    
     top: 40%;
-    right: 40px;
+   //right: 40px;
     margin: 0;
     max-width: 333px;
     width: 100%;
@@ -210,6 +211,10 @@
       line-height: 50px;
       color: $main-text;
     }
+  }
+  .price-card-container {
+    width: 100%;
+    height: 1070px;
   }
 }
 
@@ -320,3 +325,17 @@
 .shop-features {
   position: relative;
 }
+
+
+
+@media (max-width: 1600px) {
+  .basket-card .price-card-total-price  {
+    font-size: 25px;
+  }
+
+  .basket-card .price-card {
+    max-width: 250px;
+    height: 300px;
+  }
+}
+
