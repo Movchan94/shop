@@ -1,4 +1,10 @@
 $(document).ready(function(){
+	// this.$childViewContainer.on('init', function() {
+	// 	console.log('delegating child events');
+	// 	self.children.each(function(child) {
+	// 		child.delegateEvents();
+	// 	});
+	// });
 	$('.promo-block').css('opacity', '1');
 
 	$('.showcase-slider').slick({
@@ -52,23 +58,25 @@ $(document).ready(function(){
 	});
 
 
-
 	$('.newest-slider').slick({
     arrows:false,
     dots:false,
     slidesToShow:4,
-    centerMode:false,
+		centerMode:false,
+		draggable: false,
+		swipe: false,
+		touchMove: false,
     responsive:[
 			{
 				breakpoint: 1400,
 				settings: {
-					slidesToShow: 3
+					slidesToShow: 3,
 				}
 			},
 			{
 				breakpoint: 550,
 				settings: {
-					slidesToShow:2
+					slidesToShow:2,
 				}
 			}
 		]

@@ -741,6 +741,9 @@ img {
     .mslider-mid-description {
       display: block;
     }
+    .side-name {
+      display: block;
+    }
   }
     .mslider-mid-description {
       display: none;
@@ -777,7 +780,7 @@ img {
     line-height: 24px;
     text-transform: uppercase;
     color: $main-text;
-    display: block;
+    display: none;
   }
 
   .mid {
@@ -949,6 +952,26 @@ img {
 
 .desktop-hide {
   display: none;
+}
+
+.arrows-name {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  &-left {
+    align-items: flex-end;
+  }
+}
+
+.mslider-control {
+  .slide-name {
+    position: absolute;
+    top: -67px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: 'Cormorant', serif;
+  }
 }
 
 @import 'querys';
